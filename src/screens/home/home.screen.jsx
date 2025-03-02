@@ -4,19 +4,19 @@ import { AnimatedHeaders } from "../../components";
 import animationHome from "../../assets/videos/animation.mp4";
 
 export const Home = () => {
-  const headers = ["Entdecken Sie", "Finden Sie"];
+  const headers = ["Fahrradverkehr", "Autoverkehr", "Fußgängerverkehr"];
 
   return (
-    <section id="home" className="py-10">
-      <div className="lg:py-[144px]">
-        <div className="hero-parent flex flex-col lg:grid lg:grid-cols-2 lg:gap-6">
+    <section id="home" className="py-10 px-4">
+      <div className="lg:py-[125px]">
+        <div className="hero-parent flex flex-col md:grid md:grid-cols-2 md:gap-6">
           <div className="hero-child">
             <div className="flex flex-col">
               <div className="text-start">
                 <AnimatedHeaders headers={headers} />
               </div>
               <div className="text-start">
-                <h1 className="relative inline-block">
+                <h1 className="relative inline-block font-bold">
                   Ihren Standort
                   <span>
                     <svg
@@ -56,7 +56,7 @@ export const Home = () => {
             </div>
           </div>
 
-          <div>
+          <div className="flex items-center justify-center">
             <video
               autoPlay
               loop
