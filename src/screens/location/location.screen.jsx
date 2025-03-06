@@ -14,10 +14,10 @@ export const Location = () => {
   }, []);
 
   return (
-    <div className="px-2 md:px-18">
+    <div className="px-2 py-2 lg:pb-20 md:px-18">
       <div className="flex justify-center my-8 py-2">
-        <h2 className="mr-2">Entdecken Sie</h2>
-        <h2 className="relative inline-block">
+        <h2 className="mr-2 text-black">Entdecken Sie</h2>
+        <h2 className="relative text-black inline-block">
           Ihren Standort
           <span>
             <svg
@@ -50,9 +50,10 @@ export const Location = () => {
          w-full"
         ref={formRef}
         onSubmit={handleFormSubmit}
+        x
       >
         <AddressAutofill accessToken={ACCESS_TOKEN}>
-          <div className="relative w-[50vw] max-w-[500px]">
+          <div className="relative min-w-[50vw] max-w-[600px]">
             <input
               type="text"
               className="w-full p-[12px_50px_12px_20px] text-[16px] border border-gray-300 rounded-full outline-none transition duration-300 ease-in-out focus:border-gray-500 shadow-md"
@@ -60,7 +61,7 @@ export const Location = () => {
               name="address-line1"
               placeholder="Adresse eingeben..."
             />
-            <button className="absolute right-[10px] top-1/2 -translate-y-1/2 bg-transparent border-none text-blue-500 cursor-pointer p-[5px] flex items-center justify-center">
+            <button className="absolute right-[10px] top-1/2 -translate-y-1/2 bg-transparent border-none text-[#8247ff] cursor-pointer p-[5px] flex items-center justify-center">
               <FaSearch size={16} />
             </button>
           </div>

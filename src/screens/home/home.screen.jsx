@@ -1,13 +1,16 @@
 import React from "react";
 import { AnimatedHeaders } from "../../components";
 
-import animationHome from "../../assets/videos/animation.mp4";
+// import animationHome from "../../assets/videos/animation.mp4";
+import animationHome2 from "../../assets/videos/animation_2.gif";
 
 export const Home = () => {
   const headers = ["Fahrradverkehr", "Autoverkehr", "Fußgängerverkehr"];
 
+  console.log("test", animationHome2);
+
   return (
-    <section id="home" className="px-2 py-14 md:pt-[150px] md:px-18">
+    <section id="home" className="px-2 py-14 md:py-[150px] md:px-18">
       <div>
         <div className="hero-parent flex flex-col md:grid md:grid-cols-2 md:gap-6">
           <div className="hero-child">
@@ -16,7 +19,7 @@ export const Home = () => {
                 <AnimatedHeaders headers={headers} />
               </div>
               <div className="text-start">
-                <h1 className="relative inline-block font-bold">
+                <h1 className="relative inline-block lg:text-[70px] text-black font-black">
                   Ihren Standort
                   <span>
                     <svg
@@ -34,7 +37,7 @@ export const Home = () => {
                       ></path>
 
                       <path
-                        d="M0 14C15 12 35 13 55 12C75 10 90 9 100 9"
+                        d="M0 14C15 12 35 13 50 12C65 11 75 10 80 10"
                         stroke="#8247FF"
                         strokeWidth="2"
                         strokeLinecap="round"
@@ -44,7 +47,7 @@ export const Home = () => {
                 </h1>
               </div>
               <div className="my-10">
-                <p className="text-justify text-base md:text-lg lg:text-xl">
+                <p className="text-start text-sm md:text-base lg:text-lg">
                   {" "}
                   Willkommen bei [Name der Firma], Ihrem zuverlässigen Partner
                   für moderne und effiziente Verkehrsüberwachung. Mit
@@ -57,7 +60,7 @@ export const Home = () => {
           </div>
 
           <div className="flex items-center justify-center">
-            <video
+            {/* <video
               autoPlay
               loop
               muted
@@ -66,7 +69,12 @@ export const Home = () => {
             >
               <source src={animationHome} type="video/mp4" />
               Dein Browser unterstützt das Video-Tag nicht.
-            </video>
+            </video> */}
+            <img
+              src={animationHome2}
+              alt="Animation"
+              className="w-full object-cover rounded-lg"
+            />
           </div>
         </div>
       </div>

@@ -1,0 +1,29 @@
+.logo-slider {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logo-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.logo-item {
+    flex-shrink: 0;
+    width: var(--logo-width, 100px);
+    /* Dynamische Breite basierend auf erstem Logo */
+    padding: 10px;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-1 * var(--logo-width) * 3));
+        /* 3 = Anzahl der Duplikationen */
+    }
+}
