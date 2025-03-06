@@ -12,8 +12,8 @@ export const Slider = () => {
 
   return (
     <div className="flex flex-col md:flex-row px-2 md:px-18 py-10 lg:pt-15">
-      <div className="flex items-start justify-center">
-        <p className="text-start text-base font-extrabold text-black">
+      <div className="flex items-center justify-center">
+        <p className="text-start text-sm font-extrabold text-black">
           Trusted by 2000+ Customers, 19 Countries and counting...
         </p>
       </div>

@@ -1,13 +1,11 @@
 import React from "react";
 import { AnimatedHeaders } from "../../components";
 
-// import animationHome from "../../assets/videos/animation.mp4";
-import animationHome2 from "../../assets/videos/animation_2.gif";
+import animationHome from "../../assets/videos/animation.mp4";
+// import animationHome2 from "../../assets/videos/animation_2.gif";
 
 export const Home = () => {
   const headers = ["Fahrradverkehr", "Autoverkehr", "Fußgängerverkehr"];
-
-  console.log("test", animationHome2);
 
   return (
     <section id="home" className="px-2 py-14 md:py-[150px] md:px-18">
@@ -60,7 +58,7 @@ export const Home = () => {
           </div>
 
           <div className="flex items-center justify-center">
-            {/* <video
+            <video
               autoPlay
               loop
               muted
@@ -69,12 +67,12 @@ export const Home = () => {
             >
               <source src={animationHome} type="video/mp4" />
               Dein Browser unterstützt das Video-Tag nicht.
-            </video> */}
-            <img
+            </video>
+            {/* <img
               src={animationHome2}
               alt="Animation"
               className="w-full object-cover rounded-lg"
-            />
+            /> */}
           </div>
         </div>
       </div>
