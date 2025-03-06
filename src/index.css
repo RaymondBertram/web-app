@@ -28,6 +28,10 @@
     @apply text-4xl lg:text-6xl font-bold;
   }
 
+  h2 {
+    @apply text-2xl lg:text-4xl font-bold;
+  }
+
   p {
     @apply text-base md:text-lg lg:text-xl;
   }

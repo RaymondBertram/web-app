@@ -7,8 +7,8 @@ export const Home = () => {
   const headers = ["Fahrradverkehr", "Autoverkehr", "Fußgängerverkehr"];
 
   return (
-    <section id="home" className="py-10 px-4">
-      <div className="lg:py-[125px]">
+    <section id="home" className="px-2 py-14 md:pt-[150px] md:px-18">
+      <div>
         <div className="hero-parent flex flex-col md:grid md:grid-cols-2 md:gap-6">
           <div className="hero-child">
             <div className="flex flex-col">

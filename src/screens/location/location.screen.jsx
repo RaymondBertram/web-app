@@ -14,10 +14,10 @@ export const Location = () => {
   }, []);
 
   return (
-    <div className="py-12">
-      <div className="my-8 py-12">
-        <h1>Entdecken Sie Ihren Standort</h1>
-        <h1 className="relative inline-block">
+    <div className="px-2 md:px-18">
+      <div className="flex justify-center my-8 py-2">
+        <h2 className="mr-2">Entdecken Sie</h2>
+        <h2 className="relative inline-block">
           Ihren Standort
           <span>
             <svg
@@ -42,11 +42,12 @@ export const Location = () => {
               ></path>
             </svg>
           </span>
-        </h1>
+        </h2>
       </div>
 
       <form
-        className="flex items-center justify-center w-full"
+        className="flex items-center justify-center
+         w-full"
         ref={formRef}
         onSubmit={handleFormSubmit}
       >
