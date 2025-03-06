@@ -29,7 +29,7 @@ export const Slider = () => {
   }, [xTranslation, width]);
 
   return (
-    <div className="flex flex-col md:flex-row px-4 py-10">
+    <div className="flex flex-col md:flex-row px-2 md:px-18 py-10">
       <div className="flex items-center justify-center">
         <p className="text-start font-bold">
           Trusted by 2000+ Customers, 19 Countries and counting...

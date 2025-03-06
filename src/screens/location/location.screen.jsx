@@ -14,9 +14,9 @@ export const Location = () => {
   }, []);
 
   return (
-    <div className="py-12">
+    <div className="px-2 md:px-18">
       <div className="my-8 py-12">
-        <h1>Entdecken Sie Ihren Standort</h1>
+        <h1>Entdecken Sie</h1>
         <h1 className="relative inline-block">
           Ihren Standort
           <span>
@@ -46,7 +46,8 @@ export const Location = () => {
       </div>
 
       <form
-        className="flex items-center justify-center w-full"
+        className="flex items-center justify-start
+         w-full"
         ref={formRef}
         onSubmit={handleFormSubmit}
       >
