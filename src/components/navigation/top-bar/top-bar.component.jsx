@@ -50,7 +50,7 @@ export const Navigation = () => {
       <div className="flex flex-row w-full justify-between items-center py-4">
         <div className="logo-wrapper">
           <a href="#home">
-            <img src={logo_ipsum} alt="logo" className="w-auto h-[50px]" />
+            <img src={logo_ipsum} alt="logo" className="w-[170px] h-[60px]" />
           </a>
         </div>
         <ul className="hidden lg:flex lg:flex-row lg:gap-6 list-none m-0 p-0 overflow-hidden">
@@ -62,11 +62,14 @@ export const Navigation = () => {
             { id: "team", label: "Team" },
             { id: "contact", label: "Kontakt" },
           ].map(({ id, label }) => (
-            <li key={id}>
+            <li className="py-4" key={id}>
               <a
-                className={`link-text relative font-semibold cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-[#8247ff] after:transition-all after:duration-300 ${
-                  activeNavItem === id ? "after:w-full" : "after:w-0"
-                }`}
+                className={`relative font-semibold text-black cursor-pointer 
+          after:content-[''] after:absolute after:left-0 after:bottom-[-8px] 
+          after:h-[2px] after:bg-[#8247ff] 
+          after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] 
+          ${activeNavItem === id ? "after:w-full" : "after:w-0"} 
+          hover:after:w-full`}
                 href={`#${id}`}
                 onClick={() => setActiveNavItem(id)}
               >

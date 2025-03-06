@@ -20,7 +20,7 @@ export const AnimatedHeaders = ({ headers }) => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
-        className="absolute text-4xl lg:text-6xl font-bold"
+        className="absolute text-4xl lg:text-[70px] font-black text-[#2d1f6b]"
       >
         {headers[index]}
       </motion.h1>
