@@ -48,15 +48,16 @@ export default function InfiniteCarousel({ images }) {
     <div className="flex items-center relative w-full overflow-hidden">
       <div className="absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-[#f5f7fa] to-transparent z-10" />
       <div className="absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-[#f5f7fa] to-transparent z-10" />
+
       <div
         ref={containerRef}
-        className="flex whitespace-nowrap gap-x-6 w-max relative"
+        className="flex whitespace-nowrap gap-x-[100px] w-max relative"
       >
         {images.map((src, index) => (
           <img
             key={index}
             src={src}
-            className="md:w-15 md:h-15 sm:w-40 sm:h-40 object-cover mx-1 grayscale"
+            className="md:w-8 md:h-8 sm:w-[20px] sm:[20px] mx-1 grayscale brightness-110"
             alt="carousel"
           />
         ))}
