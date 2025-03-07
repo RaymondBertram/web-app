@@ -11,13 +11,14 @@ export const Slider = () => {
   const logos = [logo_1, logo_2, logo_3, logo_4, logo_5];
 
   return (
-    <div className="flex flex-col md:flex-row px-2 md:px-18 py-10 lg:pt-15">
+    <div className="flex flex-col md:flex-row px-2 md:px-18 py-10 md:gap-4 lg:pt-15">
       <div className="flex items-center justify-center">
-        <p className="text-start text-sm font-extrabold text-black">
-          Trusted by 2000+ Customers, 19 Countries and counting...
+        <p className="text-start text-sm font-extrabold text-black break-words">
+          Trusted by 2000+ Companies,
+          <br /> 19 Countries and counting...
         </p>
       </div>
-      <div className="relative flex flex-col md:flex-row lg:flex-row max-w-full w-full h-32 lg:rounded-[64px] overflow-hidden">
+      <div className="relative flex flex-col md:flex-row lg:flex-row max-w-full w-full h-32 lg:rounded-[64px] overflow-hidden bg-[#f5f7fa] border-0">
         <InfiniteCarousel images={logos} />
       </div>
     </div>

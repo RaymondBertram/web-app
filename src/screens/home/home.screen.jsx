@@ -12,7 +12,7 @@ export const Home = () => {
       <div>
         <div className="hero-parent flex flex-col md:grid md:grid-cols-2 md:gap-6">
           <div className="hero-child">
-            <div className="flex flex-col">
+            <div className="flex flex-col justify-center">
               <div className="text-start">
                 <AnimatedHeaders headers={headers} />
               </div>
@@ -45,7 +45,7 @@ export const Home = () => {
                 </h1>
               </div>
               <div className="my-10">
-                <p className="text-start text-sm md:text-base lg:text-lg">
+                <p className="text-start text-sm text-black md:text-base lg:text-lg">
                   {" "}
                   Willkommen bei [Name der Firma], Ihrem zuverlässigen Partner
                   für moderne und effiziente Verkehrsüberwachung. Mit
