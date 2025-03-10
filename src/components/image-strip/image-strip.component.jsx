@@ -53,7 +53,7 @@ export default function InfiniteCarousel({ images }) {
         ref={containerRef}
         className="flex whitespace-nowrap gap-x-[100px] w-max relative"
       >
-        {images.map((src, index) => (
+        {[...images, ...images].map((src, index) => (
           <img
             key={index}
             src={src}
