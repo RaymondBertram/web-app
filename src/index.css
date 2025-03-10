@@ -18,22 +18,22 @@
 @font-face {
   font-family: 'Montserrat';
   src: url('./assets/fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 100 900;
   font-style: normal;
 }
 
 /* Custom Style for HTML ELEMENTS */
 @layer base {
   h1 {
-    @apply text-4xl lg:text-6xl font-black;
+    @apply text-4xl font-semibold lg:text-6xl;
   }
 
   h2 {
-    @apply text-2xl lg:text-4xl font-extrabold;
+    @apply text-3xl lg:text-5xl font-semibold;
   }
 
   p {
-    @apply text-base md:text-lg lg:text-xl;
+    @apply text-base font-medium;
   }
 
   span {
