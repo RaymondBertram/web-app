@@ -9,7 +9,7 @@ export const Home = () => {
   const headers = ["Fahrradverkehr", "Autoverkehr", "Fußgängerverkehr"];
 
   return (
-    <section id="home" className="px-2 pt-14 h-[70vh] md:pt-[150px] md:px-18">
+    <section id="home" className="px-2 pt-14 h-[80vh] md:pt-[150px] md:px-18">
       <div>
         <div className="hero-parent flex flex-col md:grid md:grid-cols-2 md:gap-6">
           <div className="hero-child lg:flex items-center">
