@@ -13,7 +13,9 @@ export const Form = () => {
       className="flex flex-col h-fit bg-gray-800 rounded-[18px] p-16 md:p-4"
       id="contact"
     >
-      <h1 className="font-bold py-4 text-white text-center">Kontaktformular</h1>
+      <h1 className="font-bold py-4 text-white text-center text-wrap">
+        Formular
+      </h1>
       <form ref={formRef} onSubmit={handleSubmit} className="text-white">
         <div className="p-2">
           <label htmlFor="firstName">Vorname</label>

@@ -14,7 +14,6 @@ import {
 } from "./screens";
 
 import "./App.css";
-import { nav } from "framer-motion/client";
 
 function App() {
   const [navHeight, setNavHeight] = useState(0);
@@ -26,14 +25,13 @@ function App() {
     }
   }, []);
 
-  console.log("test", navHeight);
   return (
-    <>
+    <div className="">
       <Navigation />
       <div className="relative" style={{ marginTop: `${navHeight}px` }}>
         <Home />
-        <Location />
         <Slider />
+        <Location />
         <Services />
         <ProcessDiagramScreen />
         <Solution />
@@ -42,7 +40,7 @@ function App() {
         <Form />
         <Footer />
       </div>
-    </>
+    </div>
   );
 }
 

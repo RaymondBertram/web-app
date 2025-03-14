@@ -13,7 +13,7 @@ export const AnimatedHeaders = ({ headers }) => {
   }, [headers.length]);
 
   return (
-    <div className="h-16 overflow-hidden">
+    <div className="h-10 md:h-16 overflow-hidden">
       <motion.h1
         key={index}
         initial={{ opacity: 0, y: 50 }}
