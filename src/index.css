@@ -29,7 +29,7 @@
   }
 
   h2 {
-    @apply text-3xl lg:text-5xl font-semibold;
+    @apply text-[40px] lg:text-5xl font-semibold;
   }
 
   p {
