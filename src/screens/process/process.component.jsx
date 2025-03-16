@@ -15,7 +15,7 @@ const CustomCard = ({ img, text }) => {
 export const ProcessDiagramScreen = () => {
   return (
     <section
-      className="w-full flex justify-center py-10 min-h-screen"
+      className="w-full flex justify-center py-10 min-h-screen px-2"
       id="process"
     >
       <div className="flex flex-col md:flex-row md:flex-wrap items-center justify-center gap-4 md:gap-6 lg:gap-8">
