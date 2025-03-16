@@ -22,28 +22,23 @@ const teamMembers = [
 export const Team = () => {
   return (
     <section className="py-16" id="team">
-      <h1 className="text-center mb-10 py-4">Unser Team</h1>
-      <div className="w-full overflow-x-auto">
-        <div className="flex gap-3 w-max">
-          {[...teamMembers].map((member, index) => (
-            <div
-              key={index}
-              className="relative w-[26em] h-[21.5em] rounded-[2.25em] shadow-lg overflow-hidden flex-shrink-0 transition-transform duration-300 hover:scale-105"
-            >
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${member.img})` }}
+      <h1 className="text-center text-3xl font-semibold mb-10">Unser Team</h1>
+      <div className="flex flex-wrap justify-center gap-8 px-4">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="text-center">
+            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-gray-300 shadow-lg">
+              <img
+                src={member.img}
+                alt={member.name}
+                className="w-full h-full object-cover"
               />
-
-              <div className="absolute bottom-0 left-0 right-0 bg-white/80 backdrop-blur-md text-center py-4">
-                <h3 className="text-lg font-bold text-gray-700">
-                  {member.name}
-                </h3>
-                <p className="text-gray-600 text-sm">{member.role}</p>
-              </div>
             </div>
-          ))}
-        </div>
+            <h3 className="mt-4 text-lg font-bold text-gray-700">
+              {member.name}
+            </h3>
+            <p className="text-gray-600 text-sm">{member.role}</p>
+          </div>
+        ))}
       </div>
     </section>
   );

@@ -1,10 +1,12 @@
 import React, { useCallback } from "react";
 import { FaSearch } from "react-icons/fa";
 import { AddressAutofill, useConfirmAddress } from "@mapbox/search-js-react";
+import { useGlowContext } from "../../context/glow/glowContext";
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_API_TOKEN;
 
 export const Location = () => {
+  const { glow } = useGlowContext();
   const { formRef } = useConfirmAddress({
     accessToken: ACCESS_TOKEN,
   });
@@ -12,6 +14,8 @@ export const Location = () => {
   const handleFormSubmit = useCallback(async (e) => {
     e.preventDefault();
   }, []);
+
+  console.log(glow);
 
   return (
     <section
@@ -59,7 +63,11 @@ export const Location = () => {
           <div className="relative min-w-[50vw] max-w-[600px]">
             <input
               type="text"
-              className="w-full p-[12px_50px_12px_20px] text-[16px] border border-gray-300 rounded-full outline-none transition duration-300 ease-in-out focus:border-gray-500 shadow-md"
+              className={`w-full p-[12px_50px_12px_20px] text-[16px] border border-gray-300 rounded-full outline-none transition duration-300 ease-in-out focus:border-gray-500 shadow-md ${
+                glow
+                  ? "border-purple-500 shadow-[0_0_10px_2px_rgba(130,71,255,0.5)]"
+                  : ""
+              }`}
               autoComplete="address-line1"
               name="address-line1"
               placeholder="Adresse eingeben..."

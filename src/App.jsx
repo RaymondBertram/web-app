@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { GlowProvider } from "./context/glow/glowContext";
 import { Navigation } from "./components/navigation/top-bar/top-bar.component";
 import {
   Home,
@@ -26,21 +27,23 @@ function App() {
   }, []);
 
   return (
-    <div className="">
-      <Navigation />
-      <div className="relative" style={{ marginTop: `${navHeight}px` }}>
-        <Home />
-        <Slider />
-        <Location />
-        <Services />
-        <ProcessDiagramScreen />
-        <Solution />
-        <Advantages />
-        <Team />
-        <Form />
-        <Footer />
+    <GlowProvider>
+      <div className="">
+        <Navigation />
+        <div className="relative" style={{ marginTop: `${navHeight}px` }}>
+          <Home />
+          <Slider />
+          <Location />
+          <Services />
+          <ProcessDiagramScreen />
+          <Solution />
+          <Advantages />
+          <Team />
+          <Form />
+          <Footer />
+        </div>
       </div>
-    </div>
+    </GlowProvider>
   );
 }
 

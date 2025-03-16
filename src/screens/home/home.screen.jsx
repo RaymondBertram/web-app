@@ -1,12 +1,14 @@
 import React from "react";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import { AnimatedHeaders } from "../../components";
+import { useGlowContext } from "../../context/glow/glowContext";
 
 import animationHome from "../../assets/videos/animation.mp4";
 // import animationHome2 from "../../assets/videos/animation_2.gif";
 
 export const Home = () => {
   const headers = ["Fahrradverkehr", "Autoverkehr", "Fußgängerverkehr"];
+  const { setGlow } = useGlowContext();
 
   return (
     <section id="home" className="px-2 pt-14 md:pt-[150px] md:px-6">
@@ -58,6 +60,7 @@ export const Home = () => {
                 <a
                   href="#location"
                   className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-white bg-[#8247ff] rounded-4xl"
+                  onClick={() => setGlow(true)}
                 >
                   Lets Go
                   <ArrowRightIcon width={30} height={30} />
