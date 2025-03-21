@@ -2,7 +2,7 @@ export * from "./home/home.screen";
 export * from "./location/location.screen";
 export * from "./slider/slider.screen";
 export * from "./services/services.screen";
-export * from "./process/process.component";
+export * from "./process/process.screen";
 export * from "./solution/solution.screen";
 export * from "./advantages/advantages.screen";
 export * from "./team/team.screen";
