@@ -15,8 +15,6 @@ export const Location = () => {
     e.preventDefault();
   }, []);
 
-  console.log(glow);
-
   return (
     <section
       id="location"

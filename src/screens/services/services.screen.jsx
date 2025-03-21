@@ -3,6 +3,8 @@ import { UspCard } from "../../components";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
 
+import "./services.screen.css";
+
 export const Services = () => {
   const cards = [
     {
@@ -29,15 +31,15 @@ export const Services = () => {
   };
 
   return (
-    <section id="services" className="px-2">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-12 bg-[#1f2933] pt-12 pb-6 px-6 rounded-3xl">
-        <div className="usp_right md:order-1">
+    <section id="services" className="px-3 overflow-hidden md:px-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start justify-items-center gap-12 bg-[#1f2933] pt-12 pb-6 px-6 rounded-3xl">
+        <div className="usp_right h-full relative md:order-1">
           <div className="cotents_wrapper text-white">
             <div className="content-headings mb-4">
               <h2 className="relative inline-block text-start leading-10 mb-2">
                 Tired of finding a{" "}
                 <span className="text-[40px] lg:text-5xl font-medium leading-8">
-                  new location
+                  new location?
                   <span>
                     <svg
                       className="absolute left-0 bottom-[-9px] w-full h-[16px]"
@@ -66,8 +68,9 @@ export const Services = () => {
             </div>
             <div className="paragraph-wrapper mb-4">
               <h6 className="text-white leading-4 font-medium md:text-lg md:leading-6">
-                Join payments evolution with us. Accept bank payments that are
-                settled in seconds.
+                Optimiere den Stadtverkehr mit uns. Erhalte
+                Echtzeit-Verkehrsanalysen für mehr Sicherheit und Effizienz auf
+                den Straßen.
               </h6>
             </div>
             <div className="flex gap-2 justify-start">
@@ -79,21 +82,33 @@ export const Services = () => {
                 <ArrowRightIcon width={30} height={30} />
               </a>
             </div>
+            <div className="images relative flex justify-end">
+              {/* Needs image */}
+              <div className="absolute bottom-0"></div>
+            </div>
           </div>
         </div>
 
-        <div className="usps_child_left flex flex-col gap-4">
+        <div className="usps_child_left_mobile flex flex-col gap-4 md:hidden">
           {cards.map((card, index) => (
             <motion.div
               key={index}
               variants={cardVariants}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.2 }}
+              viewport={{ amount: 0.2 }}
               transition={{ delay: index * 0.2 }} // Stagger Effekt
             >
               <UspCard title={card.title} text={card.text} img={card.img} />
             </motion.div>
+          ))}
+        </div>
+
+        <div className="usps_child_left_larger hidden md:flex flex-col items-center gap-12">
+          {cards.map((card, index) => (
+            <div key={index} className={`usp-card`}>
+              <UspCard title={card.title} text={card.text} img={card.img} />
+            </div>
           ))}
         </div>
       </div>

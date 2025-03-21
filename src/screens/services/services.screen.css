@@ -1,0 +1,49 @@
+@media (prefers-reduced-motion: no-preference) {
+  .usps_child_left_larger {
+    animation: scrolling linear;
+    animation-timeline: scroll(root);
+    animation-fill-mode: both;
+  }
+
+
+
+  @keyframes scrolling {
+    from {
+      transform: translateY(30%);
+    }
+
+    to {
+      transform: translateY(-200%);
+    }
+  }
+
+  .usp-card {
+    animation: scaleUpDown linear;
+    animation-timeline: scroll(root);
+    will-change: transform;
+  }
+
+  @keyframes scaleUpDown {
+
+    0%,
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+      transform: scale3d(1.1, 1.1, 1);
+    }
+  }
+
+  .usp-card:nth-child(1) {
+    animation-range: entry 0% cover 30%;
+  }
+
+  .usp-card:nth-child(2) {
+    animation-range: entry 10% cover 30%;
+  }
+
+  .usp-card:nth-child(3) {
+    animation-range: entry 20% cover 30%;
+  }
+}

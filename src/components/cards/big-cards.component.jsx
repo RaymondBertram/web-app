@@ -1,6 +1,6 @@
 import React from "react";
 
-export const BigCards = ({ h1, h2, text, img, color, i }) => {
+export const BigCards = ({ h1, h2, text, img, color }) => {
   return (
     <div className="h-screen flex sticky top-[10%]">
       <div
