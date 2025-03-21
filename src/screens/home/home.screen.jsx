@@ -11,7 +11,7 @@ export const Home = () => {
   const { setGlow } = useGlowContext();
 
   return (
-    <section id="home" className="px-2 pt-14 md:pt-[150px] md:px-6">
+    <section id="home" className="px-3 pt-14 md:pt-[150px] md:px-6">
       <div>
         <div className="hero-parent flex flex-col md:grid md:grid-cols-6 md:gap-6">
           <div className="hero-child lg:flex items-center col-span-3">
