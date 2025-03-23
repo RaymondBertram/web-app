@@ -7,3 +7,5 @@ export * from "./cards/usp-card.component";
 export * from "./cards/process-card.component";
 export * from "./custom-svgs/two-lines.component";
 export * from "./custom-svgs/success.component";
+export * from "./custom-svgs/connector.component";
+export * from "./custom-svgs/underline.component";

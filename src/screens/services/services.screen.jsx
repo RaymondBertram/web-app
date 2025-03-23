@@ -1,5 +1,5 @@
 import React from "react";
-import { UspCard } from "../../components";
+import { UnderlineSVG, UspCard } from "../../components";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
 
@@ -38,31 +38,9 @@ export const Services = () => {
             <div className="content-headings mb-4">
               <h2 className="relative inline-block text-start leading-10 mb-2">
                 Tired of finding a{" "}
-                <span className="text-[40px] lg:text-5xl font-medium leading-8">
+                <span className="text-[40px] lg:text-5xl font-medium leading-8 relative">
                   new location?
-                  <span>
-                    <svg
-                      className="absolute left-0 bottom-[-9px] w-full h-[16px]"
-                      viewBox="0 0 100 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                      preserveAspectRatio="none"
-                    >
-                      <path
-                        d="M5 4C20 6 40 7 60 5C80 3 95 2 100 2"
-                        stroke="#8247FF"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                      ></path>
-
-                      <path
-                        d="M0 14C15 12 35 13 50 12C65 11 75 10 80 10"
-                        stroke="#8247FF"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                      ></path>
-                    </svg>
-                  </span>
+                  <UnderlineSVG duration={3} />
                 </span>
               </h2>
             </div>

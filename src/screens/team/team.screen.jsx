@@ -22,7 +22,7 @@ const teamMembers = [
 export const Team = () => {
   return (
     <section className="py-16" id="team">
-      <h1 className="text-center text-3xl font-semibold mb-10">Unser Team</h1>
+      <h2 className="text-center font-semibold mb-10">Unser Team</h2>
       <div className="flex flex-wrap justify-center gap-8 px-4">
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center">
