@@ -64,19 +64,21 @@ export const Advantages = () => {
 
   return (
     <section className="flex flex-col px-4 py-16" id="advantages">
-      <h1 className="text-center text-3xl font-semibold mb-10">
-        Ihre Vorteile
-      </h1>
+      <h2 className="text-center font-semibold mb-10">Ihre Vorteile</h2>
 
       <div className="relative w-full">
         <div
-          className="flex gap-4 overflow-x-auto scroll-smooth no-scrollbar px-4"
+          className="flex gap-4 overflow-x-auto no-scrollbar px-4 py-4 scrollbar-hide"
           ref={scrollRef}
+          style={{
+            scrollbarWidth: "none",
+            msOverflowStyle: "none",
+          }}
         >
           {cardData.map((card) => (
             <div
               key={card.id}
-              className="min-w-[90%] sm:min-w-[70%] md:min-w-[45%] lg:min-w-[30%] h-auto rounded-2xl bg-white shadow-lg flex flex-col p-6 mx-2"
+              className="min-w-[90%] sm:min-w-[70%] md:min-w-[45%] lg:min-w-[30%] h-[400px] rounded-2xl bg-white shadow-lg flex flex-col p-6 mx-2"
             >
               <div>{card.img}</div>
               <h3 className="text-lg font-bold text-gray-900 mt-3">

@@ -1,0 +1,19 @@
+@keyframes move-around-circle {
+    from {
+        stroke-dashoffset: 282.6;
+        /* Full circumference */
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.animated-circle {
+    animation: move-around-circle 6s linear infinite;
+    animation-direction: reverse;
+    transform-origin: center;
+    transform-box: fill-box;
+    stroke-linecap: round;
+    /* Makes it look like a dot moving */
+}

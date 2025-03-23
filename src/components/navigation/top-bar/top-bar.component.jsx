@@ -9,6 +9,7 @@ export const Navigation = () => {
   const [activeNavItem, setActiveNavItem] = useState("home");
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
+  const [flashBackground, setFlashBackground] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,6 +17,8 @@ export const Navigation = () => {
         setIsVisible(false); // Beim Runterscrollen ausblenden
       } else {
         setIsVisible(true); // Beim Hochscrollen einblenden
+        setFlashBackground(true); // Hintergrundfarbe kurz auf Weiß setzen
+        setTimeout(() => setFlashBackground(false), 2000); // Nach 1000ms smooth ausblenden
       }
       setLastScrollY(window.scrollY);
     };
@@ -41,10 +44,14 @@ export const Navigation = () => {
   return (
     <nav
       id="navigation"
-      className={`fixed top-0 left-0 w-full z-[100] px-6 bg-white transition-transform duration-500 ease-[cubic-bezier(0.25, 1, 0.5, 1)] will-change-transform ${
+      className={`fixed top-0 left-0 w-full z-[100] px-6 transition-transform duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] will-change-transform ${
         isVisible
           ? "translate-y-0 opacity-100"
-          : "-translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.25, 1, 0.5, 1)]"
+          : "-translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]"
+      } ${
+        flashBackground
+          ? "bg-white transition-colors duration-1000"
+          : "bg-[#f5f7fa] transition-colors duration-1000"
       }`}
     >
       <div className="flex flex-row w-full justify-between items-center py-4">
@@ -54,32 +61,23 @@ export const Navigation = () => {
           </a>
         </div>
         <ul className="hidden lg:flex lg:flex-row lg:gap-6 list-none m-0 p-0 overflow-hidden">
-          {[
-            { id: "home", label: "Home" },
-            { id: "services", label: "Leistungen" },
-            { id: "process", label: "Prozess" },
-            { id: "advantages", label: "Vorteile" },
-            { id: "team", label: "Team" },
-            { id: "contact", label: "Kontakt" },
-          ].map(({ id, label }) => (
-            <li className="py-4" key={id}>
-              <a
-                className={`relative font-semibold text-black cursor-pointer 
-          after:content-[''] after:absolute after:left-0 after:bottom-[-8px] 
-          after:h-[2px] after:bg-[#8247ff] 
-          after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] 
-          ${activeNavItem === id ? "after:w-full" : "after:w-0"} 
-          hover:after:w-full`}
-                href={`#${id}`}
-                onClick={() => setActiveNavItem(id)}
-              >
-                {label}
-              </a>
-            </li>
-          ))}
+          {["home", "services", "process", "advantages", "team", "contact"].map(
+            (id) => (
+              <li className="py-4" key={id}>
+                <a
+                  className={`relative font-semibold text-black cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:bg-[#8247ff] after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] ${
+                    activeNavItem === id ? "after:w-full" : "after:w-0"
+                  } hover:after:w-full`}
+                  href={`#${id}`}
+                  onClick={() => setActiveNavItem(id)}
+                >
+                  {id.charAt(0).toUpperCase() + id.slice(1)}
+                </a>
+              </li>
+            )
+          )}
         </ul>
         <>
-          {/* Burger Menu */}
           <img
             src={burger_menu}
             alt="burger-menu"
@@ -107,20 +105,20 @@ export const Navigation = () => {
 
               <ul className="flex flex-col items-center space-y-4 mt-10">
                 {[
-                  { name: "Home", href: "#home" },
-                  { name: "Leistungen", href: "#services" },
-                  { name: "Prozess", href: "#process" },
-                  { name: "Vorteile", href: "#advantages" },
-                  { name: "Team", href: "#team" },
-                  { name: "Kontakt", href: "#contact" },
-                ].map((item) => (
-                  <li key={item.href}>
+                  "home",
+                  "services",
+                  "process",
+                  "advantages",
+                  "team",
+                  "contact",
+                ].map((id) => (
+                  <li key={id}>
                     <a
-                      href={item.href}
+                      href={`#${id}`}
                       className="text-lg font-semibold text-gray-700 hover:text-[#8247ff]"
                       onClick={() => setIsMenuOpen(false)}
                     >
-                      {item.name}
+                      {id.charAt(0).toUpperCase() + id.slice(1)}
                     </a>
                   </li>
                 ))}

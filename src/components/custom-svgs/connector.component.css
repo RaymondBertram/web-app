@@ -1,0 +1,25 @@
+@keyframes animatePath {
+    0% {
+        offset-distance: 0%;
+    }
+
+    100% {
+        offset-distance: 100%;
+    }
+}
+
+.circle-top {
+    /* Define the motion path for the top circle */
+    offset-path: path("M584 129H70.7782C61.9417 129 54.7783 121.837 54.7783 113V66C54.7783 57.1634 47.6148 50 38.7783 50H2");
+    offset-distance: 0%;
+    animation: animatePath 4s linear infinite;
+    animation-direction: reverse;
+}
+
+.circle-bottom {
+    /* Define the motion path for the bottom circle */
+    offset-path: path("M584 129H70.7782C61.9417 129 54.7783 136.163 54.7783 145V192C54.7783 200.837 47.6148 208 38.7783 208H2");
+    offset-distance: 0%;
+    animation: animatePath 4s linear infinite;
+    animation-direction: reverse;
+}
