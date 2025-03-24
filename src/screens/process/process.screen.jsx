@@ -15,7 +15,7 @@ import img_2 from "../../assets/images/image_2.jpg";
 
 export const ProcessDiagramScreen = () => {
   return (
-    <section className="px-3 py-20 h-auto md:px-6 md:py-25" id="process">
+    <section className="px-3 py-20 h-auto md:px-6 md:py-35" id="process">
       <div className="text-center font-medium mb-10">
         <div className="relative inline-flex items-center gap-2">
           <h2>Unlock</h2>
@@ -29,7 +29,7 @@ export const ProcessDiagramScreen = () => {
         <h2>Location</h2>
       </div>
 
-      <div className="process-parent flex flex-col lg:flex-row items-center justify-center">
+      <div className="process-parent relative flex flex-col lg:flex-row items-center justify-center">
         {/* Left Side */}
         <div className="process-left flex justify-center">
           <div className="grid grid-cols-3 gap-3">
@@ -66,7 +66,8 @@ export const ProcessDiagramScreen = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: "easeIn" }}
           viewport={{ once: true }}
-          className="process-right flex justify-center relative"
+          // Add right padding to account for the absolute element’s width
+          className="process-right flex justify-center relative pr-24"
         >
           <div className="buyer_card bg-white rounded-2xl p-1 w-[220px]">
             <div className="buyer_img max-w-[508px] w-[210px] aspect-3/2 h-[160px] overflow-hidden rounded-2xl">
@@ -88,7 +89,8 @@ export const ProcessDiagramScreen = () => {
             </div>
           </div>
 
-          <div className="transaktion_card flex flex-col items-center w-[170px] absolute px-1 pb-1 pt-4 top-[-2em] right-[-3em] md:right-[-7em] lg:right-[-9em] bg-white rounded-2xl">
+          {/* Reposition the transaction card */}
+          <div className="transaktion_card flex flex-col items-center w-[170px] absolute px-1 pb-1 pt-4 top-[-2em] right-0 bg-white rounded-2xl">
             <div className="transaction_content_img">
               <SuccessIcon />
             </div>
