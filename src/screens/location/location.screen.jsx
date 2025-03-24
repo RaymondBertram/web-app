@@ -23,7 +23,7 @@ export const Location = () => {
   return (
     <section
       id="location"
-      className="flex flex-col justify-center px-2 py-2 h-[40vh] mb-20 md:px-18 md:my-10"
+      className="flex flex-col justify-center px-2 py-2 h-[50vh] mb-20 md:px-18 md:my-10"
     >
       <div className="flex flex-col md:flex-row justify-center items-center my-8 py-4">
         <h2 className="mr-2 text-black">Entdecken Sie</h2>

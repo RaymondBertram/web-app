@@ -12,7 +12,7 @@ export const Solution = () => {
   });
 
   // Define transformation effects for each block (smaller increments)
-  const scaleXFirst = useTransform(scrollYProgress, [0, 1], [0.97, 0.88]);
+  const scaleXFirst = useTransform(scrollYProgress, [0, 1], [0.96, 0.87]);
   const scaleYFirst = useTransform(scrollYProgress, [0, 1], [0.97, 0.92]);
   const translateFirst = useTransform(
     scrollYProgress,
@@ -47,7 +47,7 @@ export const Solution = () => {
               scaleY: scaleYFirst,
               transform: `translate3d(0, ${translateFirst}, 0)`,
             }}
-            className="h-auto sticky top-[10%] color-blocks-wrap bg-[#dfd1f4] flex flex-col justify-between items-center rounded-2xl pt-6 px-4 mb-2"
+            className="h-auto sticky top-[10%] color-blocks-wrap bg-[#dfd1f4] flex flex-col justify-around items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
           >
             <div className="relative text-center tracking-normal">
               <h2 id="first_block">
@@ -64,7 +64,21 @@ export const Solution = () => {
               <div className="w-full md:w-1/2 p-4">
                 <h3 className="text-4xl font-medium">Lorem ipsum dolor sit</h3>
                 <p className="text-gray-600 mt-2">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
               </div>
 
@@ -92,7 +106,7 @@ export const Solution = () => {
               scaleY: scaleYSecond,
               transform: `translate3d(0, ${translateSecond}, 0)`,
             }}
-            className="h-auto sticky top-[10%] bg-[#dfc9c0] flex flex-col justify-between items-center rounded-2xl pt-6 px-4 mb-2"
+            className="h-auto sticky top-[10%] bg-[#dfc9c0] flex flex-col justify-around items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
           >
             <div className="relative text-center tracking-normal">
               <h2 id="second_block">
@@ -124,7 +138,21 @@ export const Solution = () => {
               <div className="w-full md:w-1/2 p-4">
                 <h3 className="text-4xl font-medium">Lorem ipsum dolor sit</h3>
                 <p className="text-gray-600 mt-2">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
               </div>
             </div>
@@ -137,7 +165,7 @@ export const Solution = () => {
               scaleY: scaleYThird,
               transform: `translate3d(0, ${translateThird}, 0)`,
             }}
-            className="h-auto sticky top-[10%] bg-[#dff3f6] flex flex-col justify-between items-center rounded-2xl pt-6 px-4 mb-2"
+            className=" sticky top-[10%] bg-[#dff3f6] flex flex-col justify-around items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
           >
             <div className="relative text-center tracking-normal">
               <h2 id="third_block">
@@ -154,7 +182,21 @@ export const Solution = () => {
               <div className="w-full md:w-1/2 p-4">
                 <h3 className="text-4xl font-medium">Lorem ipsum dolor sit</h3>
                 <p className="text-gray-600 mt-2">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr...
+                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                  nonumy eirmod tempor invidunt ut labore et dolore magna
+                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                  sea takimata sanctus est Lorem ipsum dolor sit amet.
                 </p>
               </div>
 

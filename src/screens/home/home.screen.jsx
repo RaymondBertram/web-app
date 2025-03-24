@@ -17,7 +17,7 @@ export const Home = () => {
   };
 
   return (
-    <section id="home" className="px-3 pt-14 md:pt-[150px] md:px-6">
+    <section id="home" className="px-3 pt-14 md:pt-[150px] md:px-8">
       <div>
         <div className="hero-parent flex flex-col md:grid md:grid-cols-6 md:gap-6">
           <motion.div
