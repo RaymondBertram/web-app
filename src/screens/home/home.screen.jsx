@@ -9,7 +9,7 @@ import animationSecondary from "../../assets/videos/animation_2.mp4";
 
 export const Home = () => {
   const [showOther, setShowOther] = useState(false);
-  const headers = ["Fahrradverkehr", "Autoverkehr", "Fußgängerverkehr"];
+  const headers = ["Header 1", "Header 2", "Header 3"];
   const { setGlow } = useGlowContext();
 
   const handleVideoEnd = () => {
@@ -17,7 +17,10 @@ export const Home = () => {
   };
 
   return (
-    <section id="home" className="px-3 pt-14 md:pt-[150px] md:px-8">
+    <section
+      id="home"
+      className="px-3 pt-14 md:pt-[150px] md:px-8"
+    >
       <div>
         <div className="hero-parent flex flex-col md:grid md:grid-cols-6 md:gap-6">
           <motion.div
@@ -42,7 +45,7 @@ export const Home = () => {
               <div className="my-10">
                 <p className="text-start leading-4 md:leading-6">
                   Willkommen bei [Name der Firma] – Ihrem Partner für moderne
-                  Verkehrsüberwachung. Mit innovativer Technik optimieren wir
+                  Standortüberwachung. Mit innovativer Technik optimieren wir
                   Verkehrsflüsse, erhöhen die Sicherheit und dokumentieren
                   Regelverstöße transparent.
                 </p>

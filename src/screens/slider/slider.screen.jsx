@@ -13,8 +13,10 @@ export const Slider = () => {
   return (
     <div className="flex flex-col md:flex-row px-2 md:px-8 py-10 md:gap-4 lg:pt-15">
       <div className="flex flex-col items-center justify-center">
-        <p className="text-center md:text-start text-xs md:text-sm font-semibold break-words line-clamp-2 lg:pr-6">
-          Trusted by 2000+ Companies, 19 Countries and counting...
+        <p className="text-center md:text-start text-xs md:text-sm font-semibold break-words whitespace-pre-line lg:pr-6">
+          Trusted by 2000+ Companies,
+          <br />
+          19 Countries and counting...
         </p>
       </div>
       <div className="relative flex max-w-full w-full h-32 lg:rounded-[64px] overflow-hidden bg-[#f5f7fa] border-0">

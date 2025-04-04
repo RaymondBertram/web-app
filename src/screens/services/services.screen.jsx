@@ -31,7 +31,7 @@ export const Services = () => {
   };
 
   return (
-    <section id="services" className="px-3 overflow-hidden md:px-6">
+    <section id="services" className="px-2 overflow-hidden md:px-6">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start justify-items-center gap-12 bg-[#1f2933] pt-12 pb-6 px-6 rounded-3xl">
         <div className="usp_right h-full relative md:order-1">
           <div className="cotents_wrapper text-white">
@@ -39,7 +39,7 @@ export const Services = () => {
               <h2 className="relative inline-block text-start leading-10 mb-2">
                 Tired of finding a{" "}
                 <span className="text-[40px] lg:text-5xl font-medium leading-8 relative">
-                  new location?
+                  location?
                   <UnderlineSVG duration={3} />
                 </span>
               </h2>

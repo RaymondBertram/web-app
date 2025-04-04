@@ -28,7 +28,7 @@ function App() {
 
   return (
     <GlowProvider>
-      <div className="">
+      <div className="xl:container xl:mx-auto">
         <Navigation />
         <div className="relative" style={{ marginTop: `${navHeight}px` }}>
           <Home />
