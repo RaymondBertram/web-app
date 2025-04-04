@@ -15,7 +15,7 @@ export const UspCard = ({ title, text }) => {
   }, []);
 
   return (
-    <div className="relative transform-gpu scale-100 rotate-0 skew-0 preserve-3d w-[250px] md:w-[280px] lg:w-[400px]">
+    <div className="relative transform-gpu scale-100 rotate-0 skew-0 preserve-3d w-[275px] md:w-[280px] lg:w-[400px]">
       <div className="relative flex flex-col items-center p-6 bg-[#a9cecc] shadow-lg rounded-3xl">
         <div className="relative flex items-center justify-start size-16 mb-4 w-full">
           <div
