@@ -107,7 +107,7 @@ export const Solution = () => {
               }}
               className="h-auto sticky top-[10%] bg-[#dfc9c0] flex flex-col justify-around rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
-              <div className="relative tracking-normal">
+              <div className="relative tracking-normal flex justify-center">
                 <h2 id="second_block">
                   Lorem{" "}
                   <span className="relative inline-block">
