@@ -32,7 +32,7 @@ export const Services = () => {
 
   return (
     <section id="services" className="px-2 overflow-hidden md:px-6">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start justify-items-center gap-12 bg-[#1f2933] pt-12 pb-6 px-6 rounded-3xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start justify-items-center gap-12 bg-[#1f2933] pt-12 pb-6 px-6 rounded-3xl lg:pr-30 lg:pt-15">
         <div className="usp_right h-full relative md:order-1">
           <div className="cotents_wrapper text-white">
             <div className="content-headings mb-4">

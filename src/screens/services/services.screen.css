@@ -9,7 +9,7 @@
 
   @keyframes scrolling {
     from {
-      transform: translateY(30%);
+      transform: translateY(70%);
     }
 
     to {
@@ -37,13 +37,19 @@
 
   .usp-card:nth-child(1) {
     animation-range: entry 0% cover 30%;
+    animation-delay: 0.2s;
+    /* Verzögerung */
   }
 
   .usp-card:nth-child(2) {
     animation-range: entry 10% cover 30%;
+    animation-delay: 0.4s;
+    /* Verzögerung */
   }
 
   .usp-card:nth-child(3) {
     animation-range: entry 20% cover 30%;
+    animation-delay: 0.6s;
+    /* Verzögerung */
   }
 }
