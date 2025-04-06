@@ -15,18 +15,27 @@ import img_2 from "../../assets/images/image_2.jpg";
 
 export const ProcessDiagramScreen = () => {
   return (
-    <section className="px-3 py-20 h-auto md:px-6 md:py-35" id="process">
+    <section
+      className="px-3 py-20 h-auto md:px-6 md:pb-40 md:pt-45"
+      id="process"
+    >
       <div className="text-center font-medium mb-10">
-        <div className="relative inline-flex items-center gap-2">
-          <h2>Unlock</h2>
+        <div className="relative inline-flex items-center gap-2 text-black font-medium">
+          <h2 className="text-black font-medium">Unlock</h2>
           <span className="relative inline-block">
-            <div className="absolute -top-6 right-0 w-full flex justify-end">
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: "easeInOut" }}
+              viewport={{ once: true }}
+              className="absolute -top-6 right-0 w-full flex justify-end"
+            >
               <TwoLinesSVG />
-            </div>
-            <h2 className="relative">Your</h2>
+            </motion.div>
+            <h2 className="relative text-black font-medium">Your</h2>
           </span>
         </div>
-        <h2>Location</h2>
+        <h2 className="text-black font-medium">Location</h2>
       </div>
 
       <div className="process-parent relative flex flex-col lg:flex-row items-center justify-center">
@@ -67,7 +76,7 @@ export const ProcessDiagramScreen = () => {
           transition={{ duration: 0.5, ease: "easeIn" }}
           viewport={{ once: true }}
           // Add right padding to account for the absolute element’s width
-          className="process-right flex justify-center relative pr-24"
+          className="process-right grid place-items-center relative pr-24"
         >
           <div className="buyer_card bg-white rounded-2xl p-1 w-[220px]">
             <div className="buyer_img max-w-[508px] w-[210px] aspect-3/2 h-[160px] overflow-hidden rounded-2xl">

@@ -1,4 +1,5 @@
 import React from "react";
+import { useMediaQuery } from "react-responsive";
 
 import logo_1 from "../../assets/logos/logoipsum-331.svg";
 import logo_2 from "../../assets/logos/logoipsum-338.svg";
@@ -9,13 +10,14 @@ import InfiniteCarousel from "../../components/image-strip/image-strip.component
 
 export const Slider = () => {
   const logos = [logo_1, logo_2, logo_3, logo_4, logo_5];
+  const isTabletOrLarger = useMediaQuery({ minWidth: 768 });
 
   return (
     <div className="flex flex-col md:flex-row px-2 md:px-8 py-10 md:gap-4 lg:pt-15">
       <div className="flex flex-col items-center justify-center">
         <p className="text-center md:text-start text-xs md:text-sm font-semibold break-words whitespace-pre-line lg:pr-6">
           Trusted by 2000+ Companies,
-          <br />
+          {!isTabletOrLarger ? <br /> : " "}
           19 Countries and counting...
         </p>
       </div>

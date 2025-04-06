@@ -17,10 +17,7 @@ export const Home = () => {
   };
 
   return (
-    <section
-      id="home"
-      className="px-3 pt-14 md:pt-[150px] md:px-8"
-    >
+    <section id="home" className="px-4 pt-14 md:pt-[150px] md:px-6">
       <div>
         <div className="hero-parent flex flex-col md:grid md:grid-cols-6 md:gap-6">
           <motion.div
@@ -31,11 +28,11 @@ export const Home = () => {
             className="hero-child lg:flex items-center col-span-3"
           >
             <div className="flex flex-col justify-center w-[90%]">
-              <div className="text-start">
+              <div className="text-start mb-4">
                 <AnimatedHeaders headers={headers} />
               </div>
               <div className="text-start">
-                <h1 className="relative inline-block lg:text-[70px] text-black">
+                <h1 className="relative inline-block lg:text-[70px] text-black font-medium">
                   Ihren Standort
                   <span>
                     <UnderlineSVG duration={2} />
@@ -43,7 +40,7 @@ export const Home = () => {
                 </h1>
               </div>
               <div className="my-10">
-                <p className="text-start leading-4 md:leading-6">
+                <p className="text-start leading-6 md:leading-6">
                   Willkommen bei [Name der Firma] – Ihrem Partner für moderne
                   Standortüberwachung. Mit innovativer Technik optimieren wir
                   Verkehrsflüsse, erhöhen die Sicherheit und dokumentieren
@@ -66,6 +63,7 @@ export const Home = () => {
           <div className="flex items-center justify-center my-4 col-span-3">
             {!showOther ? (
               <video
+                key="video-primary"
                 autoPlay
                 muted
                 playsInline
@@ -77,6 +75,7 @@ export const Home = () => {
               </video>
             ) : (
               <video
+                key="video-secondary"
                 autoPlay
                 loop
                 muted

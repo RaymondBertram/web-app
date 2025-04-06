@@ -15,22 +15,22 @@ export const UspCard = ({ title, text }) => {
   }, []);
 
   return (
-    <div className="relative transform-gpu scale-100 rotate-0 skew-0 preserve-3d w-[275px] md:w-[280px] lg:w-[400px]">
+    <div className="relative transform-gpu scale-100 rotate-0 skew-0 preserve-3d w-[350px] md:w-[280px] lg:w-[400px]">
       <div className="relative flex flex-col items-center p-6 bg-[#a9cecc] shadow-lg rounded-3xl">
         <div className="relative flex items-center justify-start size-16 mb-4 w-full">
           <div
             className="absolute w-8 h-8 bg-gray-300 rounded-full"
             style={{
-              transform: `translate3d(${scrollY * 0.01}px, ${
-                scrollY * 0.01
+              transform: `translate3d(${-scrollY * 0.01}px, ${
+                -scrollY * 0.001
               }px, 0px) rotate(11deg)`,
             }}
           ></div>
           <div
             className="absolute w-8 h-8 bg-[#1f2933] rounded-full"
             style={{
-              transform: `translate3d(${scrollY * -0.01}px, ${
-                scrollY * -0.01
+              transform: `translate3d(${scrollY * 0.01}px, ${
+                scrollY * 0.001
               }px, 0px) rotate(11deg)`,
             }}
           ></div>

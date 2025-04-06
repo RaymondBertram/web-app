@@ -20,9 +20,9 @@ export const BurgerMenu = () => {
 
       {isMenuOpen && (
         <div className="fixed inset-0 bg-white z-50 animate-slide-down flex flex-col">
-          <div className="flex justify-between items-center bg-white p-[2em] sticky top-0 z-50">
+          <div className="flex justify-between items-center bg-white p-6 sticky top-0 z-50">
             <a href="#home">
-              <img src={logo_ipsum} alt="logo" className="w-[150px] h-auto" />
+              <img src={logo_ipsum} alt="logo" className="w-[150px] h-[60]" />
             </a>
 
             <button onClick={() => setIsMenuOpen(false)}>

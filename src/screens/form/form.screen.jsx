@@ -1,4 +1,6 @@
 import { useRef, useState } from "react";
+import { UnderlineSVG } from "../../components";
+import { motion } from "framer-motion";
 
 export const Form = () => {
   const formRef = useRef(null);
@@ -40,11 +42,40 @@ export const Form = () => {
   };
 
   return (
-    <section className="px-4 md:px-8 py-6" id="contact">
-      <div className="bg-gray-800 flex flex-col h-fit rounded-3xl p-6 shadow-lg w-full md:w-3/4 lg:w-1/2 mx-auto">
-        <h1 className="font-bold py-4 text-white text-center text-2xl">
-          Formular
-        </h1>
+    <section
+      className="flex flex-col gap-y-4 md:gap-0 lg:flex-row px-4 py-20"
+      id="contact"
+    >
+      <div
+        key="form-card-1"
+        className="bg-white flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto md:mr-4"
+      >
+        <h2 className="font-medium py-4 text-center mb-10">
+          Company Name an
+          <span className="relative inline-block text-[39px] text-black lg:text-5xl font-medium">
+            Ihrer Seite
+            <span>
+              <UnderlineSVG duration={2} />
+            </span>
+          </span>
+        </h2>
+        <p className="leading-6 text-gray-600">
+          Entdecken Sie, wie wir Ihre Vision in greifbare Erfolge verwandeln.
+          Füllen Sie das Formular aus, um von unserem Expertenwissen zu
+          profitieren und ein maßgeschneidertes, unverbindliches Angebot zu
+          erhalten. Unsere Leidenschaft für Innovation und Qualität macht den
+          Unterschied – lassen Sie uns gemeinsam Ihre digitale Zukunft
+          gestalten.
+        </p>
+      </div>
+      <div
+        key="form-card-2"
+        className="bg-gray-800 flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto md:ml-4"
+      >
+        <h2 className="font-medium py-4 text-white text-center">
+          {" "}
+          Möchten Sie Mehr Erfahren?
+        </h2>
         <form
           ref={formRef}
           onSubmit={handleSubmit}

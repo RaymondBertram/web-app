@@ -23,11 +23,11 @@ export const Location = () => {
   return (
     <section
       id="location"
-      className="flex flex-col justify-center px-3 py-2 h-[50vh] mb-20 md:px-18 md:my-10"
+      className="flex flex-col justify-center px-4 py-2 h-[30vh] mb-20 md:px-18 md:mb-20"
     >
       <div className="flex flex-col md:flex-row justify-center items-center my-8 py-4">
-        <h2 className="text-black">Entdecken Sie&nbsp;</h2>
-        <h2 className="relative text-black inline-flex">
+        <h2 className="text-black font-medium">Entdecken Sie&nbsp;</h2>
+        <h2 className="relative text-black font-medium inline-flex">
           Ihren Standort
           <span>
             <UnderlineSVG />
@@ -36,8 +36,7 @@ export const Location = () => {
       </div>
 
       <form
-        className="flex items-center justify-center
-         w-full"
+        className="md:flex md:items-center md:justify-center w-full px-4 md:px-0"
         ref={formRef}
         onSubmit={handleFormSubmit}
         x

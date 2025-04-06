@@ -51,10 +51,10 @@ export const Solution = () => {
                 scaleY: scaleYFirst,
                 transform: `translate3d(0, ${translateFirst}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#dfd1f4] flex flex-col justify-around items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#dfd1f4] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
-                <h2 id="first_block">
+                <h2 id="first_block px-2 text-black font-bold mb-4">
                   Lorem{" "}
                   <span className="relative inline-block">
                     <h2>API solution</h2>
@@ -64,12 +64,12 @@ export const Solution = () => {
                 </h2>
               </div>
 
-              <div className="flex flex-col md:flex-row items-center mt-6">
-                <div className="w-full md:w-1/2 p-4">
-                  <h3 className="text-4xl font-medium">
+              <div className="flex flex-col md:flex-row mt-6">
+                <div className="w-full md:w-1/2 p-4 mb-10">
+                  <h3 className="text-4xl font-medium px-2 text-black mb-10">
                     Lorem ipsum dolor sit
                   </h3>
-                  <p className="text-gray-600 mt-2">
+                  <p className="text-gray-600 mt-2 px-2">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna
                     aliquyam erat, sed diam voluptua. At vero eos et accusam et
@@ -87,11 +87,12 @@ export const Solution = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                   viewport={{ once: true }}
+                  key={"image_card_1"}
                 >
                   <img
                     src={code}
                     alt="Dashboard"
-                    className="w-full max-w-md rounded-2xl"
+                    className="w-full max-w-md rounded-t-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -105,36 +106,25 @@ export const Solution = () => {
                 scaleY: scaleYSecond,
                 transform: `translate3d(0, ${translateSecond}, 0)`,
               }}
-              className="h-auto sticky top-[10%] bg-[#dfc9c0] flex flex-col justify-around rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#dfc9c0] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
-              <div className="relative tracking-normal flex justify-center">
-                <h2 id="second_block">
+              <div className="relative text-center tracking-normal">
+                <h2 id="first_block px-2 text-black font-medium mb-4">
                   Lorem{" "}
                   <span className="relative inline-block">
                     <h2>API solution</h2>
                     <UnderlineSVG />
                   </span>{" "}
+                  Lorem ipsum dolor sit
                 </h2>
               </div>
 
-              <div className="flex flex-col md:flex-row items-center mt-6">
-                <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex justify-center"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 1, ease: "easeInOut" }}
-                  viewport={{ once: true }}
-                >
-                  <img
-                    src={code}
-                    alt="Dashboard"
-                    className="w-full max-w-md rounded-2xl"
-                    loading="lazy"
-                  />
-                </motion.div>
-
-                <div className="w-full md:w-1/2 p-4">
-                  <p className="text-gray-600 mt-2">
+              <div className="flex flex-col md:flex-row mt-6">
+                <div className="w-full md:w-1/2 p-4 mb-10">
+                  <h3 className="text-4xl font-medium px-2 text-black mb-10">
+                    Lorem ipsum dolor sit
+                  </h3>
+                  <p className="text-gray-600 mt-2 px-2">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna
                     aliquyam erat, sed diam voluptua. At vero eos et accusam et
@@ -145,6 +135,22 @@ export const Solution = () => {
                     aliquyam erat, sed diam voluptua.
                   </p>
                 </div>
+
+                <motion.div
+                  className="w-full md:w-1/2 px-4 pt-4 flex justify-center"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 1, ease: "easeInOut" }}
+                  viewport={{ once: true }}
+                  key={"image_card_1"}
+                >
+                  <img
+                    src={code}
+                    alt="Dashboard"
+                    className="w-full max-w-md rounded-t-2xl"
+                    loading="lazy"
+                  />
+                </motion.div>
               </div>
             </motion.div>
 
@@ -155,10 +161,10 @@ export const Solution = () => {
                 scaleY: scaleYThird,
                 transform: `translate3d(0, ${translateThird}, 0)`,
               }}
-              className=" sticky top-[10%] bg-[#dff3f6] flex flex-col justify-around items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#dff3f6] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
-                <h2 id="third_block">
+                <h2 id="first_block px-2 text-black font-medium mb-4">
                   Lorem{" "}
                   <span className="relative inline-block">
                     <h2>API solution</h2>
@@ -168,17 +174,20 @@ export const Solution = () => {
                 </h2>
               </div>
 
-              <div className="flex flex-col md:flex-row items-center mt-6">
-                <div className="w-full md:w-1/2 p-4">
-                  <p className="text-gray-600 mt-2">
+              <div className="flex flex-col md:flex-row mt-6">
+                <div className="w-full md:w-1/2 p-4 mb-10">
+                  <h3 className="text-4xl font-medium px-2 text-black mb-10">
+                    Lorem ipsum dolor sit
+                  </h3>
+                  <p className="text-gray-600 mt-2 px-2">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                     diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit
-                    amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                    tempor invidunt ut labore et dolore magna aliquyam erat, sed
-                    diam voluptua. At vero eos et accusam et justo duo dolores
-                    et ea rebum. Stet clita kasd gubergren, no sea takimata
-                    sanctus est Lorem ipsum dolor sit amet.
+                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+                    sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua.
                   </p>
                 </div>
 
@@ -188,11 +197,12 @@ export const Solution = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
                   viewport={{ once: true }}
+                  key={"image_card_1"}
                 >
                   <img
                     src={code}
                     alt="Dashboard"
-                    className="w-full max-w-md rounded-2xl"
+                    className="w-full max-w-md rounded-t-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -210,10 +220,10 @@ export const Solution = () => {
               viewport={{ once: true }}
             >
               <div className="relative text-center tracking-normal">
-                <h2 id="first_block">
+                <h2 id="first_block text-black">
                   Lorem{" "}
-                  <span className="relative inline-block">
-                    <h2>API solution</h2>
+                  <span className="relative inline-block text-black">
+                    <h2 className="text-black">API solution</h2>
                     <UnderlineSVG />
                   </span>{" "}
                   Lorem ipsum dolor sit
@@ -221,7 +231,9 @@ export const Solution = () => {
               </div>
 
               <div className="w-full p-4">
-                <h3 className="text-4xl font-medium">Lorem ipsum dolor sit</h3>
+                <h3 className="text-[28px] text-black font-medium mb-4">
+                  Lorem ipsum dolor sit
+                </h3>
                 <p className="text-gray-600 mt-2">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna
@@ -255,7 +267,7 @@ export const Solution = () => {
               viewport={{ once: true }}
             >
               <div className="w-full p-4">
-                <h3 className="text-4xl font-medium mb-4">
+                <h3 className="text-[28px] text-black font-medium mb-4">
                   Lorem ipsum dolor sit
                 </h3>
                 <p className="text-gray-600 mt-2">
@@ -291,7 +303,7 @@ export const Solution = () => {
               viewport={{ once: true }}
             >
               <div className="w-full p-4">
-                <h3 className="text-4xl font-medium mb-4">
+                <h3 className="text-[28px] text-black font-medium mb-4">
                   Lorem ipsum dolor sit
                 </h3>
                 <p className="text-gray-600 mt-2">

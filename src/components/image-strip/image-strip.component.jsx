@@ -26,7 +26,7 @@ export default function InfiniteCarousel({ images }) {
     container.style.whiteSpace = "nowrap";
     container.style.left = "0";
 
-    let speed = 0.2;
+    let speed = 0.3;
 
     let position = 0;
 
@@ -57,7 +57,7 @@ export default function InfiniteCarousel({ images }) {
           <img
             key={index}
             src={src}
-            className="md:w-8 md:h-8 sm:w-[20px] sm:[20px] mx-1 grayscale brightness-110"
+            className="md:w-8 md:h-8 sm:w-[20px] w-[25px] mx-1 grayscale brightness-110"
             alt="carousel"
           />
         ))}
