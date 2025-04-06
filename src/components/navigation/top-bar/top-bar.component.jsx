@@ -3,6 +3,7 @@ import { BurgerMenu } from "../../index";
 import logo_ipsum from "../../../assets/logos/logoipsum-362.svg";
 import burger_menu from "../../../assets/icons/burger.png";
 import close from "../../../assets/icons/close.png";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,6 +42,24 @@ export const Navigation = () => {
     };
   }, [isMenuOpen]);
 
+  const listVariants = {
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.3, ease: "easeOut" },
+    },
+  };
+
   return (
     <nav
       id="navigation"
@@ -65,7 +84,7 @@ export const Navigation = () => {
             (id) => (
               <li className="py-4" key={id}>
                 <a
-                  className={`relative font-semibold text-black cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:bg-[#8247ff] after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] ${
+                  className={`relative font-medium text-black cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:bg-[#8247ff] after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] ${
                     activeNavItem === id ? "after:w-full" : "after:w-0"
                   } hover:after:w-full`}
                   href={`#${id}`}
@@ -87,44 +106,57 @@ export const Navigation = () => {
             onClick={() => setIsMenuOpen(true)}
           />
 
-          {isMenuOpen && (
-            <div className="fixed inset-0 bg-white z-[1000] flex flex-col min-h-screen w-full">
-              <div className="flex justify-between items-center bg-white p-[2em] sticky top-0 z-50">
-                <a href="#home">
-                  <img
-                    src={logo_ipsum}
-                    alt="logo"
-                    className="w-[150px] h-auto"
-                  />
-                </a>
+          <AnimatePresence>
+            {isMenuOpen && (
+              <motion.div
+                initial={{ opacity: 0, y: "10%" }}
+                animate={{ opacity: 1, y: "0%" }}
+                exit={{ opacity: 0, y: "10%" }}
+                transition={{ duration: 0.3 }}
+                className="fixed inset-0 bg-white z-[1000] flex flex-col min-h-screen w-full"
+              >
+                <div className="flex justify-between items-center bg-white px-6 py-4 sticky top-0 z-50">
+                  <a href="#home">
+                    <img
+                      src={logo_ipsum}
+                      alt="logo"
+                      className="w-[170px] h-[60px]"
+                    />
+                  </a>
 
-                <button onClick={() => setIsMenuOpen(false)}>
-                  <img src={close} alt="close-menu" width={20} height={20} />
-                </button>
-              </div>
+                  <button onClick={() => setIsMenuOpen(false)}>
+                    <img src={close} alt="close-menu" width={20} height={20} />
+                  </button>
+                </div>
 
-              <ul className="flex flex-col items-center space-y-4 mt-10">
-                {[
-                  "home",
-                  "services",
-                  "process",
-                  "advantages",
-                  "team",
-                  "contact",
-                ].map((id) => (
-                  <li key={id}>
-                    <a
-                      href={`#${id}`}
-                      className="text-lg font-semibold text-gray-700 hover:text-[#8247ff]"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {id.charAt(0).toUpperCase() + id.slice(1)}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
+                <motion.ul
+                  className="flex flex-col items-center space-y-4 mt-10"
+                  initial="hidden"
+                  animate="visible"
+                  variants={listVariants}
+                >
+                  {[
+                    "home",
+                    "services",
+                    "process",
+                    "advantages",
+                    "team",
+                    "contact",
+                  ].map((id) => (
+                    <motion.li key={id} variants={itemVariants}>
+                      <a
+                        href={`#${id}`}
+                        className="text-lg font-medium text-gray-700 hover:text-[#8247ff]"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        {id.charAt(0).toUpperCase() + id.slice(1)}
+                      </a>
+                    </motion.li>
+                  ))}
+                </motion.ul>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </>
       </div>
     </nav>

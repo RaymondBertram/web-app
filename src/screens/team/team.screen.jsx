@@ -21,12 +21,12 @@ const teamMembers = [
 
 export const Team = () => {
   return (
-    <section className="py-16" id="team">
-      <h2 className="text-center font-semibold mb-10">Unser Team</h2>
+    <section className="py-20" id="team">
+      <h2 className="text-center font-medium mb-10 text-black">Unser Team</h2>
       <div className="flex flex-wrap justify-center gap-8 px-4">
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center">
-            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-4 border-gray-300 shadow-lg">
+            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-1 border-[#8247ff] shadow-lg">
               <img
                 src={member.img}
                 alt={member.name}

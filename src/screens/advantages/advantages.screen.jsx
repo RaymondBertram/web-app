@@ -63,8 +63,10 @@ export const Advantages = () => {
   };
 
   return (
-    <section className="flex flex-col px-4 py-16" id="advantages">
-      <h2 className="text-center font-semibold mb-10">Ihre Vorteile</h2>
+    <section className="flex flex-col px-4 py-40" id="advantages">
+      <h2 className="text-center font-medium mb-10 text-black">
+        Ihre Vorteile
+      </h2>
 
       <div className="relative w-full">
         <div
