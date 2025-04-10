@@ -10,15 +10,15 @@ import InfiniteCarousel from "../../components/image-strip/image-strip.component
 
 export const Slider = () => {
   const logos = [logo_1, logo_2, logo_3, logo_4, logo_5];
-  const isTabletOrLarger = useMediaQuery({ minWidth: 768 });
+  // const isTabletOrLarger = useMediaQuery({ minWidth: 768 });
+  // {!isTabletOrLarger ? <br /> : " "}
 
   return (
     <div className="flex flex-col md:flex-row px-2 md:px-8 py-10 md:gap-4 lg:pt-15">
       <div className="flex flex-col items-center justify-center">
         <p className="text-center md:text-start text-xs md:text-sm font-semibold break-words whitespace-pre-line lg:pr-6">
-          Trusted by 2000+ Companies,
-          {!isTabletOrLarger ? <br /> : " "}
-          19 Countries and counting...
+          Diese [ZAHL]+ Firmen vertrauen uns bereits und analysieren mit
+          [FIRMENNAME]
         </p>
       </div>
       <div className="relative flex max-w-full w-full h-32 lg:rounded-[64px] overflow-hidden bg-[#f5f7fa] border-0">

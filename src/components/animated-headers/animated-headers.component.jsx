@@ -13,14 +13,14 @@ export const AnimatedHeaders = ({ headers }) => {
   }, [headers.length]);
 
   return (
-    <div className="h-10 md:h-16 overflow-hidden">
+    <div className="h-10 md:h-15 overflow-hidden">
       <motion.h1
         key={index}
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 0.5 }}
-        className="absolute text-4xl lg:text-[70px] text-[#2d1f6b] font-medium"
+        className="absolute text-4xl lg:text-[65px] text-[#2d1f6b] font-medium"
       >
         {headers[index]}
       </motion.h1>

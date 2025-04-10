@@ -51,7 +51,7 @@ export const Form = () => {
         className="bg-white flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto md:mr-4"
       >
         <h2 className="font-medium py-4 text-center mb-10">
-          Company Name an
+          Company Name an{" "}
           <span className="relative inline-block text-[39px] text-black lg:text-5xl font-medium">
             Ihrer Seite
             <span>
