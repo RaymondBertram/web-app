@@ -55,19 +55,20 @@ export const Solution = () => {
             >
               <div className="relative text-center tracking-normal">
                 <h2 id="first_block px-2 text-black font-bold mb-4">
-                  Lorem{" "}
+                  Sie fordern Ihre{" "}
                   <span className="relative inline-block">
-                    <h2>API solution</h2>
+                    <h2>Standortanalyse</h2>
                     <UnderlineSVG />
                   </span>{" "}
-                  Lorem ipsum dolor sit
+                  {""}
+                  ein
                 </h2>
               </div>
 
               <div className="flex flex-col md:flex-row mt-6">
                 <div className="w-full md:w-1/2 p-4 mb-10">
                   <h3 className="text-4xl font-medium px-2 text-black mb-10">
-                    Lorem ipsum dolor sit
+                    In 2 Klicks zu Ihrem Auftrag - so simple!
                   </h3>
                   <p className="text-gray-600 mt-2 px-2">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -110,19 +111,18 @@ export const Solution = () => {
             >
               <div className="relative text-center tracking-normal">
                 <h2 id="first_block px-2 text-black font-medium mb-4">
-                  Lorem{" "}
+                  Wir analysieren bis ins letzte{" "}
                   <span className="relative inline-block">
-                    <h2>API solution</h2>
+                    <h2>Detail</h2>
                     <UnderlineSVG />
-                  </span>{" "}
-                  Lorem ipsum dolor sit
+                  </span>
                 </h2>
               </div>
 
               <div className="flex flex-col md:flex-row mt-6">
                 <div className="w-full md:w-1/2 p-4 mb-10">
                   <h3 className="text-4xl font-medium px-2 text-black mb-10">
-                    Lorem ipsum dolor sit
+                    Damit Sie 100% Klarheit über den Standort haben
                   </h3>
                   <p className="text-gray-600 mt-2 px-2">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -165,19 +165,18 @@ export const Solution = () => {
             >
               <div className="relative text-center tracking-normal">
                 <h2 id="first_block px-2 text-black font-medium mb-4">
-                  Lorem{" "}
+                  Sie erhalten Ihren Report per{" "}
                   <span className="relative inline-block">
-                    <h2>API solution</h2>
+                    <h2>E-Mail</h2>
                     <UnderlineSVG />
-                  </span>{" "}
-                  Lorem ipsum dolor sit
+                  </span>
                 </h2>
               </div>
 
               <div className="flex flex-col md:flex-row mt-6">
                 <div className="w-full md:w-1/2 p-4 mb-10">
                   <h3 className="text-4xl font-medium px-2 text-black mb-10">
-                    Lorem ipsum dolor sit
+                    Sie bekommen Ihre Daten so unkompliziert wie möglich
                   </h3>
                   <p className="text-gray-600 mt-2 px-2">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -221,18 +220,18 @@ export const Solution = () => {
             >
               <div className="relative text-center tracking-normal">
                 <h2 id="first_block text-black">
-                  Lorem{" "}
+                  Sie fordern Ihre{" "}
                   <span className="relative inline-block text-black">
-                    <h2 className="text-black">API solution</h2>
+                    <h2 className="text-black">Standortanalyse</h2>
                     <UnderlineSVG />
                   </span>{" "}
-                  Lorem ipsum dolor sit
+                  ein
                 </h2>
               </div>
 
               <div className="w-full p-4">
                 <h3 className="text-[28px] text-black font-medium mb-4">
-                  Lorem ipsum dolor sit
+                  In 2 Klicks zu Ihrem Auftrag - so simple!
                 </h3>
                 <p className="text-gray-600 mt-2">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -266,9 +265,19 @@ export const Solution = () => {
               transition={{ duration: 1, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
+              <div className="relative text-center tracking-normal">
+                <h2 id="first_block text-black">
+                  Wir analysieren bis ins letzte{" "}
+                  <span className="relative inline-block text-black">
+                    <h2 className="text-black">Detail</h2>
+                    <UnderlineSVG />
+                  </span>
+                </h2>
+              </div>
+
               <div className="w-full p-4">
                 <h3 className="text-[28px] text-black font-medium mb-4">
-                  Lorem ipsum dolor sit
+                  Damit Sie 100% Klarheit über den Standort haben
                 </h3>
                 <p className="text-gray-600 mt-2">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
@@ -302,9 +311,19 @@ export const Solution = () => {
               transition={{ duration: 1, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
+              <div className="relative text-center tracking-normal">
+                <h2 id="first_block text-black">
+                  Sie erhalten Ihren Report per{" "}
+                  <span className="relative inline-block text-black">
+                    <h2 className="text-black">E-Mail</h2>
+                    <UnderlineSVG />
+                  </span>
+                </h2>
+              </div>
+
               <div className="w-full p-4">
                 <h3 className="text-[28px] text-black font-medium mb-4">
-                  Lorem ipsum dolor sit
+                  Sie bekommen Ihre Daten so unkompliziert wie möglich
                 </h3>
                 <p className="text-gray-600 mt-2">
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed

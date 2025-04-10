@@ -21,8 +21,7 @@ export const ProcessDiagramScreen = () => {
     >
       <div className="text-center font-medium mb-10">
         <div className="relative inline-flex items-center gap-2 text-black font-medium">
-          <h2 className="text-black font-medium">Unlock</h2>
-          <span className="relative inline-block">
+          <h2 className="relative inline-block">
             <motion.div
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -32,10 +31,13 @@ export const ProcessDiagramScreen = () => {
             >
               <TwoLinesSVG />
             </motion.div>
-            <h2 className="relative text-black font-medium">Your</h2>
-          </span>
+
+            <h2 className="relative text-black font-medium">
+              Unsere Daten - <br />
+            </h2>
+          </h2>
         </div>
-        <h2 className="text-black font-medium">Location</h2>
+        <h2 className="text-black font-medium">Ihr Standortmatch</h2>
       </div>
 
       <div className="process-parent relative flex flex-col lg:flex-row items-center justify-center">

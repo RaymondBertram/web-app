@@ -23,15 +23,16 @@ export const Location = () => {
   return (
     <section
       id="location"
-      className="flex flex-col justify-center px-4 py-2 h-[30vh] mb-20 md:px-18 md:mb-20"
+      className="flex flex-col justify-center px-4 py-2 h-[30vh] mb-30 md:px-18"
     >
       <div className="flex flex-col md:flex-row justify-center items-center my-8 py-4">
-        <h2 className="text-black font-medium">Entdecken Sie&nbsp;</h2>
-        <h2 className="relative text-black font-medium inline-flex">
-          Ihren Standort
-          <span>
-            <UnderlineSVG />
-          </span>
+        <h2 className="text-black text-center font-medium leading-15">
+          Fordern Sie eine{" "}
+          <span className="relative inline-block header-2">
+            Standortanalyse
+            <UnderlineSVG duration={2} />
+          </span>{" "}
+          für jeden Ort Ihrer Wahl an
         </h2>
       </div>
 

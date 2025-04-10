@@ -9,7 +9,11 @@ import animationSecondary from "../../assets/videos/animation_2.mp4";
 
 export const Home = () => {
   const [showOther, setShowOther] = useState(false);
-  const headers = ["Header 1", "Header 2", "Header 3"];
+  const headers = [
+    "Mit Infos auf Abruf",
+    "Mit Verkehrsanalysen",
+    "Mit genauen Daten",
+  ];
   const { setGlow } = useGlowContext();
 
   const handleVideoEnd = () => {
@@ -28,12 +32,15 @@ export const Home = () => {
             className="hero-child lg:flex items-center col-span-3"
           >
             <div className="flex flex-col justify-center w-[90%]">
-              <div className="text-start mb-4">
+              <div className="text-start mb-4 md:mb-0 lg:mb-4">
                 <AnimatedHeaders headers={headers} />
               </div>
               <div className="text-start">
-                <h1 className="relative inline-block lg:text-[70px] text-black font-medium">
-                  Ihren Standort
+                <h1 className="inline-block md:text-[32px] lg:text-[65px] text-black font-medium leading-12 md:leading-none">
+                  zu Ihrem perfekten
+                </h1>{" "}
+                <h1 className="relative inline-block md:text-[32px] lg:text-[65px] text-black font-medium leading-12 md:leading-none">
+                  Standort
                   <span>
                     <UnderlineSVG duration={2} />
                   </span>
@@ -41,10 +48,10 @@ export const Home = () => {
               </div>
               <div className="my-10">
                 <p className="text-start leading-6 md:leading-6">
-                  Willkommen bei [Name der Firma] – Ihrem Partner für moderne
-                  Standortüberwachung. Mit innovativer Technik optimieren wir
-                  Verkehrsflüsse, erhöhen die Sicherheit und dokumentieren
-                  Regelverstöße transparent.
+                  Mit [FIRMENNAME] bekommen Sie in in 2 Klicks direkt hier einen
+                  individuellen Report zu den Daten des von Ihnen gewünschten
+                  Standortes. Sparen Sie sich teure Ingenieursbüros oder
+                  kostspielige Messprojekte.
                 </p>
               </div>
               <div className="flex gap-2 justify-start">
@@ -53,7 +60,7 @@ export const Home = () => {
                   className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-white bg-[#8247ff] rounded-4xl"
                   onClick={() => setGlow(true)}
                 >
-                  Lets Go
+                  Jetzt loslegen
                   <ArrowRightIcon width={30} height={30} />
                 </a>
               </div>
