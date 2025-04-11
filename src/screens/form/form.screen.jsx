@@ -1,35 +1,41 @@
 import { useRef, useState } from "react";
+import axios from "axios";
 import { UnderlineSVG } from "../../components";
-import { motion } from "framer-motion";
 
 export const Form = () => {
   const formRef = useRef(null);
+  const ACCESS_TOKEN = import.meta.env.VITE_Backend_URL;
 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-    consent: false,
   });
 
+  const [consent, setConsent] = useState(false);
   const [errors, setErrors] = useState({});
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
-    setFormData({
-      ...formData,
-      [name]: type === "checkbox" ? checked : value,
-    });
+    const { name, value, checked } = e.target;
+    if (name === "consent") {
+      setConsent(checked);
+    } else {
+      setFormData({
+        ...formData,
+        [name]: value,
+      });
+    }
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     const newErrors = {};
     if (!formData.name) newErrors.name = "Name ist erforderlich.";
     if (!formData.email) newErrors.email = "E-Mail ist erforderlich.";
     if (!formData.message) newErrors.message = "Nachricht ist erforderlich.";
-    if (!formData.consent)
+    if (!consent)
       newErrors.consent = "Sie müssen den Datenschutzbestimmungen zustimmen.";
 
     if (Object.keys(newErrors).length > 0) {
@@ -38,7 +44,21 @@ export const Form = () => {
     }
 
     setErrors({});
-    console.log("Formulardaten gesendet:", formData);
+
+    try {
+      const response = await axios.post(
+        `${ACCESS_TOKEN}/api/sendFormMail`,
+        formData
+      );
+      console.log("Serverantwort:", response.data);
+      setSuccessMessage(
+        "Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet."
+      );
+      setFormData({ name: "", email: "", message: "" });
+      setConsent(false);
+    } catch (error) {
+      console.error("Fehler beim Senden des Formulars:", error);
+    }
   };
 
   return (
@@ -73,7 +93,6 @@ export const Form = () => {
         className="bg-gray-800 flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto md:ml-4"
       >
         <h2 className="font-medium py-4 text-white text-center">
-          {" "}
           Möchten Sie Mehr Erfahren?
         </h2>
         <form
@@ -133,7 +152,7 @@ export const Form = () => {
               <input
                 type="checkbox"
                 name="consent"
-                checked={formData.consent}
+                checked={consent}
                 onChange={handleChange}
                 className="form-check-input"
                 id="flexCheckDefault"
@@ -150,13 +169,18 @@ export const Form = () => {
               <p className="text-red-500 text-sm mt-1">{errors.consent}</p>
             )}
           </div>
-          <div className="flex justify-center">
+          <div className="flex flex-col items-center">
             <button
               type="submit"
               className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
             >
               Absenden
             </button>
+            {successMessage && (
+              <p className="text-green-400 text-sm mt-4 text-center">
+                {successMessage}
+              </p>
+            )}
           </div>
         </form>
       </div>
