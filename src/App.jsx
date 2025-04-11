@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { GlowProvider } from "./context/glow/glowContext";
 import { Navigation } from "./components/navigation/top-bar/top-bar.component";
 import { Footer } from "./screens";
-import HomePage from "./pages/home.page";
+import HomePage from "./pages/Home.page";
 import DataProtectionPage from "./pages/Dataprotection.page";
 import Impress from "./pages/impress.page";
 import AGB from "./pages/agb.page";
