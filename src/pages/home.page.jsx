@@ -11,7 +11,7 @@ import {
   Form,
 } from "../screens";
 
-export default function HomePage() {
+export const HomePage = () => {
   return (
     <>
       <Start />
@@ -25,4 +25,4 @@ export default function HomePage() {
       <Form />
     </>
   );
-}
+};
