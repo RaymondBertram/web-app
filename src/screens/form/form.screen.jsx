@@ -68,7 +68,7 @@ export const Form = () => {
     >
       <div
         key="form-card-1"
-        className="bg-white flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto md:mr-4"
+        className="bg-white flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto md:mr- md:mb-4"
       >
         <h2 className="font-medium py-4 text-center mb-10">
           HELLO TRAFFIC an{" "}
@@ -90,7 +90,7 @@ export const Form = () => {
       </div>
       <div
         key="form-card-2"
-        className="bg-gray-800 flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto md:ml-4"
+        className="bg-gray-800 flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto"
       >
         <h2 className="font-medium py-4 text-white text-center">
           Möchten Sie Mehr Erfahren?

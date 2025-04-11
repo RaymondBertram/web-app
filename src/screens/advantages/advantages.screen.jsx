@@ -96,7 +96,7 @@ export const Advantages = () => {
           {cardData.map((card) => (
             <div
               key={card.id}
-              className="min-w-[90%] sm:min-w-[70%] md:min-w-[45%] lg:min-w-[30%] h-[300px] md:h-[200px] rounded-2xl bg-white shadow-lg flex flex-col p-6 mx-2"
+              className="min-w-[90%] sm:min-w-[70%] md:min-w-[45%] lg:min-w-[30%] h-[300px] lg:h-[250px] rounded-2xl bg-white shadow-lg flex flex-col p-6 mx-2"
             >
               <div>{card.img}</div>
               <h3 className="text-lg font-bold text-gray-900 mt-3">

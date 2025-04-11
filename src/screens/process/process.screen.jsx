@@ -8,8 +8,6 @@ import { IoCarSport, IoTimeSharp } from "react-icons/io5";
 import { GiLightningFrequency, GiProgression } from "react-icons/gi";
 import { SiNextra } from "react-icons/si";
 import { TbSortAscendingNumbers } from "react-icons/tb";
-import { IoIosStats } from "react-icons/io";
-import { MdMarkEmailRead } from "react-icons/md";
 import { useGlowContext } from "../../context/glow/glowContext";
 import {
   ProcessCard,
@@ -96,11 +94,6 @@ export const ProcessDiagramScreen = () => {
               <ProcessCard
                 title={"Zeiten"}
                 logo={<IoTimeSharp height={30} width={30} />}
-              />
-
-              <ProcessCard
-                title={"Statistiken"}
-                logo={<IoIosStats height={30} width={30} />}
               />
             </div>
           </div>
