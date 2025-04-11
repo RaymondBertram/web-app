@@ -41,6 +41,29 @@ export const Navigation = () => {
       document.body.style.overflow = "";
     };
   }, [isMenuOpen]);
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute("id");
+            setActiveNavItem(id);
+          }
+        });
+      },
+      {
+        threshold: 0.6, // Triggert wenn 60% der Section sichtbar sind
+      }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+
+    return () => {
+      sections.forEach((section) => observer.unobserve(section));
+    };
+  }, []);
 
   const listVariants = {
     hidden: {},
@@ -75,12 +98,12 @@ export const Navigation = () => {
     >
       <div className="flex flex-row w-full justify-between items-center py-4">
         <div className="logo-wrapper">
-          <a href="#home">
+          <a href="/">
             <img src={logo_ipsum} alt="logo" className="w-[170px] h-[60px]" />
           </a>
         </div>
         <ul className="hidden lg:flex lg:flex-row lg:gap-6 list-none m-0 p-0 overflow-hidden">
-          {["home", "services", "process", "advantages", "team", "contact"].map(
+          {["start", "services", "prozess", "vorteile", "team", "kontakt"].map(
             (id) => (
               <li className="py-4" key={id}>
                 <a
@@ -116,7 +139,7 @@ export const Navigation = () => {
                 className="fixed inset-0 bg-white z-[1000] flex flex-col min-h-screen w-full"
               >
                 <div className="flex justify-between items-center bg-white px-6 py-4 sticky top-0 z-50">
-                  <a href="#home">
+                  <a href="/">
                     <img
                       src={logo_ipsum}
                       alt="logo"
@@ -136,12 +159,12 @@ export const Navigation = () => {
                   variants={listVariants}
                 >
                   {[
-                    "home",
+                    "start",
                     "services",
-                    "process",
-                    "advantages",
+                    "prozess",
+                    "vorteile",
                     "team",
-                    "contact",
+                    "kontakt",
                   ].map((id) => (
                     <motion.li key={id} variants={itemVariants}>
                       <a

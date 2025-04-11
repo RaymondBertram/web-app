@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
@@ -7,7 +8,7 @@ import { useGlowContext } from "../../context/glow/glowContext";
 import animationPrimary from "../../assets/videos/animation.mp4";
 import animationSecondary from "../../assets/videos/animation_2.mp4";
 
-export const Home = () => {
+export const Start = () => {
   const [showOther, setShowOther] = useState(false);
   const headers = [
     "Mit Infos auf Abruf",
@@ -21,9 +22,9 @@ export const Home = () => {
   };
 
   return (
-    <section id="home" className="px-4 pt-14 md:pt-[150px] md:px-6">
+    <section id="start" className="px-4 pt-14 md:pt-[150px] md:px-6">
       <div>
-        <div className="hero-parent flex flex-col md:grid md:grid-cols-6 md:gap-6">
+        <div className="hero-parent flex flex-col md:grid md:grid-cols-6 md:gap-2">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -35,11 +36,11 @@ export const Home = () => {
               <div className="text-start mb-4 md:mb-0 lg:mb-4">
                 <AnimatedHeaders headers={headers} />
               </div>
-              <div className="text-start">
-                <h1 className="inline-block md:text-[32px] lg:text-[65px] text-black font-medium leading-12 md:leading-none">
-                  zu Ihrem perfekten
+              <div>
+                <h1 className="inline-block sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
+                  zum perfekten
                 </h1>{" "}
-                <h1 className="relative inline-block md:text-[32px] lg:text-[65px] text-black font-medium leading-12 md:leading-none">
+                <h1 className="relative inline-block sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
                   Standort
                   <span>
                     <UnderlineSVG duration={2} />
@@ -48,10 +49,10 @@ export const Home = () => {
               </div>
               <div className="my-10">
                 <p className="text-start leading-6 md:leading-6">
-                  Mit [FIRMENNAME] bekommen Sie in in 2 Klicks direkt hier einen
-                  individuellen Report zu den Daten des von Ihnen gewünschten
-                  Standortes. Sparen Sie sich teure Ingenieursbüros oder
-                  kostspielige Messprojekte.
+                  Mit HELLO TRAFFIC bekommen Sie in in 2 Klicks direkt hier
+                  einen individuellen Report zu den Daten des von Ihnen
+                  gewünschten Standortes. Sparen Sie sich teure Ingenieursbüros
+                  oder kostspielige Messprojekte.
                 </p>
               </div>
               <div className="flex gap-2 justify-start">

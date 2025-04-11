@@ -40,7 +40,6 @@ export const Location = () => {
         className="md:flex md:items-center md:justify-center w-full px-4 md:px-0"
         ref={formRef}
         onSubmit={handleFormSubmit}
-        x
       >
         <AddressAutofill accessToken={ACCESS_TOKEN}>
           <div className="relative min-w-[50vw] max-w-[600px]">

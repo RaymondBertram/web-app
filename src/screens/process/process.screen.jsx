@@ -1,12 +1,22 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { motion } from "framer-motion";
+import { InboxArrowDownIcon } from "@heroicons/react/24/outline";
+import { BiRepeat } from "react-icons/bi";
+import { FaPeoplePulling } from "react-icons/fa6";
+import { IoCarSport, IoTimeSharp } from "react-icons/io5";
+import { GiLightningFrequency, GiProgression } from "react-icons/gi";
+import { SiNextra } from "react-icons/si";
+import { TbSortAscendingNumbers } from "react-icons/tb";
+import { IoIosStats } from "react-icons/io";
+import { MdMarkEmailRead } from "react-icons/md";
+import { useGlowContext } from "../../context/glow/glowContext";
 import {
   ProcessCard,
   TwoLinesSVG,
   SuccessIcon,
   ConnectorSvg,
 } from "../../components";
-import { BiRepeat } from "react-icons/bi";
 
 import "./process.screen.css";
 
@@ -14,10 +24,11 @@ import logo from "../../assets/logos/logo512.png";
 import img_2 from "../../assets/images/image_2.jpg";
 
 export const ProcessDiagramScreen = () => {
+  const { setGlow } = useGlowContext();
   return (
     <section
       className="px-3 py-20 h-auto md:px-6 md:pb-40 md:pt-45"
-      id="process"
+      id="prozess"
     >
       <div className="text-center font-medium mb-10">
         <div className="relative inline-flex items-center gap-2 text-black font-medium">
@@ -32,12 +43,12 @@ export const ProcessDiagramScreen = () => {
               <TwoLinesSVG />
             </motion.div>
 
-            <h2 className="relative text-black font-medium">
+            <span className="relative header-2">
               Unsere Daten - <br />
-            </h2>
+            </span>
           </h2>
         </div>
-        <h2 className="text-black font-medium">Ihr Standortmatch</h2>
+        <h2 className="text-black font-medium">Ihr Standortmatch!</h2>
       </div>
 
       <div className="process-parent relative flex flex-col lg:flex-row items-center justify-center">
@@ -45,8 +56,14 @@ export const ProcessDiagramScreen = () => {
         <div className="process-left flex justify-center">
           <div className="grid grid-cols-3 gap-3">
             <div className="flex flex-col gap-2 justify-center">
-              <ProcessCard title={"Company1"} logo={logo} />
-              <ProcessCard title={"Company1"} logo={logo} />
+              <ProcessCard
+                title={"Passanten"}
+                logo={<FaPeoplePulling height={30} width={30} />}
+              />
+              <ProcessCard
+                title={"Fahrzeuge"}
+                logo={<IoCarSport height={30} width={30} />}
+              />
             </div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -55,13 +72,36 @@ export const ProcessDiagramScreen = () => {
               viewport={{ once: true }}
               className="flex flex-col gap-2 justify-center"
             >
-              <ProcessCard title="Company1" logo={logo} />
-              <ProcessCard title="Company1" logo={logo} />
-              <ProcessCard title="Company1" logo={logo} />
+              <ProcessCard
+                title="Frequenzen"
+                logo={<GiLightningFrequency height={30} width={30} />}
+              />
+
+              <ProcessCard
+                title="Extrema"
+                logo={<SiNextra height={30} width={30} />}
+              />
+
+              <ProcessCard
+                title="Verlauf"
+                logo={<GiProgression height={30} width={30} />}
+              />
             </motion.div>
             <div className="flex flex-col gap-2 justify-center mt-10 lg:m-0">
-              <ProcessCard title={"Company1"} logo={logo} />
-              <ProcessCard title={"Company1"} logo={logo} />
+              <ProcessCard
+                title={"Anzahl"}
+                logo={<TbSortAscendingNumbers height={30} width={30} />}
+              />
+
+              <ProcessCard
+                title={"Zeiten"}
+                logo={<IoTimeSharp height={30} width={30} />}
+              />
+
+              <ProcessCard
+                title={"Statistiken"}
+                logo={<IoIosStats height={30} width={30} />}
+              />
             </div>
           </div>
         </div>
@@ -90,30 +130,36 @@ export const ProcessDiagramScreen = () => {
               />
             </div>
             <div className="buyer_content_wrap flex flex-col justify-between mx-1 mb-1 mt-2 md:px-3 md:pb-3 md:pt-6">
-              <div className="text-[#7b8794] font-medium">Product_1</div>
+              <div className="text-[#7b8794] font-medium">Stadtring 1</div>
               <div className="text-[#0d0d0c] text-2xl font-medium">
-                € 500.00
+                Ihr Report
               </div>
-              <button className="text-white bg-[#1f2933] py-3 rounded-4xl mt-6">
-                Pay
-              </button>
+              <a
+                href="#location"
+                className="text-white text-center bg-[#8247ff] py-3 rounded-4xl mt-6"
+                onClick={() => setGlow(true)}
+              >
+                Jetzt anfordern!
+              </a>
             </div>
           </div>
 
           {/* Reposition the transaction card */}
           <div className="transaktion_card flex flex-col items-center w-[170px] absolute px-1 pb-1 pt-4 top-[-2em] right-0 bg-white rounded-2xl">
-            <div className="transaction_content_img">
-              <SuccessIcon />
+            <div className="transaction_content_img size-20">
+              <InboxArrowDownIcon />
             </div>
             <div className="transaction_content_wrap">
               <div className="text-wrap text-center font-medium">
-                Successful something
+                2 Klicks entfernt!
               </div>
               <div className="transaction_message_wrap flex flex-col items-start p-2 mt-2 bg-[#e4e7eb80] rounded-xl">
                 <div className="size-8 flex justify-center items-center bg-[#cbd2d9] rounded-4xl mb-2">
                   <BiRepeat />
                 </div>
-                <div className="text-xs">Transferred To Your Location!</div>
+                <div className="text-xs">
+                  Erhalten Sie direkt in Ihr Mail Postfach
+                </div>
               </div>
             </div>
           </div>

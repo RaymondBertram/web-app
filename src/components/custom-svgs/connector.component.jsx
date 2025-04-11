@@ -1,4 +1,5 @@
 import "./connector.component.css";
+import logo_ipsum from "../../assets/logos/logoipsum-363.svg";
 
 export const ConnectorSvg = () => {
   return (
@@ -87,7 +88,7 @@ export const ConnectorSvg = () => {
       </g>
 
       {/* Logo */}
-      <g className="logo">
+      <g className="logo rotate-[-90deg] lg:rotate-0 origin-[293px_129px]">
         <svg
           x="214"
           y="50"
@@ -95,9 +96,16 @@ export const ConnectorSvg = () => {
           height="158"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="158" height="158" rx="26" fill="#1F2933" />
+          <rect width="158" height="158" rx="26" fill="#FFFFFF" />
+          <image
+            href={logo_ipsum}
+            x="20"
+            y="20"
+            width="118"
+            height="118"
+            preserveAspectRatio="xMidYMid meet"
+          />
         </svg>
-        <path fillRule="evenodd" clipRule="evenodd" d="" fill="white" />
       </g>
     </svg>
   );

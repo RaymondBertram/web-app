@@ -1,4 +1,4 @@
-export * from "./home/home.screen";
+export * from "./start/start.screen";
 export * from "./location/location.screen";
 export * from "./slider/slider.screen";
 export * from "./services/services.screen";
