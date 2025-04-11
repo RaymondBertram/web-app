@@ -68,7 +68,7 @@ export const Form = () => {
     >
       <div
         key="form-card-1"
-        className="bg-white flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto md:mr- md:mb-4"
+        className="bg-white flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto mb-4 md:mb-4 lg:mb-0 md:mr-4"
       >
         <h2 className="font-medium py-4 text-center mb-10">
           HELLO TRAFFIC an{" "}
