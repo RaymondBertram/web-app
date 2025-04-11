@@ -71,14 +71,12 @@ export const Solution = () => {
                     In 2 Klicks zu Ihrem Auftrag - so simple!
                   </h3>
                   <p className="text-gray-600 mt-2 px-2">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                    sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua.
+                    Sie möchten Ihre Standortanalyse beauftragen? Kein Problem –
+                    bei uns geht das schnell und unkompliziert. In nur zwei
+                    einfachen Schritten können Sie Ihre Anfrage abschließen.
+                    Ohne langes Suchen, ohne Papierkram. So sparen Sie Zeit und
+                    kommen schneller zu den Informationen, die Sie wirklich
+                    brauchen.
                   </p>
                 </div>
 
@@ -125,14 +123,13 @@ export const Solution = () => {
                     Damit Sie 100% Klarheit über den Standort haben
                   </h3>
                   <p className="text-gray-600 mt-2 px-2">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                    sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua.
+                    Unser Expertenteam prüft den Standort gründlich und
+                    datenbasiert – von der regionalen Infrastruktur bis hin zur
+                    Zielgruppenanalyse. Jeder relevante Aspekt wird
+                    berücksichtigt, damit Sie eine fundierte Entscheidung
+                    treffen können. Sie erhalten einen detaillierten Einblick in
+                    Chancen und Risiken – verständlich, transparent und
+                    individuell auf Ihr Projekt zugeschnitten.
                   </p>
                 </div>
 
@@ -178,15 +175,13 @@ export const Solution = () => {
                   <h3 className="text-4xl font-medium px-2 text-black mb-10">
                     Sie bekommen Ihre Daten so unkompliziert wie möglich
                   </h3>
-                  <p className="text-gray-600 mt-2 px-2">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                    sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                    ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna
-                    aliquyam erat, sed diam voluptua.
+                  <p className="text-gray-600 mt-2">
+                    Sobald die Analyse abgeschlossen ist, erhalten Sie den
+                    Report bequem per E-Mail. Ohne zusätzlichen Aufwand, ohne
+                    Login oder Plattform. Einfach, direkt und schnell – damit
+                    Sie sofort mit den Ergebnissen arbeiten können. Ihre Daten
+                    sind sicher, übersichtlich aufbereitet und jederzeit
+                    griffbereit.
                   </p>
                 </div>
 
@@ -234,16 +229,11 @@ export const Solution = () => {
                   In 2 Klicks zu Ihrem Auftrag - so simple!
                 </h3>
                 <p className="text-gray-600 mt-2">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                  nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet.
+                  Sie möchten Ihre Standortanalyse beauftragen? Kein Problem –
+                  bei uns geht das schnell und unkompliziert. In nur zwei
+                  einfachen Schritten können Sie Ihre Anfrage abschließen. Ohne
+                  langes Suchen, ohne Papierkram. So sparen Sie Zeit und kommen
+                  schneller zu den Informationen, die Sie wirklich brauchen.
                 </p>
               </div>
 
@@ -280,16 +270,13 @@ export const Solution = () => {
                   Damit Sie 100% Klarheit über den Standort haben
                 </h3>
                 <p className="text-gray-600 mt-2">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                  nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet.
+                  Unser Expertenteam prüft den Standort gründlich und
+                  datenbasiert – von der regionalen Infrastruktur bis hin zur
+                  Zielgruppenanalyse. Jeder relevante Aspekt wird
+                  berücksichtigt, damit Sie eine fundierte Entscheidung treffen
+                  können. Sie erhalten einen detaillierten Einblick in Chancen
+                  und Risiken – verständlich, transparent und individuell auf
+                  Ihr Projekt zugeschnitten.
                 </p>
               </div>
 
@@ -326,16 +313,11 @@ export const Solution = () => {
                   Sie bekommen Ihre Daten so unkompliziert wie möglich
                 </h3>
                 <p className="text-gray-600 mt-2">
-                  Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                  diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-                  ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                  nonumy eirmod tempor invidunt ut labore et dolore magna
-                  aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                  justo duo dolores et ea rebum. Stet clita kasd gubergren, no
-                  sea takimata sanctus est Lorem ipsum dolor sit amet.
+                  Sobald die Analyse abgeschlossen ist, erhalten Sie den Report
+                  bequem per E-Mail. Ohne zusätzlichen Aufwand, ohne Login oder
+                  Plattform. Einfach, direkt und schnell – damit Sie sofort mit
+                  den Ergebnissen arbeiten können. Ihre Daten sind sicher,
+                  übersichtlich aufbereitet und jederzeit griffbereit.
                 </p>
               </div>
 

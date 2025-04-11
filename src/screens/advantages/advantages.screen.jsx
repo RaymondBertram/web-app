@@ -1,46 +1,49 @@
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import {
   ChevronRightIcon,
   ChevronLeftIcon,
-  AcademicCapIcon,
-  AdjustmentsVerticalIcon,
   ArchiveBoxIcon,
   ArrowPathIcon,
+  ForwardIcon,
+  MapPinIcon,
+  AcademicCapIcon,
 } from "@heroicons/react/16/solid";
 
 export const Advantages = () => {
   const scrollRef = useRef(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
 
   const cardData = [
     {
       id: 1,
-      title: "Schnelle Analyse",
-      text: "Erhalten Sie eine schnelle und präzise Analyse Ihrer aktuellen Situation, um fundierte Entscheidungen zu treffen.",
-      img: <AcademicCapIcon className="size-6" />,
+      title: "Schneller Zugang zu Entscheidungsdaten",
+      text: "Standortdaten wie Fahrzeug- und Passantenfrequenzen in Sekunden abrufbar – ohne langes Warten auf externe Gutachten.",
+      img: <ForwardIcon className="size-6" />,
     },
     {
       id: 2,
-      title: "Individuelle Beratung",
-      text: "Unsere Experten entwickeln maßgeschneiderte Lösungen, die perfekt auf Ihre spezifischen Bedürfnisse und Ziele abgestimmt sind.",
-      img: <AdjustmentsVerticalIcon className="size-6" />,
+      title: "Bessere Standortentscheidungen",
+      text: "Zuverlässige Frequenzdaten helfen, Potenziale zu erkennen, Risiken zu minimieren und fundierte Entscheidungen für Anmietung oder Entwicklung zu treffen.",
+      img: <MapPinIcon className="size-6" />,
     },
     {
       id: 3,
-      title: "Maximale Effizienz",
-      text: "Optimieren Sie Ihre Prozesse mit innovativen Strategien und sparen wertvolle Zeit sowie Ressourcen für nachhaltigen Erfolg.",
+      title: "Wettbewerbsvorteil sichern",
+      text: "Mit aktuellen Frequenzdaten können Nutzer schneller und gezielter auf attraktive Lagen zugreifen – bevor es die Konkurrenz tut.",
       img: <ArchiveBoxIcon className="size-6" />,
     },
     {
       id: 4,
-      title: "Innovative Strategien",
-      text: "Nutzen Sie kreative und zukunftsorientierte Strategien, um nachhaltiges Wachstum und langfristigen Erfolg sicherzustellen.",
+      title: "Optimierte Vermarktungschancen",
+      text: "Makler und Eigentümer belegen mit objektiven Zahlen die Attraktivität ihrer Immobilien – ein starkes Argument in jedem Exposé oder Pitch.",
       img: <ArrowPathIcon className="size-6" />,
     },
     {
       id: 5,
-      title: "Höchste Qualität",
-      text: "Profitieren Sie von erstklassigen Standards und bewährten Methoden, die exzellente Ergebnisse und nachhaltige Zufriedenheit garantieren.",
-      img: <ArrowPathIcon className="size-6" />,
+      title: "Keine Fachkenntnisse nötig",
+      text: "Intuitive Oberfläche, leicht verständliche Auswertungen – ideal für alle, die keine Analysten sind, aber schnell belastbare Insights brauchen.",
+      img: <AcademicCapIcon className="size-6" />,
     },
   ];
 
@@ -59,18 +62,31 @@ export const Advantages = () => {
         left: targetScrollLeft,
         behavior: "smooth",
       });
+      setTimeout(updateScrollButtons, 300);
     }
   };
 
+  const updateScrollButtons = () => {
+    if (scrollRef.current) {
+      const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
+      setCanScrollLeft(scrollLeft > 0);
+      setCanScrollRight(scrollLeft + clientWidth < scrollWidth);
+    }
+  };
+
+  useEffect(() => {
+    updateScrollButtons();
+  }, []);
+
   return (
-    <section className="flex flex-col px-4 py-40" id="advantages">
+    <section className="flex flex-col px-4 py-40" id="vorteile">
       <h2 className="text-center font-medium mb-10 text-black">
         Ihre Vorteile
       </h2>
 
-      <div className="relative w-full">
+      <div className="relative w-screen">
         <div
-          className="flex gap-4 overflow-x-auto no-scrollbar px-4 py-4 scrollbar-hide"
+          className="flex gap-4 overflow-x-auto no-scrollbar py-4 scrollbar-hide"
           ref={scrollRef}
           style={{
             scrollbarWidth: "none",
@@ -80,7 +96,7 @@ export const Advantages = () => {
           {cardData.map((card) => (
             <div
               key={card.id}
-              className="min-w-[90%] sm:min-w-[70%] md:min-w-[45%] lg:min-w-[30%] h-[300px] md:h-[200px] rounded-2xl bg-white shadow-lg flex flex-col p-6 mx-2"
+              className="min-w-[90%] sm:min-w-[70%] md:min-w-[45%] lg:min-w-[30%] h-[250px] rounded-2xl bg-white shadow-lg flex flex-col p-6 mx-2"
             >
               <div>{card.img}</div>
               <h3 className="text-lg font-bold text-gray-900 mt-3">
@@ -95,13 +111,15 @@ export const Advantages = () => {
       <div className="flex justify-center gap-4 mt-4 md:flex">
         <button
           onClick={() => scroll("left")}
-          className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
+          className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 disabled:opacity-50"
+          disabled={!canScrollLeft}
         >
           <ChevronLeftIcon className="size-6" />
         </button>
         <button
           onClick={() => scroll("right")}
-          className="p-2 bg-gray-200 rounded-full hover:bg-gray-300"
+          className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 disabled:opacity-50"
+          disabled={!canScrollRight}
         >
           <ChevronRightIcon className="size-6" />
         </button>

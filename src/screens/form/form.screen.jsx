@@ -44,14 +44,14 @@ export const Form = () => {
   return (
     <section
       className="flex flex-col gap-y-4 md:gap-0 lg:flex-row px-4 py-20"
-      id="contact"
+      id="kontakt"
     >
       <div
         key="form-card-1"
         className="bg-white flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto md:mr-4"
       >
         <h2 className="font-medium py-4 text-center mb-10">
-          Company Name an{" "}
+          HELLO TRAFFIC an{" "}
           <span className="relative inline-block text-[39px] text-black lg:text-5xl font-medium">
             Ihrer Seite
             <span>

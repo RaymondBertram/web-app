@@ -1,8 +1,12 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import { UnderlineSVG, UspCard } from "../../components";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import { useGlowContext } from "../../context/glow/glowContext";
+import { DocumentChartBarIcon } from "@heroicons/react/24/solid";
+import { FaPersonWalkingDashedLineArrowRight } from "react-icons/fa6";
+import { IoAnalytics } from "react-icons/io5";
 
 import "./services.screen.css";
 
@@ -10,16 +14,22 @@ export const Services = () => {
   const { setGlow } = useGlowContext();
   const cards = [
     {
-      title: "Infrastruktur",
-      text: "Klare Erfassung von Verkehrsdaten zur Optimierung von Verkehrsströmen.",
+      title: "Fahrzeugfrequenzdaten",
+      text: "Erfahren Sie mehr über den Fahrzeugverkehr am gewählten Standort.",
+      icon: <DocumentChartBarIcon height={30} width={30} />,
+      scrollYValue: 0.01,
     },
     {
-      title: "Standort",
-      text: "Präzise Erkennung von Verkehr und Standort.",
+      title: "Passantenfrequenzdaten",
+      text: "Finden Sie heraus, wie belebt Ihre Wunschgegend ist.",
+      icon: <FaPersonWalkingDashedLineArrowRight height={30} width={30} />,
+      scrollYValue: 0.01,
     },
     {
-      title: "Kennzeichen",
-      text: "Effiziente Parkraumüberwachung und Zufahrtskontrolle.",
+      title: "Genaue Analysen",
+      text: "Mit Aufschlüsselung der Daten nach Zeiträumen, Durchschnitten und Extrema haben Sie ein detailliertes Bild.",
+      icon: <IoAnalytics height={30} width={30} />,
+      scrollYValue: 0.01,
     },
   ];
 
@@ -78,7 +88,12 @@ export const Services = () => {
               viewport={{ amount: 0.2 }}
               transition={{ delay: index * 0.2 }} // Stagger Effekt
             >
-              <UspCard title={card.title} text={card.text} img={card.img} />
+              <UspCard
+                title={card.title}
+                text={card.text}
+                icon={card.icon}
+                scrollYValue={card.scrollYValue}
+              />
             </motion.div>
           ))}
         </div>
@@ -86,7 +101,12 @@ export const Services = () => {
         <div className="usps_child_left_larger hidden md:flex flex-col items-center gap-12">
           {cards.map((card, index) => (
             <div key={index} className={`usp-card`}>
-              <UspCard title={card.title} text={card.text} img={card.img} />
+              <UspCard
+                title={card.title}
+                text={card.text}
+                icon={card.icon}
+                scrollYValue={card.scrollYValue}
+              />
             </div>
           ))}
         </div>
