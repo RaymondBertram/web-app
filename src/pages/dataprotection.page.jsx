@@ -1,4 +1,4 @@
-export default function DataProtectionPage() {
+export const DataProtectionPage = () => {
   return (
     <div className="h-fit">
       <div style={{ padding: "2rem" }}>
@@ -69,4 +69,4 @@ export default function DataProtectionPage() {
       </div>
     </div>
   );
-}
+};

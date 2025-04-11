@@ -4,9 +4,9 @@ import { GlowProvider } from "./context/glow/glowContext";
 import { Navigation } from "./components/navigation/top-bar/top-bar.component";
 import { Footer } from "./screens";
 import { HomePage } from "./pages/home.page";
-import DataProtectionPage from "./pages/Dataprotection.page";
-import Impress from "./pages/impress.page";
-import AGB from "./pages/agb.page";
+import { DataProtectionPage } from "./pages/Dataprotection.page";
+import { Impress } from "./pages/impress.page";
+import { AGB } from "./pages/agb.page";
 
 import "./App.css";
 
