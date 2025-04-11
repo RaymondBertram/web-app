@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
@@ -7,7 +8,7 @@ import { useGlowContext } from "../../context/glow/glowContext";
 import animationPrimary from "../../assets/videos/animation.mp4";
 import animationSecondary from "../../assets/videos/animation_2.mp4";
 
-export const Home = () => {
+export const Start = () => {
   const [showOther, setShowOther] = useState(false);
   const headers = [
     "Mit Infos auf Abruf",

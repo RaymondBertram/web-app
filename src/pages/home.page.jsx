@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  Home,
+  Start,
   Slider,
   Location,
   Services,
@@ -14,7 +14,7 @@ import {
 export default function HomePage() {
   return (
     <>
-      <Home />
+      <Start />
       <Slider />
       <Location />
       <Services />
