@@ -8,6 +8,7 @@ import {
   MapPinIcon,
   AcademicCapIcon,
 } from "@heroicons/react/16/solid";
+import { UnderlineSVG } from "../../components";
 
 export const Advantages = () => {
   const scrollRef = useRef(null);
@@ -50,8 +51,8 @@ export const Advantages = () => {
   const scroll = (direction) => {
     if (scrollRef.current) {
       const { scrollLeft } = scrollRef.current;
-      const cardWidth = scrollRef.current.children[0].offsetWidth; // Dynamische Breite der Karte ermitteln
-      const scrollAmount = cardWidth + 16; // Berücksichtigt den Abstand zwischen den Karten
+      const cardWidth = scrollRef.current.children[0].offsetWidth;
+      const scrollAmount = cardWidth + 16;
 
       const targetScrollLeft =
         direction === "left"
@@ -79,15 +80,24 @@ export const Advantages = () => {
   }, []);
 
   return (
-    <section className="flex flex-col px-4 py-40" id="vorteile">
-      <h2 className="text-center font-medium mb-10 text-black">
-        Ihre Vorteile
+    <section className="flex flex-col px-0 py-30" id="vorteile">
+      <h2 className=" text-center font-medium mb-10 text-black">
+        <span className="relative text-[39px] text-black lg:text-5xl font-medium">
+          Ihre Vorteile
+          <UnderlineSVG />
+        </span>
       </h2>
 
-      <div className="relative w-full">
+      <div className="flex items-center relative w-full overflow-x-auto md:overflow-hidden">
+        {/* Left fade */}
+        <div className="absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-[#f5f7fa] to-transparent z-10" />
+        {/* Right fade */}
+        <div className="absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-[#f5f7fa] to-transparent z-10" />
+
+        {/* Scrollable cards */}
         <div
-          className="flex gap-4 overflow-x-auto no-scrollbar px-4 py-4 scrollbar-hide"
           ref={scrollRef}
+          className="flex gap-4 overflow-x-auto no-scrollbar px-4 py-4 scrollbar-hide relative"
           style={{
             scrollbarWidth: "none",
             msOverflowStyle: "none",
@@ -96,7 +106,7 @@ export const Advantages = () => {
           {cardData.map((card) => (
             <div
               key={card.id}
-              className="min-w-[90%] sm:min-w-[70%] md:min-w-[45%] lg:min-w-[30%] h-[300px] lg:h-[250px] rounded-2xl bg-white shadow-lg flex flex-col p-6 mx-2"
+              className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] h-[300px] lg:h-[250px] rounded-2xl bg-white shadow-lg flex flex-col p-6 mx-2"
             >
               <div>{card.img}</div>
               <h3 className="text-lg font-bold text-gray-900 mt-3">

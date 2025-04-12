@@ -2,8 +2,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { InboxArrowDownIcon } from "@heroicons/react/24/outline";
-import { BiRepeat } from "react-icons/bi";
 import { FaPeoplePulling } from "react-icons/fa6";
+import { MdTouchApp } from "react-icons/md";
 import { IoCarSport, IoTimeSharp } from "react-icons/io5";
 import { GiLightningFrequency, GiProgression } from "react-icons/gi";
 import { SiNextra } from "react-icons/si";
@@ -16,18 +16,13 @@ import {
   ConnectorSvg,
 } from "../../components";
 
-import "./process.screen.css";
-
-import logo from "../../assets/logos/logo512.png";
 import img_2 from "../../assets/images/image_2.jpg";
+import "./process.screen.css";
 
 export const ProcessDiagramScreen = () => {
   const { setGlow } = useGlowContext();
   return (
-    <section
-      className="px-3 py-20 h-auto md:px-6 md:pb-40 md:pt-45"
-      id="prozess"
-    >
+    <section className="px-3 h-auto md:px-6 py-30 md:pt-45" id="prozess">
       <div className="text-center font-medium mb-10">
         <div className="relative inline-flex items-center gap-2 text-black font-medium">
           <h2 className="relative inline-block">
@@ -85,7 +80,7 @@ export const ProcessDiagramScreen = () => {
                 logo={<GiProgression height={30} width={30} />}
               />
             </motion.div>
-            <div className="flex flex-col gap-2 justify-center mt-10 lg:m-0">
+            <div className="flex flex-col gap-2 justify-center">
               <ProcessCard
                 title={"Anzahl"}
                 logo={<TbSortAscendingNumbers height={30} width={30} />}
@@ -140,7 +135,7 @@ export const ProcessDiagramScreen = () => {
           {/* Reposition the transaction card */}
           <div className="transaktion_card flex flex-col items-center w-[170px] absolute px-1 pb-1 pt-4 top-[-2em] right-0 bg-white rounded-2xl">
             <div className="transaction_content_img size-20">
-              <InboxArrowDownIcon />
+              <MdTouchApp className="w-full h-full" />
             </div>
             <div className="transaction_content_wrap">
               <div className="text-wrap text-center font-medium">
@@ -148,7 +143,7 @@ export const ProcessDiagramScreen = () => {
               </div>
               <div className="transaction_message_wrap flex flex-col items-start p-2 mt-2 bg-[#e4e7eb80] rounded-xl">
                 <div className="size-8 flex justify-center items-center bg-[#cbd2d9] rounded-4xl mb-2">
-                  <BiRepeat />
+                  <InboxArrowDownIcon height={20} width={20} />
                 </div>
                 <div className="text-xs">
                   Erhalten Sie direkt in Ihr Mail Postfach

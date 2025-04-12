@@ -21,7 +21,7 @@ const teamMembers = [
 
 export const Team = () => {
   return (
-    <section className="py-20" id="team">
+    <section className="py-30" id="team">
       <h2 className="text-center font-medium mb-10 text-black">Unser Team</h2>
       <div className="flex flex-wrap justify-center gap-8 px-4">
         {teamMembers.map((member, index) => (
