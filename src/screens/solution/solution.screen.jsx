@@ -40,7 +40,7 @@ export const Solution = () => {
   );
 
   return (
-    <section className="px-3" id="solution">
+    <section className="px-3 py-30" id="solution">
       <div ref={containerRef} className="solution-card-container relative">
         {isTabletOrLarger ? (
           <div className="flex flex-col">
@@ -55,7 +55,7 @@ export const Solution = () => {
             >
               <div className="relative text-center tracking-normal">
                 <h2 id="first_block px-2 text-black font-bold mb-4">
-                  Sie fordern Ihre{" "}
+                  Fordern Sie Ihre{" "}
                   <span className="relative inline-block">
                     <h2>Standortanalyse</h2>
                     <UnderlineSVG />
@@ -77,6 +77,14 @@ export const Solution = () => {
                     Ohne langes Suchen, ohne Papierkram. So sparen Sie Zeit und
                     kommen schneller zu den Informationen, die Sie wirklich
                     brauchen.
+                    <br />
+                    <br />
+                    Unsere benutzerfreundliche Oberfläche führt Sie intuitiv
+                    durch den Prozess. Sie wählen Ihren Standort, geben Ihre
+                    Kontaktdaten an – und den Rest übernehmen wir. Mit einem
+                    Klick ist Ihr Auftrag bei uns. Sie können sich darauf
+                    verlassen, dass wir uns sofort um Ihr Anliegen kümmern und
+                    Sie zeitnah Rückmeldung erhalten.
                   </p>
                 </div>
 
@@ -130,6 +138,17 @@ export const Solution = () => {
                     treffen können. Sie erhalten einen detaillierten Einblick in
                     Chancen und Risiken – verständlich, transparent und
                     individuell auf Ihr Projekt zugeschnitten.
+                    <br />
+                    <br />
+                    Dabei greifen wir auf aktuelle Marktanalysen, demografische
+                    Daten und wirtschaftliche Kennzahlen zurück, um eine präzise
+                    Bewertung vorzunehmen. Zusätzlich fließen regionale
+                    Besonderheiten, Wettbewerbssituation sowie zukünftige
+                    Entwicklungspotenziale in unsere Analyse ein. So erhalten
+                    Sie nicht nur eine Momentaufnahme, sondern eine strategische
+                    Entscheidungsgrundlage für Ihr Vorhaben. Unser Ziel ist es,
+                    Ihnen maximale Klarheit und Sicherheit für Ihre Investition
+                    zu bieten – fundiert, objektiv und auf den Punkt gebracht.
                   </p>
                 </div>
 
@@ -182,6 +201,13 @@ export const Solution = () => {
                     Sie sofort mit den Ergebnissen arbeiten können. Ihre Daten
                     sind sicher, übersichtlich aufbereitet und jederzeit
                     griffbereit.
+                    <br />
+                    <br />
+                    Zusätzlich stellen wir sicher, dass Sie alle relevanten
+                    Informationen verständlich und visuell ansprechend
+                    aufbereitet bekommen – inklusive klarer Empfehlungen. So
+                    können Sie sofort fundierte Entscheidungen treffen und haben
+                    jederzeit Zugriff auf Ihre Auswertung.
                   </p>
                 </div>
 
@@ -215,7 +241,7 @@ export const Solution = () => {
             >
               <div className="relative text-center tracking-normal">
                 <h2 id="first_block text-black">
-                  Sie fordern Ihre{" "}
+                  Fordern Sie Ihre{" "}
                   <span className="relative inline-block text-black">
                     <h2 className="text-black">Standortanalyse</h2>
                     <UnderlineSVG />
@@ -234,6 +260,14 @@ export const Solution = () => {
                   einfachen Schritten können Sie Ihre Anfrage abschließen. Ohne
                   langes Suchen, ohne Papierkram. So sparen Sie Zeit und kommen
                   schneller zu den Informationen, die Sie wirklich brauchen.
+                  <br />
+                  <br />
+                  Unsere benutzerfreundliche Oberfläche führt Sie intuitiv durch
+                  den Prozess. Sie wählen Ihren Standort, geben Ihre
+                  Kontaktdaten an – und den Rest übernehmen wir. Mit einem Klick
+                  ist Ihr Auftrag bei uns. Sie können sich darauf verlassen,
+                  dass wir uns sofort um Ihr Anliegen kümmern und Sie zeitnah
+                  Rückmeldung erhalten.
                 </p>
               </div>
 
@@ -277,6 +311,17 @@ export const Solution = () => {
                   können. Sie erhalten einen detaillierten Einblick in Chancen
                   und Risiken – verständlich, transparent und individuell auf
                   Ihr Projekt zugeschnitten.
+                  <br />
+                  <br />
+                  Dabei greifen wir auf aktuelle Marktanalysen, demografische
+                  Daten und wirtschaftliche Kennzahlen zurück, um eine präzise
+                  Bewertung vorzunehmen. Zusätzlich fließen regionale
+                  Besonderheiten, Wettbewerbssituation sowie zukünftige
+                  Entwicklungspotenziale in unsere Analyse ein. So erhalten Sie
+                  nicht nur eine Momentaufnahme, sondern eine strategische
+                  Entscheidungsgrundlage für Ihr Vorhaben. Unser Ziel ist es,
+                  Ihnen maximale Klarheit und Sicherheit für Ihre Investition zu
+                  bieten – fundiert, objektiv und auf den Punkt gebracht.
                 </p>
               </div>
 
@@ -318,6 +363,13 @@ export const Solution = () => {
                   Plattform. Einfach, direkt und schnell – damit Sie sofort mit
                   den Ergebnissen arbeiten können. Ihre Daten sind sicher,
                   übersichtlich aufbereitet und jederzeit griffbereit.
+                  <br />
+                  <br />
+                  Zusätzlich stellen wir sicher, dass Sie alle relevanten
+                  Informationen verständlich und visuell ansprechend aufbereitet
+                  bekommen – inklusive klarer Empfehlungen. So können Sie sofort
+                  fundierte Entscheidungen treffen und haben jederzeit Zugriff
+                  auf Ihre Auswertung.
                 </p>
               </div>
 

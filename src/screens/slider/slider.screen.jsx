@@ -14,7 +14,7 @@ export const Slider = () => {
   // {!isTabletOrLarger ? <br /> : " "}
 
   return (
-    <div className="flex flex-col md:flex-row px-2 md:px-8 py-10 md:gap-4 lg:pt-15">
+    <div className="flex flex-col md:flex-row px-2 md:px-8 py-30 md:gap-4 lg:pt-15">
       <div className="flex flex-col items-center justify-center">
         <p className="text-center md:text-start text-xs md:text-sm font-semibold break-words whitespace-pre-line lg:pr-6">
           Diese [ZAHL]+ Firmen vertrauen uns bereits und analysieren mit HELLO

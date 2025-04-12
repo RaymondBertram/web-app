@@ -1,6 +1,12 @@
 import { useEffect, useState } from "react";
 
-export const UspCard = ({ title, text, icon, scrollYValue }) => {
+export const UspCard = ({
+  title,
+  text,
+  icon,
+  scrollYValue,
+  scrollSecondSymbol,
+}) => {
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -19,7 +25,7 @@ export const UspCard = ({ title, text, icon, scrollYValue }) => {
       <div className="relative flex flex-col items-center p-6 bg-[#a9cecc] shadow-lg rounded-3xl">
         <div className="relative flex items-center justify-start size-20 mb-4 w-full">
           <div
-            className="flex items-center justify-center absolute w-10 h-10 bg-gray-300 rounded-full"
+            className="flex items-center justify-center absolute w-10 h-10 bg-gray-300 rounded-full z-10"
             style={{
               transform: `translate3d(${scrollY * scrollYValue}px, ${
                 -scrollY * 0.001
@@ -28,6 +34,14 @@ export const UspCard = ({ title, text, icon, scrollYValue }) => {
           >
             {icon}
           </div>
+          <div
+            className="absolute w-8 h-8 bg-[#42576c] rounded-full z-0"
+            style={{
+              transform: `translate3d(${scrollY * scrollSecondSymbol}px, ${
+                scrollY * 0.001
+              }px, 0px) rotate(15deg)`,
+            }}
+          ></div>
         </div>
         <h2 className="text-2xl md:text-xl font-medium text-[#23596d] w-full">
           {title}

@@ -4,7 +4,7 @@ import { UnderlineSVG } from "../../components";
 
 export const Form = () => {
   const formRef = useRef(null);
-  const ACCESS_TOKEN = import.meta.env.VITE_Backend_URL;
+  const ACCESS_TOKEN = import.meta.env.VITE_BACKEND_URL;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -63,7 +63,7 @@ export const Form = () => {
 
   return (
     <section
-      className="flex flex-col gap-y-4 md:gap-0 lg:flex-row px-4 py-20"
+      className="flex flex-col gap-y-4 md:gap-0 lg:flex-row px-4 py-30"
       id="kontakt"
     >
       <div
@@ -80,12 +80,14 @@ export const Form = () => {
           </span>
         </h2>
         <p className="leading-6 text-gray-600">
-          Entdecken Sie, wie wir Ihre Vision in greifbare Erfolge verwandeln.
-          Füllen Sie das Formular aus, um von unserem Expertenwissen zu
-          profitieren und ein maßgeschneidertes, unverbindliches Angebot zu
-          erhalten. Unsere Leidenschaft für Innovation und Qualität macht den
-          Unterschied – lassen Sie uns gemeinsam Ihre digitale Zukunft
-          gestalten.
+          Nutzen Sie das Kontaktformular, um mit uns in Verbindung zu treten.
+          Egal, ob Sie Fragen haben, ein individuelles Angebot wünschen oder
+          einfach mehr über unsere Leistungen erfahren möchten – wir sind gerne
+          für Sie da.
+          <br />
+          <br />
+          Füllen Sie das Formular aus und wir melden uns zeitnah bei Ihnen.
+          Gemeinsam finden wir die passende Lösung für Ihr digitales Vorhaben.
         </p>
       </div>
       <div

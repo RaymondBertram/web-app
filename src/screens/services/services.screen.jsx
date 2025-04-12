@@ -18,18 +18,21 @@ export const Services = () => {
       text: "Erfahren Sie mehr über den Fahrzeugverkehr am gewählten Standort.",
       icon: <DocumentChartBarIcon height={30} width={30} />,
       scrollYValue: 0.01,
+      scrollSecondSymbol: 0.4,
     },
     {
       title: "Passantenfrequenzdaten",
       text: "Finden Sie heraus, wie belebt Ihre Wunschgegend ist.",
       icon: <FaPersonWalkingDashedLineArrowRight height={30} width={30} />,
       scrollYValue: 0.01,
+      scrollSecondSymbol: 0.4,
     },
     {
       title: "Genaue Analysen",
       text: "Mit Aufschlüsselung der Daten nach Zeiträumen, Durchschnitten und Extrema haben Sie ein detailliertes Bild.",
       icon: <IoAnalytics height={30} width={30} />,
       scrollYValue: 0.01,
+      scrollSecondSymbol: 0.4,
     },
   ];
 
@@ -43,7 +46,7 @@ export const Services = () => {
   };
 
   return (
-    <section id="services" className="px-2 overflow-hidden md:px-6">
+    <section id="services" className="px-2 overflow-hidden md:px-6 py-30">
       <div className="grid grid-cols-1 md:grid-cols-2 items-center md:items-start justify-items-center gap-12 bg-[#1f2933] pt-12 pb-6 px-6 rounded-3xl lg:pr-30 lg:pt-15">
         <div className="usp_right h-full relative md:order-1">
           <div className="cotents_wrapper h-full text-white md:flex md:flex-col md:justify-evenly">
@@ -93,6 +96,7 @@ export const Services = () => {
                 text={card.text}
                 icon={card.icon}
                 scrollYValue={card.scrollYValue}
+                scrollSecondSymbol={card.scrollSecondSymbol}
               />
             </motion.div>
           ))}
