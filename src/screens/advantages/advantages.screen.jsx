@@ -80,7 +80,7 @@ export const Advantages = () => {
   }, []);
 
   return (
-    <section className="flex flex-col px-0 py-30" id="vorteile">
+    <section className="flex flex-col px-0 pt-15 md:py-20" id="vorteile">
       <h2 className=" text-center font-medium mb-10 text-black">
         <span className="relative text-[39px] text-black lg:text-5xl font-medium">
           Ihre Vorteile

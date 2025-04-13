@@ -63,7 +63,7 @@ export const Form = () => {
 
   return (
     <section
-      className="flex flex-col gap-y-4 md:gap-0 lg:flex-row px-4 py-30"
+      className="flex flex-col gap-y-4 md:gap-0 lg:flex-row px-4 pt-10 md:py-25"
       id="kontakt"
     >
       <div
@@ -95,7 +95,7 @@ export const Form = () => {
         className="bg-gray-800 flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto"
       >
         <h2 className="font-medium py-4 text-white text-center">
-          Möchten Sie Mehr Erfahren?
+          Möchten Sie mehr Erfahren?
         </h2>
         <form
           ref={formRef}
