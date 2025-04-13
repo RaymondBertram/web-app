@@ -82,6 +82,8 @@ export const Location = () => {
           (details.payerInfo && details.payerInfo.firstName),
         lastName:
           details.lastName || (details.payerInfo && details.payerInfo.lastName),
+        payerId:
+          details.payerId || (details.payerId && details.payerInfo.payerId),
       };
 
       const { data } = await axios.post(`${BACKEND_URL}/api/checkout`, {
@@ -107,10 +109,6 @@ export const Location = () => {
     }
   };
 
-  const handleAddressRetrieve = (result) => {
-    console.log("Ausgewählte Adresse:", result);
-  };
-
   return (
     <section
       id="location"
@@ -132,10 +130,7 @@ export const Location = () => {
         ref={formRef}
         onSubmit={handleFormSubmit}
       >
-        <AddressAutofill
-          accessToken={ACCESS_TOKEN}
-          onRetrieve={handleAddressRetrieve}
-        >
+        <AddressAutofill accessToken={ACCESS_TOKEN}>
           <div className="relative min-w-[50vw] max-w-[600px]">
             <input
               type="text"
