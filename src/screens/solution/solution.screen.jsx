@@ -240,9 +240,19 @@ export const Solution = () => {
               viewport={{ once: true }}
             >
               <div className="w-full p-4">
-                <h3 className="text-[28px] text-black font-medium mb-4">
-                  In 2 Klicks zu Ihrem Auftrag - so simple!
-                </h3>
+                <div className="relative text-start tracking-normal">
+                  <h3
+                    id="first_block"
+                    className="px-2 text-[28px] text-black font-medium mb-4"
+                  >
+                    In{" "}
+                    <span className="relative inline-block text-[28px] text-black font-medium">
+                      <h3>2 Klicks</h3>
+                      <UnderlineSVG />
+                    </span>{" "}
+                    zu Ihrem Auftrag - so simple!
+                  </h3>
+                </div>
                 <p className="text-gray-600 mt-2">
                   Sie möchten Ihre Standortanalyse beauftragen? Kein Problem –
                   bei uns geht das schnell und unkompliziert. In nur zwei
@@ -279,9 +289,19 @@ export const Solution = () => {
               viewport={{ once: true }}
             >
               <div className="w-full p-4">
-                <h3 className="text-[28px] text-black font-medium mb-4">
-                  Damit Sie 100% Klarheit über den Standort haben
-                </h3>
+                <div className="relative text-start tracking-normal">
+                  <h3
+                    id="first_block"
+                    className="px-2 text-[28px] text-black font-medium mb-4"
+                  >
+                    Damit Sie{" "}
+                    <span className="relative inline-block text-[28px] text-black font-medium">
+                      <h3>100% Klarheit</h3>
+                      <UnderlineSVG />
+                    </span>{" "}
+                    über den Standort haben
+                  </h3>
+                </div>
                 <p className="text-gray-600 mt-2">
                   Unser Expertenteam prüft den Standort gründlich und
                   datenbasiert – von der regionalen Infrastruktur bis hin zur
@@ -323,9 +343,19 @@ export const Solution = () => {
               viewport={{ once: true }}
             >
               <div className="w-full p-4">
-                <h3 className="text-[28px] text-black font-medium mb-4">
-                  Sie bekommen Ihre Daten so unkompliziert wie möglich
-                </h3>
+                <div className="relative text-start tracking-normal">
+                  <h3
+                    id="first_block"
+                    className="px-2 text-[28px] text-black font-medium mb-4"
+                  >
+                    Sie bekommen Ihre Daten so{" "}
+                    <span className="relative inline-block text-[28px] text-black font-medium">
+                      <h3>unkompliziert</h3>
+                      <UnderlineSVG />
+                    </span>{" "}
+                    wie möglich
+                  </h3>
+                </div>
                 <p className="text-gray-600 mt-2">
                   Sobald die Analyse abgeschlossen ist, erhalten Sie den Report
                   bequem per E-Mail. Ohne zusätzlichen Aufwand, ohne Login oder
