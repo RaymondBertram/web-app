@@ -89,7 +89,7 @@ export const Solution = () => {
                 </div>
 
                 <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex justify-center"
+                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-end items-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -99,7 +99,7 @@ export const Solution = () => {
                   <img
                     src={code}
                     alt="Dashboard"
-                    className="w-full max-w-md rounded-t-2xl"
+                    className="max-w-md rounded-t-2xl mt-auto"
                     loading="lazy"
                   />
                 </motion.div>
@@ -153,7 +153,7 @@ export const Solution = () => {
                 </div>
 
                 <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex justify-center"
+                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-end items-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -163,7 +163,7 @@ export const Solution = () => {
                   <img
                     src={code}
                     alt="Dashboard"
-                    className="w-full max-w-md rounded-t-2xl"
+                    className="max-w-md rounded-t-2xl mt-auto"
                     loading="lazy"
                   />
                 </motion.div>
@@ -212,7 +212,7 @@ export const Solution = () => {
                 </div>
 
                 <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex justify-center"
+                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-end items-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -222,7 +222,7 @@ export const Solution = () => {
                   <img
                     src={code}
                     alt="Dashboard"
-                    className="w-full max-w-md rounded-t-2xl"
+                    className="max-w-md rounded-t-2xl mt-auto"
                     loading="lazy"
                   />
                 </motion.div>
