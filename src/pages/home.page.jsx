@@ -15,16 +15,20 @@ import { Navigation } from "../components";
 export const HomePage = () => {
   return (
     <>
-      <Navigation />
-      <Start />
-      <Slider />
-      <Location />
-      <Services />
-      <ProcessDiagramScreen />
+      <div className="overflow-hidden">
+        <Navigation />
+        <Start />
+        <Slider />
+        <Location />
+        <Services />
+        <ProcessDiagramScreen />
+      </div>
       <Solution />
-      <Advantages />
-      <Team />
-      <Form />
+      <div className="overflow-hidden">
+        <Advantages />
+        <Team />
+        <Form />
+      </div>
     </>
   );
 };
