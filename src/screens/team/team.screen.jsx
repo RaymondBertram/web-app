@@ -23,7 +23,7 @@ export const Team = () => {
   ];
 
   return (
-    <section className="pb-30 pt-20" id="team">
+    <section className="pb-30 md:pt-20" id="team">
       <div className="relative text-center tracking-normal mb-6 md:mb-12">
         <h2 id="first_block text-black">
           Unser{" "}
