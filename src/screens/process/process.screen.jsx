@@ -8,6 +8,7 @@ import { IoCarSport, IoTimeSharp } from "react-icons/io5";
 import { GiLightningFrequency, GiProgression } from "react-icons/gi";
 import { SiNextra } from "react-icons/si";
 import { TbSortAscendingNumbers } from "react-icons/tb";
+import { MdOutlineEmail } from "react-icons/md";
 import { useGlowContext } from "../../context/glow/glowContext";
 import {
   ProcessCard,
@@ -22,7 +23,7 @@ import "./process.screen.css";
 export const ProcessDiagramScreen = () => {
   const { setGlow } = useGlowContext();
   return (
-    <section className="px-3 h-auto md:px-6 py-30 md:pt-45" id="prozess">
+    <section className="px-3 h-auto md:px-6 py-20 md:py-25" id="prozess">
       <div className="text-center font-medium mb-10">
         <div className="relative inline-flex items-center gap-2 text-black font-medium">
           <h2 className="relative inline-block">
@@ -134,7 +135,7 @@ export const ProcessDiagramScreen = () => {
 
           {/* Reposition the transaction card */}
           <div className="transaktion_card flex flex-col items-center w-[170px] absolute px-1 pb-1 pt-4 top-[-2em] right-0 bg-white rounded-2xl">
-            <div className="transaction_content_img size-20">
+            <div className="transaction_content_img size-20 p-4">
               <MdTouchApp className="w-full h-full" />
             </div>
             <div className="transaction_content_wrap">
@@ -143,7 +144,7 @@ export const ProcessDiagramScreen = () => {
               </div>
               <div className="transaction_message_wrap flex flex-col items-start p-2 mt-2 bg-[#e4e7eb80] rounded-xl">
                 <div className="size-8 flex justify-center items-center bg-[#cbd2d9] rounded-4xl mb-2">
-                  <InboxArrowDownIcon height={20} width={20} />
+                  <MdOutlineEmail height={20} width={20} />
                 </div>
                 <div className="text-xs">
                   Erhalten Sie direkt in Ihr Mail Postfach

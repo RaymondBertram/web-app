@@ -40,8 +40,8 @@ export const Solution = () => {
   );
 
   return (
-    <section className="px-3 py-30" id="solution">
-      <div ref={containerRef} className="solution-card-container relative">
+    <section className="px-3 pt-15 md:py-20" id="solution">
+      <div ref={containerRef} className="solution-card-container">
         {isTabletOrLarger ? (
           <div className="flex flex-col">
             {/* First Block */}
@@ -239,17 +239,6 @@ export const Solution = () => {
               transition={{ duration: 1, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
-              <div className="relative text-center tracking-normal">
-                <h2 id="first_block text-black">
-                  Fordern Sie Ihre{" "}
-                  <span className="relative inline-block text-black">
-                    <h2 className="text-black">Standortanalyse</h2>
-                    <UnderlineSVG />
-                  </span>{" "}
-                  ein
-                </h2>
-              </div>
-
               <div className="w-full p-4">
                 <h3 className="text-[28px] text-black font-medium mb-4">
                   In 2 Klicks zu Ihrem Auftrag - so simple!
@@ -289,16 +278,6 @@ export const Solution = () => {
               transition={{ duration: 1, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
-              <div className="relative text-center tracking-normal">
-                <h2 id="first_block text-black">
-                  Wir analysieren bis ins letzte{" "}
-                  <span className="relative inline-block text-black">
-                    <h2 className="text-black">Detail</h2>
-                    <UnderlineSVG />
-                  </span>
-                </h2>
-              </div>
-
               <div className="w-full p-4">
                 <h3 className="text-[28px] text-black font-medium mb-4">
                   Damit Sie 100% Klarheit über den Standort haben
@@ -343,16 +322,6 @@ export const Solution = () => {
               transition={{ duration: 1, ease: "easeInOut" }}
               viewport={{ once: true }}
             >
-              <div className="relative text-center tracking-normal">
-                <h2 id="first_block text-black">
-                  Sie erhalten Ihren Report per{" "}
-                  <span className="relative inline-block text-black">
-                    <h2 className="text-black">E-Mail</h2>
-                    <UnderlineSVG />
-                  </span>
-                </h2>
-              </div>
-
               <div className="w-full p-4">
                 <h3 className="text-[28px] text-black font-medium mb-4">
                   Sie bekommen Ihre Daten so unkompliziert wie möglich

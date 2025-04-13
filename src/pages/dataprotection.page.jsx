@@ -2,7 +2,7 @@ export const DataProtectionPage = () => {
   return (
     <div className="h-fit">
       <div style={{ padding: "2rem" }}>
-        <h1>Datenschutzerklärung</h1>
+        <h1 className="text-center">Datenschutzerklärung</h1>
         <p>
           Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen.
           Wir behandeln Ihre personenbezogenen Daten vertraulich und

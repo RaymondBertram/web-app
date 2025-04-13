@@ -114,9 +114,9 @@ export const Location = () => {
   return (
     <section
       id="location"
-      className="flex flex-col justify-center px-4 py-30 h-[auto] mb-30 md:px-18"
+      className="flex flex-col justify-center px-4 pt-10 lg:pt-20 pb-10 h-[auto] mb-25 md:px-18"
     >
-      <div className="flex flex-col md:flex-row justify-center items-center my-8 py-4">
+      <div className="flex flex-col md:flex-row justify-center items-center mb-8 py-4">
         <h2 className="text-black text-center font-medium leading-15">
           Fordern Sie eine{" "}
           <span className="relative inline-block header-2">

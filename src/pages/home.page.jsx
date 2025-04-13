@@ -10,10 +10,12 @@ import {
   Team,
   Form,
 } from "../screens";
+import { Navigation } from "../components";
 
 export const HomePage = () => {
   return (
     <>
+      <Navigation />
       <Start />
       <Slider />
       <Location />

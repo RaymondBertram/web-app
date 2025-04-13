@@ -10,11 +10,7 @@ import animationSecondary from "../../assets/videos/animation_2.mp4";
 
 export const Start = () => {
   const [showOther, setShowOther] = useState(false);
-  const headers = [
-    "Mit Infos auf Abruf",
-    "Mit Verkehrsanalysen",
-    "Mit genauen Daten",
-  ];
+  const headers = ["Infos auf Abruf", "Verkehrsanalysen", "Genaue Daten"];
   const { setGlow } = useGlowContext();
 
   const handleVideoEnd = () => {
@@ -33,7 +29,7 @@ export const Start = () => {
             className="hero-child lg:flex items-center col-span-3"
           >
             <div className="flex flex-col justify-center w-[90%]">
-              <div className="text-start mb-4 md:mb-0 lg:mb-4">
+              <div className="text-start mb-1 md:mb-0 lg:mb-4">
                 <AnimatedHeaders headers={headers} />
               </div>
               <div>
@@ -68,7 +64,7 @@ export const Start = () => {
             </div>
           </motion.div>
 
-          <div className="flex items-center justify-center my-4 col-span-3">
+          <div className="flex items-center justify-center mt-15 md:my-4 col-span-3">
             {!showOther ? (
               <video
                 key="video-primary"

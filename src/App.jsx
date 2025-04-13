@@ -24,7 +24,6 @@ function App() {
     <Router>
       <GlowProvider>
         <div className="xl:container xl:mx-auto">
-          <Navigation />
           <div className="relative" style={{ marginTop: `${navHeight}px` }}>
             <Routes>
               <Route path="/" element={<HomePage />} />
