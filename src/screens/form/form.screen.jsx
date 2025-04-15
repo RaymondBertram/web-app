@@ -161,7 +161,7 @@ export const Form = () => {
               />
               <label htmlFor="flexCheckDefault" className="text-sm">
                 Ich stimme den{" "}
-                <a href="#" className="text-blue-500 underline">
+                <a href="/datenschutz" className="text-blue-500 underline">
                   Datenschutzbestimmungen
                 </a>{" "}
                 zu.
