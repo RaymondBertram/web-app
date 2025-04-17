@@ -76,7 +76,23 @@ export const Advantages = () => {
   };
 
   useEffect(() => {
+    const scrollEl = scrollRef.current;
+    if (!scrollEl) return;
+
+    // Update on mount
     updateScrollButtons();
+
+    // Add scroll event listener
+    const handleScroll = () => {
+      updateScrollButtons();
+    };
+
+    scrollEl.addEventListener("scroll", handleScroll);
+
+    // Clean up on unmount
+    return () => {
+      scrollEl.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   return (
