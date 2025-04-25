@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import burger_menu from "../../../assets/icons/burger.png";
 import close from "../../../assets/icons/close.png";
-import logo_ipsum from "../../../assets/logos/logoipsum-362.svg";
+import company_logo from "../../../assets/logos/company_logo.png";
 
 export const BurgerMenu = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ export const BurgerMenu = () => {
         <div className="fixed inset-0 bg-white z-50 animate-slide-down flex flex-col">
           <div className="flex justify-between items-center bg-white p-6 sticky top-0 z-50">
             <a href="#home">
-              <img src={logo_ipsum} alt="logo" className="w-[150px] h-[60]" />
+              <img src={company_logo} alt="logo" className="w-auto h-[120px]" />
             </a>
 
             <button onClick={() => setIsMenuOpen(false)}>

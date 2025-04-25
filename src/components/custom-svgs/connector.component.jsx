@@ -1,5 +1,5 @@
 import "./connector.component.css";
-import logo_ipsum from "../../assets/logos/logoipsum-363.svg";
+import company_logo from "../../assets/logos/company_logo.png";
 
 export const ConnectorSvg = () => {
   return (
@@ -98,7 +98,7 @@ export const ConnectorSvg = () => {
         >
           <rect width="158" height="158" rx="26" fill="#FFFFFF" />
           <image
-            href={logo_ipsum}
+            href={company_logo}
             x="20"
             y="20"
             width="118"

@@ -5,6 +5,7 @@ import { Navigation } from "./components/navigation/top-bar/top-bar.component";
 import { Footer } from "./screens";
 import { HomePage } from "./pages/home.page";
 import { DataProtectionPage } from "./pages/dataprotection.page";
+import { PaymentRedirect } from "./pages/payment-redirect.page";
 import { Impress } from "./pages/impress.page";
 import { AGB } from "./pages/agb.page";
 
@@ -24,15 +25,13 @@ function App() {
     <Router>
       <GlowProvider>
         <div className="xl:container xl:mx-auto">
-          <div
-            className="relative"
-            style={{ marginTop: `${navHeight}px` }}
-          >
+          <div className="relative" style={{ marginTop: `${navHeight}px` }}>
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/agb" element={<AGB />} />
               <Route path="/impressum" element={<Impress />} />
               <Route path="/datenschutz" element={<DataProtectionPage />} />
+              <Route path="/paymentSuccess" element={<PaymentRedirect />} />
             </Routes>
           </div>
         </div>

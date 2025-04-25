@@ -5,6 +5,7 @@ import dropin from "braintree-web-drop-in";
 import { AddressAutofill, useConfirmAddress } from "@mapbox/search-js-react";
 import { useGlowContext } from "../../context/glow/glowContext";
 import { UnderlineSVG } from "../../components";
+import { useNavigate } from "react-router-dom";
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_API_TOKEN;
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
@@ -15,6 +16,7 @@ const PAY_PAL_FLOW = import.meta.env.VITE_FLOW_PAY_PAL;
 export const Location = () => {
   const { glow } = useGlowContext();
   const { formRef } = useConfirmAddress({ accessToken: ACCESS_TOKEN });
+  const navigate = useNavigate();
 
   const dropinContainer = useRef(null);
   const dropinInstance = useRef(null);
@@ -94,8 +96,7 @@ export const Location = () => {
       });
 
       if (data.success) {
-        setShowDropIn(false);
-        setPaymentSuccessMessage("✅ Zahlung erfolgreich! Vielen Dank.");
+        navigate("/paymentSuccess");
       } else {
         setPaymentSuccessMessage(
           "❌ Zahlung fehlgeschlagen. Bitte erneut versuchen."
@@ -183,6 +184,13 @@ export const Location = () => {
 
       {showDropIn && (
         <div className="flex flex-col items-center mt-8">
+          <p className="mb-2 text-sm text-gray-600">
+            🔥{" "}
+            <strong>
+              {PAY_PAL_AMOUNT} {PAY_PAL_CURRENCY}
+            </strong>{" "}
+            – Sonderpreis für Ihre Standortanalyse!
+          </p>
           <div ref={dropinContainer} className="w-full max-w-[600px]"></div>
           <button
             onClick={handlePayment}

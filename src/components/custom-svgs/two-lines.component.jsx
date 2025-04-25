@@ -1,4 +1,4 @@
-export const TwoLinesSVG = () => {
+export const TwoLinesSVG = ({ color }) => {
   return (
     <svg
       className="svg-two-lines"
@@ -10,13 +10,13 @@ export const TwoLinesSVG = () => {
     >
       <path
         d="M2 27C3.3557 18.4591 6.90298 10.3881 9 2"
-        stroke="#8247FF"
+        stroke={color}
         strokeWidth="3"
         strokeLinecap="round"
       />
       <path
         d="M17.5 32C25.9926 27.1537 34.4984 22.3305 43 17.5"
-        stroke="#8247FF"
+        stroke={color}
         strokeWidth="3"
         strokeLinecap="round"
       />

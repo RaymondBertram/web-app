@@ -74,7 +74,7 @@ export const Services = () => {
             <div className="flex gap-2 justify-center md:justify-end md:mt-20">
               <a
                 href="#location"
-                className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-white bg-[#8247ff] rounded-4xl"
+                className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-[#012060] bg-white rounded-4xl"
                 onClick={() => setGlow(true)}
               >
                 Direkt Anfragen!

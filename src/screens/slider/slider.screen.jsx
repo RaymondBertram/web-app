@@ -1,15 +1,13 @@
 import React from "react";
 import { useMediaQuery } from "react-responsive";
 
-import logo_1 from "../../assets/logos/logoipsum-331.svg";
-import logo_2 from "../../assets/logos/logoipsum-338.svg";
-import logo_3 from "../../assets/logos/logoipsum-353.svg";
-import logo_4 from "../../assets/logos/logoipsum-357.svg";
-import logo_5 from "../../assets/logos/logoipsum-362.svg";
+import customer_logo_1 from "../../assets/logos/customer_1.png";
+import customer_logo_2 from "../../assets/logos/customer_2.png";
+import customer_logo_3 from "../../assets/logos/customer_3.png";
 import InfiniteCarousel from "../../components/image-strip/image-strip.component";
 
 export const Slider = () => {
-  const logos = [logo_1, logo_2, logo_3, logo_4, logo_5];
+  const logos = [customer_logo_1, customer_logo_2, customer_logo_3];
   // const isTabletOrLarger = useMediaQuery({ minWidth: 768 });
   // {!isTabletOrLarger ? <br /> : " "}
 
@@ -21,7 +19,7 @@ export const Slider = () => {
           TRAFFIC
         </p>
       </div>
-      <div className="relative flex max-w-full w-full h-32 lg:rounded-[64px] overflow-hidden bg-[#f5f7fa] border-0">
+      <div className="relative flex max-w-full w-full h-35 lg:rounded-[64px] overflow-hidden bg-[#f5f7fa] border-0">
         <InfiniteCarousel images={logos} />
       </div>
     </div>

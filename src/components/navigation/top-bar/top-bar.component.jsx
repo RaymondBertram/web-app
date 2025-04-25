@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BurgerMenu } from "../../index";
-import logo_ipsum from "../../../assets/logos/logoipsum-362.svg";
+import company_logo from "../../../assets/logos/company_logo.png";
 import burger_menu from "../../../assets/icons/burger.png";
 import close from "../../../assets/icons/close.png";
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,7 +19,7 @@ export const Navigation = () => {
       } else {
         setIsVisible(true); // Beim Hochscrollen einblenden
         setFlashBackground(true); // Hintergrundfarbe kurz auf Weiß setzen
-        setTimeout(() => setFlashBackground(false), 2000); // Nach 1000ms smooth ausblenden
+        setTimeout(() => setIsVisible(false), 4000); // Nach 1000ms smooth ausblenden
       }
       setLastScrollY(window.scrollY);
     };
@@ -96,10 +96,10 @@ export const Navigation = () => {
           : "bg-[#f5f7fa] transition-colors duration-1000"
       }`}
     >
-      <div className="flex flex-row w-full justify-between items-center py-4">
+      <div className="flex flex-row w-full justify-between items-center md:pt-4">
         <div className="logo-wrapper">
           <a href="/">
-            <img src={logo_ipsum} alt="logo" className="w-[170px] h-[60px]" />
+            <img src={company_logo} alt="logo" className="w-auto h-[120px]" />
           </a>
         </div>
         <ul className="hidden lg:flex lg:flex-row lg:gap-6 list-none m-0 p-0 overflow-hidden">
@@ -107,7 +107,7 @@ export const Navigation = () => {
             (id) => (
               <li className="py-4" key={id}>
                 <a
-                  className={`relative font-medium text-black cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:bg-[#8247ff] after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] ${
+                  className={`relative font-medium text-black cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:bg-[#012060] after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] ${
                     activeNavItem === id ? "after:w-full" : "after:w-0"
                   } hover:after:w-full`}
                   href={`#${id}`}
@@ -141,9 +141,9 @@ export const Navigation = () => {
                 <div className="flex justify-between items-center bg-white px-6 py-4 sticky top-0 z-50">
                   <a href="/">
                     <img
-                      src={logo_ipsum}
+                      src={company_logo}
                       alt="logo"
-                      className="w-[170px] h-[60px]"
+                      className="w-auto h-[120px]"
                     />
                   </a>
 

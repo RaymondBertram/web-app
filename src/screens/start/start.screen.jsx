@@ -18,7 +18,7 @@ export const Start = () => {
   };
 
   return (
-    <section id="start" className="px-4 pt-14 md:pt-[150px] md:px-6">
+    <section id="start" className="px-4 pt-[150px] md:px-6">
       <div>
         <div className="hero-parent flex flex-col md:grid md:grid-cols-6 md:gap-2">
           <motion.div
@@ -39,7 +39,7 @@ export const Start = () => {
                 <h1 className="relative inline-block sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
                   Standort
                   <span>
-                    <UnderlineSVG duration={2} />
+                    <UnderlineSVG duration={2} color="#8247FF" />
                   </span>
                 </h1>
               </div>
@@ -54,7 +54,7 @@ export const Start = () => {
               <div className="flex gap-2 justify-start">
                 <a
                   href="#location"
-                  className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-white bg-[#8247ff] rounded-4xl"
+                  className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-white bg-[#012060] rounded-4xl"
                   onClick={() => setGlow(true)}
                 >
                   Jetzt loslegen
