@@ -9,6 +9,10 @@
   background-color: #F4F6FA;
   scroll-behavior: smooth;
 
+  --color-primary: #002060;
+  --color-secondary: #EBFF00;
+  --color-tertiary: #D9D9D9;
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

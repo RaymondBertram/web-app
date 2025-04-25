@@ -1,8 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 const config = {
-  content: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      colors: {
+        primary: "#002060",
+        secondary: "#EBFF00",
+        tertiary: "#D9D9D9",
+      },
       keyframes: {
         slideDown: {
           "0%": { transform: "translateY(-100%)", opacity: "0" },

@@ -57,7 +57,7 @@ export default function InfiniteCarousel({ images }) {
           <img
             key={index}
             src={src}
-            className="md:w-8 md:h-8 sm:w-[20px] w-[25px] mx-1 grayscale brightness-110"
+            className="md:w-10 md:h-10 sm:w-[25px] w-[40px] mx-1 brightness-110"
             alt="carousel"
           />
         ))}
