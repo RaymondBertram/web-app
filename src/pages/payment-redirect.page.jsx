@@ -28,14 +28,14 @@ export const PaymentRedirect = () => {
         <div className="bg-[#D9D9D9] rounded-3xl shadow-lg p-6 text-[#012060] space-y-6 w-full mx-auto">
           <CiCircleCheck className="mx-auto h-16 w-16 text-green-600" />
           <p className="text-lg">
-            Vielen Dank für deine Zahlung! Deine Transaktion wurde erfolgreich
+            Vielen Dank für Ihre Zahlung! Ihre Transaktion wurde erfolgreich
             abgeschlossen.
           </p>
           <p className="text-sm text-[#012060]/70">
-            Du wirst automatisch in {countdown} Sekunden weitergeleitet...
+            Sie werden automatisch in {countdown} Sekunden weitergeleitet...
           </p>
           <div className="text-sm text-[#012060]/80">
-            Eine Bestätigung wurde an deine E-Mail-Adresse gesendet.
+            Eine Bestätigung wird an Ihre E-Mail-Adresse gesendet.
           </div>
           <div className="pt-4">
             <Link

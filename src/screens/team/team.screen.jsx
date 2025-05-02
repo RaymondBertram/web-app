@@ -18,14 +18,14 @@ export const Team = () => {
           Unser{" "}
           <span className="relative inline-block text-black">
             <h2 className="text-black">Gründer</h2>
-            <UnderlineSVG />
+            <UnderlineSVG color="#FEC227" duration={2} />
           </span>
         </h2>
       </div>
       <div className="flex flex-wrap justify-center gap-8 px-4">
         {teamMembers.map((member, index) => (
           <div key={index} className="text-center">
-            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-1 border-[#EBFF00] shadow-lg">
+            <div className="w-40 h-40 mx-auto rounded-full overflow-hidden border-1  shadow-lg">
               <img
                 src={member.img}
                 alt={member.name}

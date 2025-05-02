@@ -1,12 +1,10 @@
-import { useEffect, useRef } from "react";
+import { useLayoutEffect, useRef } from "react";
 
 export default function InfiniteCarousel({ images }) {
   const containerRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const container = containerRef.current;
-    const imageWidth = container.firstElementChild.clientWidth;
-    const threshold = imageWidth * (container.children.length / 4);
     if (!container) return;
 
     function createImageStrip() {
@@ -20,6 +18,9 @@ export default function InfiniteCarousel({ images }) {
     }
 
     createImageStrip();
+
+    // Calculate threshold as half of total scrollable width for seamless infinite scrolling
+    const threshold = container.scrollWidth / 2;
 
     container.style.display = "flex";
     container.style.position = "absolute";
