@@ -1,6 +1,8 @@
 import { useRef, useState } from "react";
 import axios from "axios";
 import { UnderlineSVG } from "../../components";
+import { Link } from "react-router-dom";
+import { DataProtectionPage } from "../../pages/dataprotection.page";
 
 export const Form = () => {
   const formRef = useRef(null);
@@ -75,7 +77,7 @@ export const Form = () => {
           <span className="relative inline-block text-[39px] text-black lg:text-5xl font-medium">
             Ihrer Seite
             <span>
-              <UnderlineSVG duration={2} />
+              <UnderlineSVG duration={2} color="#FEC227"/>
             </span>
           </span>
         </h2>
@@ -161,9 +163,9 @@ export const Form = () => {
               />
               <label htmlFor="flexCheckDefault" className="text-sm">
                 Ich stimme den{" "}
-                <a href="/datenschutz" className="text-blue-500 underline">
+                <Link className="underline" to="/datenschutz">
                   Datenschutzbestimmungen
-                </a>{" "}
+                </Link>{" "}
                 zu.
               </label>
             </div>

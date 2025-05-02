@@ -120,7 +120,7 @@ export const Location = () => {
           Fordern Sie eine{" "}
           <span className="relative inline-block header-2">
             Standortanalyse
-            <UnderlineSVG duration={2} />
+            <UnderlineSVG duration={2} color="#F8D77B" />
           </span>{" "}
           für jeden Ort Ihrer Wahl an
         </h2>

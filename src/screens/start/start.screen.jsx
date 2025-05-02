@@ -39,7 +39,7 @@ export const Start = () => {
                 <h1 className="relative inline-block sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
                   Standort
                   <span>
-                    <UnderlineSVG duration={2} color="#8247FF" />
+                    <UnderlineSVG duration={2} color="#FEC227" />
                   </span>
                 </h1>
               </div>

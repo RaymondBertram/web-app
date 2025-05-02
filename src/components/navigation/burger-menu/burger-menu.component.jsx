@@ -22,7 +22,7 @@ export const BurgerMenu = () => {
         <div className="fixed inset-0 bg-white z-50 animate-slide-down flex flex-col">
           <div className="flex justify-between items-center bg-white p-6 sticky top-0 z-50">
             <a href="#home">
-              <img src={company_logo} alt="logo" className="w-auto h-[120px]" />
+              <img src={company_logo} alt="logo" className="w-auto h-[100px]" />
             </a>
 
             <button onClick={() => setIsMenuOpen(false)}>

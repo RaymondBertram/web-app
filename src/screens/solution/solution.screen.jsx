@@ -3,8 +3,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
 import { UnderlineSVG } from "../../components";
-import code from "../../assets/images/code.jpg";
-import { div } from "framer-motion/client";
+import verkehrsanalyse_schnell from "../../assets/images/verkehrsanalyse_schnell.jpg";
+import vernetzt from "../../assets/images/vernetzt.jpg";
+import direkt_aufs_smartphone from "../../assets/images/direkt_auf_das_smartphone.jpg";
 
 export const Solution = () => {
   const containerRef = useRef(null);
@@ -51,14 +52,17 @@ export const Solution = () => {
                 scaleY: scaleYFirst,
                 transform: `translate3d(0, ${translateFirst}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#dfd1f4] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#012060] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
-                <h2 id="first_block px-2 text-black font-bold mb-4">
+                <h2
+                  id="first_block px-2"
+                  className="text-white font-medium mb-4"
+                >
                   Fordern Sie Ihre{" "}
-                  <span className="relative inline-block">
-                    <h2>Standortanalyse</h2>
-                    <UnderlineSVG />
+                  <span className="relative text-white inline-block">
+                    <h2 className="text-white">Standortanalyse</h2>
+                    <UnderlineSVG duration={2} color="#F8D77B" />
                   </span>{" "}
                   {""}
                   ein
@@ -67,10 +71,10 @@ export const Solution = () => {
 
               <div className="flex flex-col md:flex-row mt-6">
                 <div className="w-full md:w-1/2 p-4 mb-10">
-                  <h3 className="text-4xl font-medium px-2 text-black mb-10">
+                  <h3 className="text-4xl text-white font-medium px-2 mb-10">
                     In 2 Klicks zu Ihrem Auftrag - so simple!
                   </h3>
-                  <p className="text-gray-600 mt-2 px-2">
+                  <p className="text-white mt-2 px-2">
                     Sie möchten Ihre Standortanalyse beauftragen? Kein Problem –
                     bei uns geht das schnell und unkompliziert. In nur zwei
                     einfachen Schritten können Sie Ihre Anfrage abschließen.
@@ -97,8 +101,8 @@ export const Solution = () => {
                   key={"image_card_1"}
                 >
                   <img
-                    src={code}
-                    alt="Dashboard"
+                    src={verkehrsanalyse_schnell}
+                    alt="verkehrsanalyse_schnell"
                     className="max-w-md rounded-t-2xl mt-auto"
                     loading="lazy"
                   />
@@ -113,24 +117,27 @@ export const Solution = () => {
                 scaleY: scaleYSecond,
                 transform: `translate3d(0, ${translateSecond}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#dfc9c0] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#012060] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
-                <h2 id="first_block px-2 text-black font-medium mb-4">
+                <h2
+                  id="first_block"
+                  className="px-2 text-white font-medium mb-4"
+                >
                   Wir analysieren bis ins letzte{" "}
                   <span className="relative inline-block">
-                    <h2>Detail</h2>
-                    <UnderlineSVG />
+                    <h2 className="text-white">Detail</h2>
+                    <UnderlineSVG duration={2} color="#FEC227"/>
                   </span>
                 </h2>
               </div>
 
               <div className="flex flex-col md:flex-row mt-6">
                 <div className="w-full md:w-1/2 p-4 mb-10">
-                  <h3 className="text-4xl font-medium px-2 text-black mb-10">
+                  <h3 className="text-4xl font-medium px-2 text-white mb-10">
                     Damit Sie 100% Klarheit über den Standort haben
                   </h3>
-                  <p className="text-gray-600 mt-2 px-2">
+                  <p className="text-white mt-2 px-2">
                     Unser Expertenteam prüft den Standort gründlich und
                     datenbasiert – von der regionalen Infrastruktur bis hin zur
                     Zielgruppenanalyse. Jeder relevante Aspekt wird
@@ -161,8 +168,8 @@ export const Solution = () => {
                   key={"image_card_1"}
                 >
                   <img
-                    src={code}
-                    alt="Dashboard"
+                    src={vernetzt}
+                    alt="vernetzt"
                     className="max-w-md rounded-t-2xl mt-auto"
                     loading="lazy"
                   />
@@ -177,24 +184,27 @@ export const Solution = () => {
                 scaleY: scaleYThird,
                 transform: `translate3d(0, ${translateThird}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#dff3f6] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#012060] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
-                <h2 id="first_block px-2 text-black font-medium mb-4">
+                <h2
+                  id="first_block"
+                  className="px-2 font-medium mb-4 text-white"
+                >
                   Sie erhalten Ihren Report per{" "}
                   <span className="relative inline-block">
-                    <h2>E-Mail</h2>
-                    <UnderlineSVG />
+                    <h2 className="text-white">E-Mail</h2>
+                    <UnderlineSVG duration={2} color="#FEC227"/>
                   </span>
                 </h2>
               </div>
 
               <div className="flex flex-col md:flex-row mt-6">
                 <div className="w-full md:w-1/2 p-4 mb-10">
-                  <h3 className="text-4xl font-medium px-2 text-black mb-10">
+                  <h3 className="text-4xl font-medium px-2 text-white mb-10">
                     Sie bekommen Ihre Daten so unkompliziert wie möglich
                   </h3>
-                  <p className="text-gray-600 mt-2">
+                  <p className="text-white mt-2">
                     Sobald die Analyse abgeschlossen ist, erhalten Sie den
                     Report bequem per E-Mail. Ohne zusätzlichen Aufwand, ohne
                     Login oder Plattform. Einfach, direkt und schnell – damit
@@ -220,8 +230,8 @@ export const Solution = () => {
                   key={"image_card_1"}
                 >
                   <img
-                    src={code}
-                    alt="Dashboard"
+                    src={direkt_aufs_smartphone}
+                    alt="direkt_aufs_smartphone"
                     className="max-w-md rounded-t-2xl mt-auto"
                     loading="lazy"
                   />
@@ -233,7 +243,7 @@ export const Solution = () => {
           <div className="flex flex-col space-y-6 py-4">
             {/* First Block */}
             <motion.div
-              className="bg-[#dfd1f4] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="bg-[#012060] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -243,17 +253,17 @@ export const Solution = () => {
                 <div className="relative text-start tracking-normal">
                   <h3
                     id="first_block"
-                    className="px-2 text-[28px] text-black font-medium mb-4"
+                    className="px-2 text-[28px] text-white font-medium mb-4"
                   >
                     In{" "}
-                    <span className="relative inline-block text-[28px] text-black font-medium">
+                    <span className="relative inline-block text-[28px] text-white font-medium">
                       <h3>2 Klicks</h3>
-                      <UnderlineSVG />
+                      <UnderlineSVG color="#FEC227" duration={2}/>
                     </span>{" "}
                     zu Ihrem Auftrag - so simple!
                   </h3>
                 </div>
-                <p className="text-gray-600 mt-2">
+                <p className="text-white mt-2">
                   Sie möchten Ihre Standortanalyse beauftragen? Kein Problem –
                   bei uns geht das schnell und unkompliziert. In nur zwei
                   einfachen Schritten können Sie Ihre Anfrage abschließen. Ohne
@@ -272,8 +282,8 @@ export const Solution = () => {
 
               <div className="w-full px-4 pt-4 flex justify-center">
                 <img
-                  src={code}
-                  alt="Dashboard"
+                  src={verkehrsanalyse_schnell}
+                  alt="verkehrsanalyse_schnell"
                   className="w-full max-w-md rounded-t-2xl"
                   loading="lazy"
                 />
@@ -282,7 +292,7 @@ export const Solution = () => {
 
             {/* Second Block */}
             <motion.div
-              className="bg-[#dfc9c0] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="bg-[#012060] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -292,17 +302,17 @@ export const Solution = () => {
                 <div className="relative text-start tracking-normal">
                   <h3
                     id="first_block"
-                    className="px-2 text-[28px] text-black font-medium mb-4"
+                    className="px-2 text-[28px] text-white font-medium mb-4"
                   >
                     Damit Sie{" "}
-                    <span className="relative inline-block text-[28px] text-black font-medium">
+                    <span className="relative inline-block text-[28px] text-white font-medium">
                       <h3>100% Klarheit</h3>
-                      <UnderlineSVG />
+                      <UnderlineSVG duration={2} color="#FEC227"/>
                     </span>{" "}
                     über den Standort haben
                   </h3>
                 </div>
-                <p className="text-gray-600 mt-2">
+                <p className="text-white mt-2">
                   Unser Expertenteam prüft den Standort gründlich und
                   datenbasiert – von der regionalen Infrastruktur bis hin zur
                   Zielgruppenanalyse. Jeder relevante Aspekt wird
@@ -326,8 +336,8 @@ export const Solution = () => {
 
               <div className="w-full px-4 pt-4 flex justify-center">
                 <img
-                  src={code}
-                  alt="Dashboard"
+                  src={vernetzt}
+                  alt="vernetzt"
                   className="w-full max-w-md rounded-t-2xl"
                   loading="lazy"
                 />
@@ -336,7 +346,7 @@ export const Solution = () => {
 
             {/* Third Block */}
             <motion.div
-              className="bg-[#dff3f6] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="bg-[#012060] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -346,17 +356,17 @@ export const Solution = () => {
                 <div className="relative text-start tracking-normal">
                   <h3
                     id="first_block"
-                    className="px-2 text-[28px] text-black font-medium mb-4"
+                    className="px-2 text-[28px] text-white font-medium mb-4"
                   >
                     Sie bekommen Ihre Daten so{" "}
-                    <span className="relative inline-block text-[28px] text-black font-medium">
+                    <span className="relative inline-block text-[28px] text-white font-medium">
                       <h3>unkompliziert</h3>
-                      <UnderlineSVG />
+                      <UnderlineSVG color="#FEC227" duration={2}/>
                     </span>{" "}
                     wie möglich
                   </h3>
                 </div>
-                <p className="text-gray-600 mt-2">
+                <p className="text-white mt-2">
                   Sobald die Analyse abgeschlossen ist, erhalten Sie den Report
                   bequem per E-Mail. Ohne zusätzlichen Aufwand, ohne Login oder
                   Plattform. Einfach, direkt und schnell – damit Sie sofort mit
@@ -374,8 +384,8 @@ export const Solution = () => {
 
               <div className="w-full px-4 pt-4 flex justify-center">
                 <img
-                  src={code}
-                  alt="Dashboard"
+                  src={direkt_aufs_smartphone}
+                  alt="direkt_aufs_smartphone"
                   className="w-full max-w-md rounded-t-2xl"
                   loading="lazy"
                 />

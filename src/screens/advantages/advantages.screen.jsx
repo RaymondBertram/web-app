@@ -18,7 +18,7 @@ export const Advantages = () => {
   const cardData = [
     {
       id: 1,
-      title: "Schneller Zugang zu Entscheidungsdaten",
+      title: "Schneller Datenzugriff",
       text: "Standortdaten wie Fahrzeug- und Passantenfrequenzen in Sekunden abrufbar – ohne langes Warten auf externe Gutachten.",
       img: <ForwardIcon className="size-6" />,
     },
@@ -100,7 +100,7 @@ export const Advantages = () => {
       <h2 className=" text-center font-medium mb-10 text-black">
         <span className="relative text-[39px] text-black lg:text-5xl font-medium">
           Ihre Vorteile
-          <UnderlineSVG />
+          <UnderlineSVG color="#FEC227" duration={2} />
         </span>
       </h2>
 
@@ -128,7 +128,7 @@ export const Advantages = () => {
               <h3 className="text-lg font-bold text-gray-900 mt-3">
                 {card.title}
               </h3>
-              <p className="text-gray-600 text-sm mt-1">{card.text}</p>
+              <p className="text-gray-600 text-base mt-1">{card.text}</p>
             </div>
           ))}
         </div>

@@ -10,14 +10,9 @@ import { SiNextra } from "react-icons/si";
 import { TbSortAscendingNumbers } from "react-icons/tb";
 import { MdOutlineEmail } from "react-icons/md";
 import { useGlowContext } from "../../context/glow/glowContext";
-import {
-  ProcessCard,
-  TwoLinesSVG,
-  SuccessIcon,
-  ConnectorSvg,
-} from "../../components";
+import { ProcessCard, TwoLinesSVG, ConnectorSvg } from "../../components";
 
-import img_2 from "../../assets/images/image_2.jpg";
+import dein_report from "../../assets/images/your_report_diagram.jpg";
 import "./process.screen.css";
 
 export const ProcessDiagramScreen = () => {
@@ -113,8 +108,8 @@ export const ProcessDiagramScreen = () => {
             <div className="buyer_img max-w-[508px] w-[210px] aspect-3/2 h-[160px] overflow-hidden rounded-2xl">
               <img
                 loading="lazy"
-                src={img_2}
-                alt="img_2"
+                src={dein_report}
+                alt="dein_report"
                 className="w-full h-full object-cover"
               />
             </div>

@@ -24,8 +24,11 @@ function App() {
   return (
     <Router>
       <GlowProvider>
-        <div className="xl:container xl:mx-auto">
-          <div className="relative" style={{ marginTop: `${navHeight}px` }}>
+        <div className="xl:container xl:mx-auto flex flex-col min-h-screen">
+          <div
+            className="relative flex-grow"
+            style={{ marginTop: `${navHeight}px` }}
+          >
             <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/agb" element={<AGB />} />
@@ -34,8 +37,8 @@ function App() {
               <Route path="/paymentSuccess" element={<PaymentRedirect />} />
             </Routes>
           </div>
+          <Footer />
         </div>
-        <Footer />
       </GlowProvider>
     </Router>
   );
