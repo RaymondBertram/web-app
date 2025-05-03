@@ -58,7 +58,7 @@ export const Services = () => {
                 Ihre{" "}
                 <span className="text-[40px] lg:text-5xl font-medium leading-8 relative">
                   Standortanalyse
-                  <UnderlineSVG duration={3} color="#FEC227" />
+                  <UnderlineSVG duration={3} color="#b9278b" />
                 </span>{" "}
                 dreht sich im Kreis?
               </h2>

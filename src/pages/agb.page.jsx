@@ -1,10 +1,15 @@
+import { useEffect } from "react";
 import { SimpleNav } from "../components/navigation/simple-nav/simple-nav.component";
 
 export const AGB = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <SimpleNav />
-      <div className="pt-20 md:pt-24 h-screen text-center text-[#012060] px-4">
+      <div className="pt-20 md:pt-24 text-center text-[#012060] px-4">
         <div className="space-y-6">
           <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
           <div className="bg-[#D9D9D9] text-start rounded-3xl shadow-lg p-6 text-[#012060] space-y-6 w-full mx-auto">
