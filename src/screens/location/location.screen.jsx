@@ -120,7 +120,7 @@ export const Location = () => {
           Fordern Sie eine{" "}
           <span className="relative inline-block header-2">
             Standortanalyse
-            <UnderlineSVG duration={2} color="#F8D77B" />
+            <UnderlineSVG duration={2} color="#b9278b" />
           </span>{" "}
           für jeden Ort Ihrer Wahl an
         </h2>
@@ -137,7 +137,7 @@ export const Location = () => {
               type="text"
               className={`w-full p-[12px_50px_12px_20px] text-[16px] border border-gray-300 rounded-full outline-none transition duration-300 ease-in-out focus:border-gray-500 shadow-md ${
                 glow
-                  ? "border-purple-500 shadow-[0_0_10px_2px_rgba(130,71,255,0.5)]"
+                  ? "border-red-700 shadow-[0_0_10px_2px_rgba(130,71,255,0.5)]"
                   : ""
               }`}
               autoComplete="address-line1"

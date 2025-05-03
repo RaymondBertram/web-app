@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-export const UnderlineSVG = ({ duration, color = "#FEC227" }) => {
+export const UnderlineSVG = ({ duration, color = "#b9278b" }) => {
   return (
     <svg
       className="absolute left-0 bottom-[-10px] w-full h-[16px]"

@@ -77,7 +77,7 @@ export const Form = () => {
           <span className="relative inline-block text-[39px] text-black lg:text-5xl font-medium">
             Ihrer Seite
             <span>
-              <UnderlineSVG duration={2} color="#FEC227"/>
+              <UnderlineSVG duration={2} color="#b9278b"/>
             </span>
           </span>
         </h2>

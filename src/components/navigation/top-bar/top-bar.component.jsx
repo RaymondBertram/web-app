@@ -99,7 +99,7 @@ export const Navigation = () => {
       <div className="flex flex-row w-full justify-between items-center md:pt-4">
         <div className="logo-wrapper">
           <a href="/">
-            <img src={company_logo} alt="logo" className="w-auto h-[100px]" />
+            <img src={company_logo} alt="logo" className="w-auto h-[80px]" />
           </a>
         </div>
         <ul className="hidden lg:flex lg:flex-row lg:gap-6 list-none m-0 p-0 overflow-hidden">
@@ -143,7 +143,7 @@ export const Navigation = () => {
                     <img
                       src={company_logo}
                       alt="logo"
-                      className="w-auto h-[100px]"
+                      className="w-auto h-[80px]"
                     />
                   </a>
 

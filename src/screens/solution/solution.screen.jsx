@@ -52,7 +52,7 @@ export const Solution = () => {
                 scaleY: scaleYFirst,
                 transform: `translate3d(0, ${translateFirst}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#012060] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#393d74] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -62,7 +62,7 @@ export const Solution = () => {
                   Fordern Sie Ihre{" "}
                   <span className="relative text-white inline-block">
                     <h2 className="text-white">Standortanalyse</h2>
-                    <UnderlineSVG duration={2} color="#F8D77B" />
+                    <UnderlineSVG duration={2} color="#b9278b" />
                   </span>{" "}
                   {""}
                   ein
@@ -103,7 +103,7 @@ export const Solution = () => {
                   <img
                     src={verkehrsanalyse_schnell}
                     alt="verkehrsanalyse_schnell"
-                    className="max-w-md rounded-t-2xl mt-auto"
+                    className="w-full h-[300px] object-cover rounded-t-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -117,7 +117,7 @@ export const Solution = () => {
                 scaleY: scaleYSecond,
                 transform: `translate3d(0, ${translateSecond}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#012060] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#394574] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -127,7 +127,7 @@ export const Solution = () => {
                   Wir analysieren bis ins letzte{" "}
                   <span className="relative inline-block">
                     <h2 className="text-white">Detail</h2>
-                    <UnderlineSVG duration={2} color="#FEC227"/>
+                    <UnderlineSVG duration={2} color="#b9278b" />
                   </span>
                 </h2>
               </div>
@@ -170,7 +170,7 @@ export const Solution = () => {
                   <img
                     src={vernetzt}
                     alt="vernetzt"
-                    className="max-w-md rounded-t-2xl mt-auto"
+                    className="w-full h-[300px] object-cover rounded-t-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -184,7 +184,7 @@ export const Solution = () => {
                 scaleY: scaleYThird,
                 transform: `translate3d(0, ${translateThird}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#012060] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#395b74] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -194,7 +194,7 @@ export const Solution = () => {
                   Sie erhalten Ihren Report per{" "}
                   <span className="relative inline-block">
                     <h2 className="text-white">E-Mail</h2>
-                    <UnderlineSVG duration={2} color="#FEC227"/>
+                    <UnderlineSVG duration={2} color="#b9278b" />
                   </span>
                 </h2>
               </div>
@@ -232,7 +232,7 @@ export const Solution = () => {
                   <img
                     src={direkt_aufs_smartphone}
                     alt="direkt_aufs_smartphone"
-                    className="max-w-md rounded-t-2xl mt-auto"
+                    className="w-full h-[300px] object-cover rounded-t-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -243,7 +243,7 @@ export const Solution = () => {
           <div className="flex flex-col space-y-6 py-4">
             {/* First Block */}
             <motion.div
-              className="bg-[#012060] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="bg-[#393d74] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -258,7 +258,7 @@ export const Solution = () => {
                     In{" "}
                     <span className="relative inline-block text-[28px] text-white font-medium">
                       <h3>2 Klicks</h3>
-                      <UnderlineSVG color="#FEC227" duration={2}/>
+                      <UnderlineSVG color="#b9278b" duration={2} />
                     </span>{" "}
                     zu Ihrem Auftrag - so simple!
                   </h3>
@@ -284,7 +284,7 @@ export const Solution = () => {
                 <img
                   src={verkehrsanalyse_schnell}
                   alt="verkehrsanalyse_schnell"
-                  className="w-full max-w-md rounded-t-2xl"
+                  className="w-full h-[300px] object-cover rounded-t-2xl"
                   loading="lazy"
                 />
               </div>
@@ -292,7 +292,7 @@ export const Solution = () => {
 
             {/* Second Block */}
             <motion.div
-              className="bg-[#012060] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="bg-[#394574] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -307,7 +307,7 @@ export const Solution = () => {
                     Damit Sie{" "}
                     <span className="relative inline-block text-[28px] text-white font-medium">
                       <h3>100% Klarheit</h3>
-                      <UnderlineSVG duration={2} color="#FEC227"/>
+                      <UnderlineSVG duration={2} color="#b9278b" />
                     </span>{" "}
                     über den Standort haben
                   </h3>
@@ -338,7 +338,7 @@ export const Solution = () => {
                 <img
                   src={vernetzt}
                   alt="vernetzt"
-                  className="w-full max-w-md rounded-t-2xl"
+                  className="w-full h-[300px] object-cover rounded-t-2xl"
                   loading="lazy"
                 />
               </div>
@@ -346,7 +346,7 @@ export const Solution = () => {
 
             {/* Third Block */}
             <motion.div
-              className="bg-[#012060] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="bg-[#395b74] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -361,7 +361,7 @@ export const Solution = () => {
                     Sie bekommen Ihre Daten so{" "}
                     <span className="relative inline-block text-[28px] text-white font-medium">
                       <h3>unkompliziert</h3>
-                      <UnderlineSVG color="#FEC227" duration={2}/>
+                      <UnderlineSVG color="#b9278b" duration={2} />
                     </span>{" "}
                     wie möglich
                   </h3>
@@ -386,7 +386,7 @@ export const Solution = () => {
                 <img
                   src={direkt_aufs_smartphone}
                   alt="direkt_aufs_smartphone"
-                  className="w-full max-w-md rounded-t-2xl"
+                  className="w-full h-[300px] object-cover rounded-t-2xl"
                   loading="lazy"
                 />
               </div>

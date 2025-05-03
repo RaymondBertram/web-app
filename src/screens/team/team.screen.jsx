@@ -18,7 +18,7 @@ export const Team = () => {
           Unser{" "}
           <span className="relative inline-block text-black">
             <h2 className="text-black">Gründer</h2>
-            <UnderlineSVG color="#FEC227" duration={2} />
+            <UnderlineSVG color="#b9278b" duration={2} />
           </span>
         </h2>
       </div>

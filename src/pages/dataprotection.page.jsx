@@ -1,6 +1,11 @@
+import { useEffect } from "react";
 import { SimpleNav } from "../components/navigation/simple-nav/simple-nav.component";
 
 export const DataProtectionPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <SimpleNav />
