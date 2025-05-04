@@ -1,28 +1,24 @@
-import React, { useRef, useState, useCallback, useEffect } from "react";
+import React, { useRef, useState, useCallback } from "react";
 import { FaSearch } from "react-icons/fa";
 import axios from "axios";
-import dropin from "braintree-web-drop-in";
+import { useNavigate } from "react-router-dom";
+import { loadStripe } from "@stripe/stripe-js";
+
 import { AddressAutofill, useConfirmAddress } from "@mapbox/search-js-react";
+
 import { useGlowContext } from "../../context/glow/glowContext";
 import { UnderlineSVG } from "../../components";
-import { useNavigate } from "react-router-dom";
+import { CheckoutForm } from "../../components/stripe/checkoutForm/checkoutForm.component";
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_API_TOKEN;
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
 const PAY_PAL_AMOUNT = import.meta.env.VITE_AMOUNT_PAY_PAL;
 const PAY_PAL_CURRENCY = import.meta.env.VITE_CURRENCY_PAY_PAL;
-const PAY_PAL_FLOW = import.meta.env.VITE_FLOW_PAY_PAL;
 
 export const Location = () => {
   const { glow } = useGlowContext();
   const { formRef } = useConfirmAddress({ accessToken: ACCESS_TOKEN });
-  const navigate = useNavigate();
 
-  const dropinContainer = useRef(null);
-  const dropinInstance = useRef(null);
-
-  const [showDropIn, setShowDropIn] = useState(false);
-  const [clientToken, setClientToken] = useState(null);
   const [paymentSuccessMessage, setPaymentSuccessMessage] = useState("");
 
   const [addressData, setAddressData] = useState({
@@ -30,85 +26,33 @@ export const Location = () => {
     city: "",
     country: "",
   });
+  const [clientSecret, setClientSecret] = useState(null);
+  const navigate = useNavigate();
 
-  const handleFormSubmit = useCallback(async (e) => {
-    e.preventDefault();
+  const handleFormSubmit = useCallback(
+    async (e) => {
+      e.preventDefault();
 
-    try {
-      const { data } = await axios.get(`${BACKEND_URL}/api/getToken`);
-      setClientToken(data.clientToken);
-      setShowDropIn(true);
-      setPaymentSuccessMessage(""); // Clear old messages
-    } catch (err) {
-      console.error("Fehler beim Laden des Client Tokens", err);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (clientToken && dropinContainer.current) {
-      dropin.create(
-        {
-          authorization: clientToken,
-          container: dropinContainer.current,
-          paypal: {
-            flow: PAY_PAL_FLOW,
+      try {
+        const { data } = await axios.post(
+          `${BACKEND_URL}/api/create-payment-intent`,
+          {
             amount: PAY_PAL_AMOUNT,
-            currency: PAY_PAL_CURRENCY,
-          },
-        },
-        (err, instance) => {
-          if (err) return console.error("Drop-in Fehler:", err);
-          dropinInstance.current = instance;
-        }
-      );
-    }
-  }, [clientToken, showDropIn]);
-
-  const handlePayment = async () => {
-    if (!dropinInstance.current) return;
-
-    try {
-      const { nonce, details } =
-        await dropinInstance.current.requestPaymentMethod();
-      const { addressLine1, city, country } = addressData;
-      const address = {
-        street: addressLine1,
-        city: city,
-        country: country,
-      };
-
-      const customer = {
-        email: details.email,
-        firstName:
-          details.firstName ||
-          (details.payerInfo && details.payerInfo.firstName),
-        lastName:
-          details.lastName || (details.payerInfo && details.payerInfo.lastName),
-        payerId:
-          details.payerId || (details.payerId && details.payerInfo.payerId),
-      };
-
-      const { data } = await axios.post(`${BACKEND_URL}/api/checkout`, {
-        paymentMethodNonce: nonce,
-        amount: PAY_PAL_AMOUNT,
-        address: address,
-        customer: customer,
-      });
-
-      if (data.success) {
-        navigate("/paymentSuccess");
-      } else {
-        setPaymentSuccessMessage(
-          "❌ Zahlung fehlgeschlagen. Bitte erneut versuchen."
+            addressData,
+          }
         );
+
+        setPaymentSuccessMessage(""); // Clear old messages
+        setClientSecret(data.clientSecret);
+        navigate("/payment", {
+          state: { clientSecret: data.clientSecret, addressData },
+        });
+      } catch (err) {
+        console.error("Fehler beim Erstellen des Payment Intents", err);
       }
-    } catch (err) {
-      console.error("Zahlungsfehler:", err);
-      setPaymentSuccessMessage(
-        "❌ Ein Fehler ist aufgetreten. Bitte erneut versuchen."
-      );
-    }
-  };
+    },
+    [addressData]
+  );
 
   return (
     <section
@@ -182,7 +126,7 @@ export const Location = () => {
         </AddressAutofill>
       </form>
 
-      {showDropIn && (
+      {clientSecret && (
         <div className="flex flex-col items-center mt-8">
           <p className="mb-2 text-sm text-gray-600">
             🔥{" "}
@@ -191,13 +135,6 @@ export const Location = () => {
             </strong>{" "}
             – Sonderpreis für Ihre Standortanalyse!
           </p>
-          <div ref={dropinContainer} className="w-full max-w-[600px]"></div>
-          <button
-            onClick={handlePayment}
-            className="mt-4 bg-purple-600 text-white py-2 px-6 rounded-full"
-          >
-            Jetzt bezahlen
-          </button>
         </div>
       )}
 

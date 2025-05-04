@@ -12,6 +12,8 @@
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@mapbox/search-js-react": "^1.0.0",
+    "@stripe/react-stripe-js": "^3.7.0",
+    "@stripe/stripe-js": "^7.3.0",
     "@tailwindcss/vite": "^4.0.9",
     "axios": "^1.8.4",
     "braintree-web-drop-in": "^1.44.1",
