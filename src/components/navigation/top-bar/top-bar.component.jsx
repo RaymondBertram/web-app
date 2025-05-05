@@ -107,7 +107,7 @@ export const Navigation = () => {
             (id) => (
               <li className="py-4" key={id}>
                 <a
-                  className={`relative font-medium text-black cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:bg-[#012060] after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] ${
+                  className={`relative font-medium text-black cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:bg-[#112233] after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] ${
                     activeNavItem === id ? "after:w-full" : "after:w-0"
                   } hover:after:w-full`}
                   href={`#${id}`}

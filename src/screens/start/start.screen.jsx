@@ -37,9 +37,9 @@ export const Start = () => {
                   zum perfekten
                 </h1>{" "}
                 <h1 className="relative inline-block sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
-                  Standort
-                  <span>
-                    <UnderlineSVG duration={2} color="#b9278b" />
+                  <span className="span-style sm:text-[28px] md:text-[32px] lg:text-[60px] move-heading">
+                    Standort
+                    {/* <UnderlineSVG duration={2} color="#b9278b" /> */}
                   </span>
                 </h1>
               </div>
@@ -54,7 +54,7 @@ export const Start = () => {
               <div className="flex gap-2 justify-start">
                 <a
                   href="#location"
-                  className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-white bg-[#012060] rounded-4xl"
+                  className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-white bg-[#112233] rounded-4xl"
                   onClick={() => setGlow(true)}
                 >
                   Jetzt loslegen
