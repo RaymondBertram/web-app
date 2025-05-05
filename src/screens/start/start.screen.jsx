@@ -33,10 +33,10 @@ export const Start = () => {
                 <AnimatedHeaders headers={headers} />
               </div>
               <div>
-                <h1 className="inline-block sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
+                <h1 className="inline-block mt-3 sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
                   zum perfekten
                 </h1>{" "}
-                <h1 className="relative inline-block sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
+                <h1 className="relative mt-2 inline-block sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
                   <span className="span-style sm:text-[28px] md:text-[32px] lg:text-[60px] move-heading">
                     Standort
                     {/* <UnderlineSVG duration={2} color="#b9278b" /> */}
