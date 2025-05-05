@@ -97,10 +97,10 @@ export const Advantages = () => {
 
   return (
     <section className="flex flex-col px-0 py-25" id="vorteile">
-      <h2 className=" text-center font-medium mb-10 text-black">
-        <span className="relative text-[39px] text-black lg:text-5xl font-medium">
-          Ihre Vorteile
-          <UnderlineSVG color="#b9278b" duration={2} />
+      <h2 className="text-center font-medium mb-10 text-black">
+        Ihre
+        <span className="ml-2 span-style text-[39px] text-black lg:text-5xl font-medium">
+          Vorteile
         </span>
       </h2>
 
