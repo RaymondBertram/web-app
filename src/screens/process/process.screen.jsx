@@ -29,7 +29,7 @@ export const ProcessDiagramScreen = () => {
               viewport={{ once: true }}
               className="absolute -top-6 right-0 w-full flex justify-end"
             >
-              <TwoLinesSVG color="#012060" />
+              <TwoLinesSVG color="#b6dd3e" />
             </motion.div>
 
             <span className="relative header-2">
@@ -120,7 +120,7 @@ export const ProcessDiagramScreen = () => {
               </div>
               <a
                 href="#location"
-                className="text-white text-center bg-[#012060] py-3 rounded-4xl mt-6"
+                className="text-white text-center bg-[#112233] py-3 rounded-4xl mt-6"
                 onClick={() => setGlow(true)}
               >
                 Jetzt anfordern!

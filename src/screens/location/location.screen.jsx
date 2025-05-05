@@ -1,14 +1,11 @@
-import React, { useRef, useState, useCallback } from "react";
+import React, { useState, useCallback } from "react";
 import { FaSearch } from "react-icons/fa";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import { loadStripe } from "@stripe/stripe-js";
 
 import { AddressAutofill, useConfirmAddress } from "@mapbox/search-js-react";
 
 import { useGlowContext } from "../../context/glow/glowContext";
-import { UnderlineSVG } from "../../components";
-import { CheckoutForm } from "../../components/stripe/checkoutForm/checkoutForm.component";
 
 const ACCESS_TOKEN = import.meta.env.VITE_MAPBOX_API_TOKEN;
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
@@ -62,9 +59,9 @@ export const Location = () => {
       <div className="flex flex-col md:flex-row justify-center items-center mb-8 py-4">
         <h2 className="text-black text-center font-medium leading-15">
           Fordern Sie eine{" "}
-          <span className="relative inline-block header-2">
+          <span className="span-style header-2">
             Standortanalyse
-            <UnderlineSVG duration={2} color="#b9278b" />
+            {/* <UnderlineSVG duration={2} color="#b9278b" /> */}
           </span>{" "}
           für jeden Ort Ihrer Wahl an
         </h2>
@@ -81,7 +78,7 @@ export const Location = () => {
               type="text"
               className={`w-full p-[12px_50px_12px_20px] text-[16px] border border-gray-300 rounded-full outline-none transition duration-300 ease-in-out focus:border-gray-500 shadow-md ${
                 glow
-                  ? "border-red-700 shadow-[0_0_10px_2px_rgba(130,71,255,0.5)]"
+                  ? "border-[#112233] shadow-[0_0_10px_2px_rgba(130,71,255,0.5)]"
                   : ""
               }`}
               autoComplete="address-line1"
@@ -118,7 +115,7 @@ export const Location = () => {
             />
             <button
               type="submit"
-              className="absolute right-[10px] top-1/2 -translate-y-1/2 bg-transparent border-none text-[#8247ff] cursor-pointer p-[5px] flex items-center justify-center"
+              className="absolute right-[10px] top-1/2 -translate-y-1/2 bg-transparent border-none text-[#112233] cursor-pointer p-[5px] flex items-center justify-center"
             >
               <FaSearch size={16} />
             </button>

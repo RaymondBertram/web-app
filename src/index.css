@@ -9,9 +9,10 @@
   background-color: #F4F6FA;
   scroll-behavior: smooth;
 
-  --color-primary: #002060;
-  --color-secondary: #EBFF00;
+  --color-primary: #112233;
+  --color-secondary: #b6dd3e;
   --color-tertiary: #D9D9D9;
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -53,4 +54,12 @@
   .header-2 {
     @apply text-[39px] text-black lg:text-5xl font-medium;
   }
+
+  .span-style {
+    @apply bg-[#b6dd3e] mt-3 p-2 rounded-lg relative inline-block text-black font-medium leading-12 md:leading-none
+  }
+}
+
+.move-heading {
+  transform: translateX(-8px);
 }

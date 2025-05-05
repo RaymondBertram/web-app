@@ -52,16 +52,16 @@ export const Solution = () => {
                 scaleY: scaleYFirst,
                 transform: `translate3d(0, ${translateFirst}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#393d74] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F4F6FA] shadow-[#002060] shadow-2xl flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
                   id="first_block px-2"
-                  className="text-white font-medium mb-4"
+                  className="text-black font-medium mb-4"
                 >
                   Fordern Sie Ihre{" "}
-                  <span className="relative text-white inline-block">
-                    <h2 className="text-white">Standortanalyse</h2>
+                  <span className="relative text-black inline-block">
+                    <h2 className="text-black">Standortanalyse</h2>
                     <UnderlineSVG duration={2} color="#b9278b" />
                   </span>{" "}
                   {""}
@@ -71,10 +71,10 @@ export const Solution = () => {
 
               <div className="flex flex-col md:flex-row mt-6">
                 <div className="w-full md:w-1/2 p-4 mb-10">
-                  <h3 className="text-4xl text-white font-medium px-2 mb-10">
+                  <h3 className="text-4xl text-black font-medium px-2 mb-10">
                     In 2 Klicks zu Ihrem Auftrag - so simple!
                   </h3>
-                  <p className="text-white mt-2 px-2">
+                  <p className="text-black mt-2 px-2">
                     Sie möchten Ihre Standortanalyse beauftragen? Kein Problem –
                     bei uns geht das schnell und unkompliziert. In nur zwei
                     einfachen Schritten können Sie Ihre Anfrage abschließen.
