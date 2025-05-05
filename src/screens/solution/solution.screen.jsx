@@ -52,7 +52,7 @@ export const Solution = () => {
                 scaleY: scaleYFirst,
                 transform: `translate3d(0, ${translateFirst}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F4F6FA] shadow-[#002060] shadow-2xl flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F4F6FA] shadow-360  flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -61,8 +61,7 @@ export const Solution = () => {
                 >
                   Fordern Sie Ihre{" "}
                   <span className="relative text-black inline-block">
-                    <h2 className="text-black">Standortanalyse</h2>
-                    <UnderlineSVG duration={2} color="#b9278b" />
+                    <h2 className="span-style">Standortanalyse</h2>
                   </span>{" "}
                   {""}
                   ein
@@ -117,27 +116,26 @@ export const Solution = () => {
                 scaleY: scaleYSecond,
                 transform: `translate3d(0, ${translateSecond}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#394574] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F4F6FA] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
                   id="first_block"
-                  className="px-2 text-white font-medium mb-4"
+                  className="px-2 text-black font-medium mb-4"
                 >
                   Wir analysieren bis ins letzte{" "}
                   <span className="relative inline-block">
-                    <h2 className="text-white">Detail</h2>
-                    <UnderlineSVG duration={2} color="#b9278b" />
+                    <h2 className="span-style">Detail</h2>
                   </span>
                 </h2>
               </div>
 
               <div className="flex flex-col md:flex-row mt-6">
                 <div className="w-full md:w-1/2 p-4 mb-10">
-                  <h3 className="text-4xl font-medium px-2 text-white mb-10">
+                  <h3 className="text-4xl font-medium px-2 text-black mb-10">
                     Damit Sie 100% Klarheit über den Standort haben
                   </h3>
-                  <p className="text-white mt-2 px-2">
+                  <p className="text-black mt-2 px-2">
                     Unser Expertenteam prüft den Standort gründlich und
                     datenbasiert – von der regionalen Infrastruktur bis hin zur
                     Zielgruppenanalyse. Jeder relevante Aspekt wird
@@ -184,27 +182,26 @@ export const Solution = () => {
                 scaleY: scaleYThird,
                 transform: `translate3d(0, ${translateThird}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#395b74] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap shadow-360 bg-[#F4F6FA] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
                   id="first_block"
-                  className="px-2 font-medium mb-4 text-white"
+                  className="px-2 font-medium mb-4 text-black"
                 >
                   Sie erhalten Ihren Report per{" "}
                   <span className="relative inline-block">
-                    <h2 className="text-white">E-Mail</h2>
-                    <UnderlineSVG duration={2} color="#b9278b" />
+                    <h2 className="span-style">E-Mail</h2>
                   </span>
                 </h2>
               </div>
 
               <div className="flex flex-col md:flex-row mt-6">
                 <div className="w-full md:w-1/2 p-4 mb-10">
-                  <h3 className="text-4xl font-medium px-2 text-white mb-10">
+                  <h3 className="text-4xl font-medium px-2 text-black mb-10">
                     Sie bekommen Ihre Daten so unkompliziert wie möglich
                   </h3>
-                  <p className="text-white mt-2">
+                  <p className="text-black mt-2">
                     Sobald die Analyse abgeschlossen ist, erhalten Sie den
                     Report bequem per E-Mail. Ohne zusätzlichen Aufwand, ohne
                     Login oder Plattform. Einfach, direkt und schnell – damit
@@ -257,8 +254,7 @@ export const Solution = () => {
                   >
                     In{" "}
                     <span className="relative inline-block text-[28px] text-white font-medium">
-                      <h3>2 Klicks</h3>
-                      <UnderlineSVG color="#b9278b" duration={2} />
+                      <h3 className="span-style">2 Klicks</h3>
                     </span>{" "}
                     zu Ihrem Auftrag - so simple!
                   </h3>
@@ -306,8 +302,7 @@ export const Solution = () => {
                   >
                     Damit Sie{" "}
                     <span className="relative inline-block text-[28px] text-white font-medium">
-                      <h3>100% Klarheit</h3>
-                      <UnderlineSVG duration={2} color="#b9278b" />
+                      <h3 className="span-style">100% Klarheit</h3>
                     </span>{" "}
                     über den Standort haben
                   </h3>
@@ -360,8 +355,7 @@ export const Solution = () => {
                   >
                     Sie bekommen Ihre Daten so{" "}
                     <span className="relative inline-block text-[28px] text-white font-medium">
-                      <h3>unkompliziert</h3>
-                      <UnderlineSVG color="#b9278b" duration={2} />
+                      <h3 className="span-style">unkompliziert</h3>
                     </span>{" "}
                     wie möglich
                   </h3>

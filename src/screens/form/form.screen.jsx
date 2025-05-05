@@ -74,11 +74,8 @@ export const Form = () => {
       >
         <h2 className="font-medium py-4 text-center mb-10">
           HELLO TRAFFIC an{" "}
-          <span className="relative inline-block text-[39px] text-black lg:text-5xl font-medium">
+          <span className="span-style inline-block text-[39px] text-black lg:text-5xl font-medium">
             Ihrer Seite
-            <span>
-              <UnderlineSVG duration={2} color="#b9278b"/>
-            </span>
           </span>
         </h2>
         <p className="leading-6 text-gray-600">
@@ -94,10 +91,10 @@ export const Form = () => {
       </div>
       <div
         key="form-card-2"
-        className="bg-gray-800 flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto"
+        className="bg-[#112233] flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto"
       >
         <h2 className="font-medium py-4 text-white text-center">
-          Möchten Sie mehr Erfahren?
+          Möchten Sie mehr erfahren?
         </h2>
         <form
           ref={formRef}
@@ -176,7 +173,7 @@ export const Form = () => {
           <div className="flex flex-col items-center">
             <button
               type="submit"
-              className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition-colors"
+              className="bg-white text-[#112233] font-semibold py-2 px-4 rounded-lg transition-colors"
             >
               Absenden
             </button>
