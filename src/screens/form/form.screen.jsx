@@ -70,7 +70,7 @@ export const Form = () => {
     >
       <div
         key="form-card-1"
-        className="bg-white flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto mb-4 md:mb-4 lg:mb-0 md:mr-4"
+        className="bg-[#f7f7f7] flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto mb-4 md:mb-4 lg:mb-0 md:mr-4"
       >
         <h2 className="font-medium py-4 text-center mb-10">
           HELLO TRAFFIC an{" "}
@@ -91,15 +91,15 @@ export const Form = () => {
       </div>
       <div
         key="form-card-2"
-        className="bg-[#112233] flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto"
+        className="bg-[#f7f7f7] flex flex-col flex-1 rounded-3xl p-6 shadow-lg w-full h-80 lg:h-auto"
       >
-        <h2 className="font-medium py-4 text-white text-center">
+        <h2 className="font-medium py-4 text-black text-center">
           Möchten Sie mehr erfahren?
         </h2>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className="text-white space-y-4"
+          className="text-black space-y-4"
         >
           <div>
             <label htmlFor="name" className="block text-sm mb-1">
@@ -110,7 +110,7 @@ export const Form = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full p-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#6146ff]"
               placeholder="Name"
             />
             {errors.name && (
@@ -126,7 +126,7 @@ export const Form = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full p-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
+              className="w-full p-2 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#6146ff]"
               placeholder="E-Mail"
             />
             {errors.email && (
@@ -141,7 +141,7 @@ export const Form = () => {
               name="message"
               value={formData.message}
               onChange={handleChange}
-              className="w-full p-2 rounded-md bg-gray-700 text-white focus:outline-none focus:ring-2 focus:ring-blue-500 h-32"
+              className="w-full p-2 rounded-md bg-white text-black focus:outline-none focus:ring-2 focus:ring-[#6146ff] h-32"
               placeholder="Ihre Nachricht"
             />
             {errors.message && (
@@ -173,7 +173,7 @@ export const Form = () => {
           <div className="flex flex-col items-center">
             <button
               type="submit"
-              className="bg-white text-[#112233] font-semibold py-2 px-4 rounded-lg transition-colors"
+              className="bg-black text-white font-semibold py-2 px-4 rounded-lg transition-colors"
             >
               Absenden
             </button>

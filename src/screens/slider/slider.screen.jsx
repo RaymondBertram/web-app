@@ -19,7 +19,7 @@ export const Slider = () => {
           HELLO TRAFFIC
         </p>
       </div>
-      <div className="relative flex max-w-full w-full h-35 lg:rounded-[64px] overflow-hidden bg-[#f5f7fa] border-0">
+      <div className="relative flex max-w-full w-full h-35 lg:rounded-[64px] overflow-hidden bg-white border-0">
         <InfiniteCarousel images={logos} />
       </div>
     </div>

@@ -76,9 +76,9 @@ export const Location = () => {
           <div className="relative min-w-[50vw] max-w-[600px]">
             <input
               type="text"
-              className={`w-full p-[12px_50px_12px_20px] text-[16px] border border-gray-300 rounded-full outline-none transition duration-300 ease-in-out focus:border-gray-500 shadow-md ${
+              className={`w-full p-[12px_50px_12px_20px] text-[16px] border border-gray-300 rounded-full outline-none transition duration-300 ease-in-out focus:border-[#6146ff] shadow-md ${
                 glow
-                  ? "border-[#112233] shadow-[0_0_10px_2px_rgba(130,71,255,0.5)]"
+                  ? "border-[#6146ff] shadow-[0_0_10px_2px_rgba(130,71,255,0.5)]"
                   : ""
               }`}
               autoComplete="address-line1"
@@ -115,7 +115,7 @@ export const Location = () => {
             />
             <button
               type="submit"
-              className="absolute right-[10px] top-1/2 -translate-y-1/2 bg-transparent border-none text-[#112233] cursor-pointer p-[5px] flex items-center justify-center"
+              className="absolute right-[10px] top-1/2 -translate-y-1/2 bg-transparent border-none text-[#6146ff] cursor-pointer p-[5px] flex items-center justify-center"
             >
               <FaSearch size={16} />
             </button>

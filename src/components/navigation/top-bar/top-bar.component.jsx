@@ -92,11 +92,11 @@ export const Navigation = () => {
           : "-translate-y-full transition-transform duration-700 ease-[cubic-bezier(0.25,1,0.5,1)]"
       } ${
         flashBackground
-          ? "bg-white transition-colors duration-1000"
-          : "bg-[#f5f7fa] transition-colors duration-1000"
+          ? "bg-[#f7f7f7] transition-colors duration-1000"
+          : "bg-[#ffffff] transition-colors duration-1000"
       }`}
     >
-      <div className="flex flex-row w-full justify-between items-center md:pt-4">
+      <div className="flex flex-row w-full justify-between items-center md:py-2">
         <div className="logo-wrapper">
           <a href="/">
             <img src={company_logo} alt="logo" className="w-auto h-[80px]" />
@@ -107,7 +107,7 @@ export const Navigation = () => {
             (id) => (
               <li className="py-4" key={id}>
                 <a
-                  className={`relative font-medium text-black cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:bg-[#112233] after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] ${
+                  className={`relative font-medium text-black cursor-pointer after:content-[''] after:absolute after:left-0 after:bottom-[-8px] after:h-[2px] after:bg-[#6146ff] after:transition-all after:duration-300 after:transform after:skew-y-[-2deg] ${
                     activeNavItem === id ? "after:w-full" : "after:w-0"
                   } hover:after:w-full`}
                   href={`#${id}`}

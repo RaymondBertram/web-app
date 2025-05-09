@@ -106,9 +106,9 @@ export const Advantages = () => {
 
       <div className="flex items-center relative w-full overflow-x-auto md:overflow-hidden">
         {/* Left fade */}
-        <div className="absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-[#f5f7fa] to-transparent z-10" />
+        <div className="absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-[#FFFFFF] to-transparent z-10" />
         {/* Right fade */}
-        <div className="absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-[#f5f7fa] to-transparent z-10" />
+        <div className="absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-[#FFFFFF] to-transparent z-10" />
 
         {/* Scrollable cards */}
         <div
@@ -122,7 +122,7 @@ export const Advantages = () => {
           {cardData.map((card) => (
             <div
               key={card.id}
-              className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] h-[300px] lg:h-[250px] rounded-2xl bg-white shadow-lg flex flex-col p-6 mx-2"
+              className="min-w-[85%] sm:min-w-[60%] md:min-w-[45%] lg:min-w-[30%] h-[300px] lg:h-[250px] rounded-2xl bg-[#f7f7f7] shadow-lg flex flex-col p-6 mx-2"
             >
               <div>{card.img}</div>
               <h3 className="text-lg font-bold text-gray-900 mt-3">

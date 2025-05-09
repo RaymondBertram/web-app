@@ -47,8 +47,8 @@ export default function InfiniteCarousel({ images }) {
 
   return (
     <div className="flex items-center relative w-full overflow-hidden">
-      <div className="absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-[#f5f7fa] to-transparent z-10" />
-      <div className="absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-[#f5f7fa] to-transparent z-10" />
+      <div className="absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-[#ffffff] to-transparent z-10" />
+      <div className="absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-[#ffffff] to-transparent z-10" />
 
       <div
         ref={containerRef}

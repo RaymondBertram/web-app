@@ -6,12 +6,14 @@
   font-weight: 400;
 
   color: #52606d;
-  background-color: #F4F6FA;
+  background-color: #FFFFFF;
   scroll-behavior: smooth;
 
   --color-primary: #112233;
   --color-secondary: #b6dd3e;
   --color-tertiary: #D9D9D9;
+  --color-quadrary: #6146ff;
+  --color-gray: #f7f7f7;
 
 
   font-synthesis: none;
@@ -56,7 +58,7 @@
   }
 
   .span-style {
-    @apply bg-[#b6dd3e] mt-3 p-2 rounded-lg relative inline-block text-black font-medium leading-12 md:leading-none
+    @apply bg-[#e2fe54] mt-3 p-2 rounded-lg relative inline-block text-black font-medium leading-12 md:leading-none
   }
 }
 
@@ -66,7 +68,7 @@
 
 .shadow-360 {
   box-shadow:
-    0 0 1px 0.5px color-mix(in srgb, var(--color-primary) 50%, transparent),
-    0 0 4px 0px color-mix(in srgb, var(--color-primary) 30%, transparent),
-    0 0 6px 6px color-mix(in srgb, var(--color-primary) 20%, transparent);
+    0 0 4px 1px color-mix(in srgb, var(--color-gray) 40%, transparent),
+    0 0 8px 2px color-mix(in srgb, var(--color-gray) 25%, transparent),
+    0 0 16px 4px color-mix(in srgb, var(--color-gray) 10%, transparent);
 }

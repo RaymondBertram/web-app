@@ -52,7 +52,7 @@ export const ConnectorSvg = () => {
             <circle
               className="circle-bottom"
               r="18"
-              fill="#b6dd3e"
+              fill="#6146ff"
               fillOpacity="0.79"
             />
           </g>
@@ -80,7 +80,7 @@ export const ConnectorSvg = () => {
             <circle
               className="circle-top"
               r="18"
-              fill="#b6dd3e"
+              fill="#6146ff"
               fillOpacity="0.79"
             />
           </g>
