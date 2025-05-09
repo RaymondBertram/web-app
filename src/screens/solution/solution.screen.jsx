@@ -52,7 +52,7 @@ export const Solution = () => {
                 scaleY: scaleYFirst,
                 transform: `translate3d(0, ${translateFirst}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F4F6FA] shadow-360  flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F7F7F7] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -100,7 +100,7 @@ export const Solution = () => {
                   key={"image_card_1"}
                 >
                   <img
-                    src={verkehrsanalyse_schnell}
+                    src={"https://placehold.co/600x400"}
                     alt="verkehrsanalyse_schnell"
                     className="w-full h-[300px] object-cover rounded-t-2xl"
                     loading="lazy"
@@ -116,7 +116,7 @@ export const Solution = () => {
                 scaleY: scaleYSecond,
                 transform: `translate3d(0, ${translateSecond}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F4F6FA] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F7F7F7] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -166,7 +166,7 @@ export const Solution = () => {
                   key={"image_card_1"}
                 >
                   <img
-                    src={vernetzt}
+                    src={"https://placehold.co/600x400"}
                     alt="vernetzt"
                     className="w-full h-[300px] object-cover rounded-t-2xl"
                     loading="lazy"
@@ -182,7 +182,7 @@ export const Solution = () => {
                 scaleY: scaleYThird,
                 transform: `translate3d(0, ${translateThird}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap shadow-360 bg-[#F4F6FA] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap shadow-360 bg-[#F7F7F7] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -227,7 +227,7 @@ export const Solution = () => {
                   key={"image_card_1"}
                 >
                   <img
-                    src={direkt_aufs_smartphone}
+                    src={"https://placehold.co/600x400"}
                     alt="direkt_aufs_smartphone"
                     className="w-full h-[300px] object-cover rounded-t-2xl"
                     loading="lazy"
@@ -278,7 +278,7 @@ export const Solution = () => {
 
               <div className="w-full px-4 pt-4 flex justify-center">
                 <img
-                  src={verkehrsanalyse_schnell}
+                  src={"https://placehold.co/600x400"}
                   alt="verkehrsanalyse_schnell"
                   className="w-full h-[300px] object-cover rounded-t-2xl"
                   loading="lazy"
@@ -331,7 +331,7 @@ export const Solution = () => {
 
               <div className="w-full px-4 pt-4 flex justify-center">
                 <img
-                  src={vernetzt}
+                  src={"https://placehold.co/600x400"}
                   alt="vernetzt"
                   className="w-full h-[300px] object-cover rounded-t-2xl"
                   loading="lazy"
@@ -378,7 +378,7 @@ export const Solution = () => {
 
               <div className="w-full px-4 pt-4 flex justify-center">
                 <img
-                  src={direkt_aufs_smartphone}
+                  src={"https://placehold.co/600x400"}
                   alt="direkt_aufs_smartphone"
                   className="w-full h-[300px] object-cover rounded-t-2xl"
                   loading="lazy"

@@ -33,11 +33,11 @@ export const Start = () => {
                 <AnimatedHeaders headers={headers} />
               </div>
               <div>
-                <h1 className="inline-block mt-3 sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
+                <h1 className="inline-block mt-3 sm:text-[28px] md:text-[32px] lg:text-[55px] text-black font-medium leading-12 md:leading-none">
                   zum perfekten
                 </h1>{" "}
                 <h1 className="relative mt-2 inline-block sm:text-[28px] md:text-[32px] lg:text-[60px] text-black font-medium leading-12 md:leading-none">
-                  <span className="span-style sm:text-[28px] md:text-[32px] lg:text-[60px] move-heading">
+                  <span className="span-style sm:text-[28px] md:text-[32px] lg:text-[55px] move-heading">
                     Standort
                     {/* <UnderlineSVG duration={2} color="#b9278b" /> */}
                   </span>
@@ -54,7 +54,7 @@ export const Start = () => {
               <div className="flex gap-2 justify-start">
                 <a
                   href="#location"
-                  className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-white bg-[#112233] rounded-4xl"
+                  className="inline-flex items-center gap-2 text-nowrap text-center px-6 py-4 text-lg font-bold text-white bg-[#000000] rounded-4xl"
                   onClick={() => setGlow(true)}
                 >
                   Jetzt loslegen

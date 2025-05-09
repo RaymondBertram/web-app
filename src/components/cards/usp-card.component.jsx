@@ -22,7 +22,7 @@ export const UspCard = ({
 
   return (
     <div className="relative transform-gpu scale-100 rotate-0 skew-0 preserve-3d w-[350px] md:w-[280px] lg:w-[400px]">
-      <div className="relative flex flex-col items-center p-6 bg-[#a9cecc] shadow-lg rounded-3xl">
+      <div className="relative flex flex-col items-center p-6 bg-[#FFFFFF] shadow-lg rounded-3xl">
         <div className="relative flex items-center justify-start size-20 mb-4 w-full">
           <div
             className="flex items-center justify-center absolute w-10 h-10 bg-gray-300 rounded-full z-10"
@@ -43,10 +43,10 @@ export const UspCard = ({
             }}
           ></div>
         </div>
-        <h2 className="text-2xl md:text-xl font-medium text-[#23596d] w-full">
+        <h2 className="text-2xl md:text-xl font-medium text-black w-full">
           {title}
         </h2>
-        <p className="text-[#23596d] font-base text-sm mt-2 text-start w-full">
+        <p className="text-[#52606d] font-base text-sm mt-2 text-start w-full">
           {text}
         </p>
       </div>
