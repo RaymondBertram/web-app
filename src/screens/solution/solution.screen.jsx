@@ -3,9 +3,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import { useMediaQuery } from "react-responsive";
 
 import { UnderlineSVG } from "../../components";
-import verkehrsanalyse_schnell from "../../assets/images/verkehrsanalyse_schnell.jpg";
-import vernetzt from "../../assets/images/vernetzt.jpg";
-import direkt_aufs_smartphone from "../../assets/images/direkt_auf_das_smartphone.jpg";
+import solution_1 from "../../assets/images/solution_1.png";
+import solution_2 from "../../assets/images/solution_2.png";
+import solution_3 from "../../assets/images/solution_3.png";
 
 export const Solution = () => {
   const containerRef = useRef(null);
@@ -52,7 +52,7 @@ export const Solution = () => {
                 scaleY: scaleYFirst,
                 transform: `translate3d(0, ${translateFirst}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F7F7F7] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F7F7F7] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[650px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -92,7 +92,7 @@ export const Solution = () => {
                 </div>
 
                 <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-end items-center"
+                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-center items-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -100,9 +100,9 @@ export const Solution = () => {
                   key={"image_card_1"}
                 >
                   <img
-                    src={"https://placehold.co/600x400"}
+                    src={solution_1}
                     alt="verkehrsanalyse_schnell"
-                    className="w-full h-[300px] object-cover rounded-t-2xl"
+                    className="w-full object-cover h-full rounded-t-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -116,7 +116,7 @@ export const Solution = () => {
                 scaleY: scaleYSecond,
                 transform: `translate3d(0, ${translateSecond}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F7F7F7] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F7F7F7] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[650px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -158,7 +158,7 @@ export const Solution = () => {
                 </div>
 
                 <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-end items-center"
+                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-center items-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -166,9 +166,9 @@ export const Solution = () => {
                   key={"image_card_1"}
                 >
                   <img
-                    src={"https://placehold.co/600x400"}
+                    src={solution_2}
                     alt="vernetzt"
-                    className="w-full h-[300px] object-cover rounded-t-2xl"
+                    className="w-full object-cover h-full rounded-t-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -182,7 +182,7 @@ export const Solution = () => {
                 scaleY: scaleYThird,
                 transform: `translate3d(0, ${translateThird}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap shadow-360 bg-[#F7F7F7] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[600px]"
+              className="h-auto sticky top-[10%] color-blocks-wrap shadow-360 bg-[#F7F7F7] flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[650px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
@@ -219,7 +219,7 @@ export const Solution = () => {
                 </div>
 
                 <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-end items-center"
+                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-center items-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -227,9 +227,9 @@ export const Solution = () => {
                   key={"image_card_1"}
                 >
                   <img
-                    src={"https://placehold.co/600x400"}
+                    src={solution_3}
                     alt="direkt_aufs_smartphone"
-                    className="w-full h-[300px] object-cover rounded-t-2xl"
+                    className="w-full object-cover h-full rounded-t-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -240,7 +240,7 @@ export const Solution = () => {
           <div className="flex flex-col space-y-6 py-4">
             {/* First Block */}
             <motion.div
-              className="bg-[#393d74] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="shadow-360 bg-[#F7F7F7] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -250,16 +250,16 @@ export const Solution = () => {
                 <div className="relative text-start tracking-normal">
                   <h3
                     id="first_block"
-                    className="px-2 text-[28px] text-white font-medium mb-4"
+                    className="px-2 text-[28px] text-black font-medium mb-4"
                   >
                     In{" "}
-                    <span className="relative inline-block text-[28px] text-white font-medium">
+                    <span className="relative inline-block text-[28px] text-black font-medium">
                       <h3 className="span-style">2 Klicks</h3>
                     </span>{" "}
                     zu Ihrem Auftrag - so simple!
                   </h3>
                 </div>
-                <p className="text-white mt-2">
+                <p className="text-black mt-2">
                   Sie möchten Ihre Standortanalyse beauftragen? Kein Problem –
                   bei uns geht das schnell und unkompliziert. In nur zwei
                   einfachen Schritten können Sie Ihre Anfrage abschließen. Ohne
@@ -278,7 +278,7 @@ export const Solution = () => {
 
               <div className="w-full px-4 pt-4 flex justify-center">
                 <img
-                  src={"https://placehold.co/600x400"}
+                  src={solution_1} // asdf - mobile image
                   alt="verkehrsanalyse_schnell"
                   className="w-full h-[300px] object-cover rounded-t-2xl"
                   loading="lazy"
@@ -288,7 +288,7 @@ export const Solution = () => {
 
             {/* Second Block */}
             <motion.div
-              className="bg-[#394574] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="shadow-360 bg-[#F7F7F7]flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -298,16 +298,16 @@ export const Solution = () => {
                 <div className="relative text-start tracking-normal">
                   <h3
                     id="first_block"
-                    className="px-2 text-[28px] text-white font-medium mb-4"
+                    className="px-2 text-[28px] text-black font-medium mb-4"
                   >
                     Damit Sie{" "}
-                    <span className="relative inline-block text-[28px] text-white font-medium">
+                    <span className="relative inline-block text-[28px] text-black font-medium">
                       <h3 className="span-style">100% Klarheit</h3>
                     </span>{" "}
                     über den Standort haben
                   </h3>
                 </div>
-                <p className="text-white mt-2">
+                <p className="text-black mt-2">
                   Unser Expertenteam prüft den Standort gründlich und
                   datenbasiert – von der regionalen Infrastruktur bis hin zur
                   Zielgruppenanalyse. Jeder relevante Aspekt wird
@@ -331,7 +331,7 @@ export const Solution = () => {
 
               <div className="w-full px-4 pt-4 flex justify-center">
                 <img
-                  src={"https://placehold.co/600x400"}
+                  src={solution_2}
                   alt="vernetzt"
                   className="w-full h-[300px] object-cover rounded-t-2xl"
                   loading="lazy"
@@ -341,7 +341,7 @@ export const Solution = () => {
 
             {/* Third Block */}
             <motion.div
-              className="bg-[#395b74] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="shadow-360 bg-[#F7F7F7] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
@@ -351,16 +351,16 @@ export const Solution = () => {
                 <div className="relative text-start tracking-normal">
                   <h3
                     id="first_block"
-                    className="px-2 text-[28px] text-white font-medium mb-4"
+                    className="px-2 text-[28px] text-black font-medium mb-4"
                   >
                     Sie bekommen Ihre Daten so{" "}
-                    <span className="relative inline-block text-[28px] text-white font-medium">
+                    <span className="relative inline-block text-[28px] text-black font-medium">
                       <h3 className="span-style">unkompliziert</h3>
                     </span>{" "}
                     wie möglich
                   </h3>
                 </div>
-                <p className="text-white mt-2">
+                <p className="text-black mt-2">
                   Sobald die Analyse abgeschlossen ist, erhalten Sie den Report
                   bequem per E-Mail. Ohne zusätzlichen Aufwand, ohne Login oder
                   Plattform. Einfach, direkt und schnell – damit Sie sofort mit
@@ -378,7 +378,7 @@ export const Solution = () => {
 
               <div className="w-full px-4 pt-4 flex justify-center">
                 <img
-                  src={"https://placehold.co/600x400"}
+                  src={solution_3}
                   alt="direkt_aufs_smartphone"
                   className="w-full h-[300px] object-cover rounded-t-2xl"
                   loading="lazy"
