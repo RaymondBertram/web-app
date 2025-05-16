@@ -96,7 +96,7 @@ export const ConnectorSvg = () => {
           height="158"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <rect width="158" height="158" rx="26" fill="#FFFFFF" />
+          <rect width="158" height="158" rx="26" fill="#F7F7F7" />
           <image
             href={company_logo}
             x="20"
