@@ -129,7 +129,7 @@ export const ProcessDiagramScreen = () => {
           </div>
 
           {/* Reposition the transaction card */}
-          <div className="transaktion_card flex flex-col items-center w-[170px] absolute px-1 pb-1 pt-4 top-[-2em] right-0 bg-white rounded-2xl">
+          <div className="transaktion_card flex flex-col items-center w-[170px] absolute px-1 pb-1 pt-4 top-[-2em] right-0 bg-white shadow-360 rounded-2xl">
             <div className="transaction_content_img size-20 p-4">
               <MdTouchApp className="w-full h-full" />
             </div>
