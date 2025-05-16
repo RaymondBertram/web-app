@@ -13,21 +13,32 @@ export const Navigation = () => {
   const [flashBackground, setFlashBackground] = useState(false);
 
   useEffect(() => {
+    let lastScrollYLocal = lastScrollY;
+    const SCROLL_THRESHOLD = 30;
+
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
-        setIsVisible(false); // Beim Runterscrollen ausblenden
+      const currentScrollY = window.scrollY;
+      const diff = currentScrollY - lastScrollYLocal;
+
+      // Nur bei größerem Unterschied reagieren
+      if (Math.abs(diff) < SCROLL_THRESHOLD) return;
+
+      if (diff > 0) {
+        // Runterscrollen
+        setIsVisible(false);
       } else {
-        setIsVisible(true); // Beim Hochscrollen einblenden
-        setFlashBackground(true); // Hintergrundfarbe kurz auf Weiß setzen
-        setTimeout(() => setFlashBackground(false), 2000); // Nach 1000ms smooth ausblenden
+        // Hochscrollen
+        setIsVisible(true);
+        setFlashBackground(true);
+        setTimeout(() => setFlashBackground(false), 2000);
       }
-      setLastScrollY(window.scrollY);
+
+      lastScrollYLocal = currentScrollY;
+      setLastScrollY(currentScrollY);
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
   useEffect(() => {
@@ -41,6 +52,7 @@ export const Navigation = () => {
       document.body.style.overflow = "";
     };
   }, [isMenuOpen]);
+
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
 

@@ -25,7 +25,7 @@ export const Advantages = () => {
     {
       id: 2,
       title: "Bessere Standortentscheidungen",
-      text: "Zuverlässige Frequenzdaten helfen, Potenziale zu erkennen, Risiken zu minimieren und fundierte Entscheidungen für Anmietung oder Entwicklung zu treffen.",
+      text: "Zuverlässige Frequenzdaten zeigen Potenziale, senken Risiken und unterstützen fundierte Miet- und Entwicklungsentscheidungen.",
       img: <MapPinIcon className="size-6" />,
     },
     {
@@ -137,14 +137,14 @@ export const Advantages = () => {
       <div className="flex justify-center gap-4 mt-4 md:flex">
         <button
           onClick={() => scroll("left")}
-          className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 disabled:opacity-50"
+          className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 disabled:opacity-50 cursor-pointer"
           disabled={!canScrollLeft}
         >
           <ChevronLeftIcon className="size-6" />
         </button>
         <button
           onClick={() => scroll("right")}
-          className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 disabled:opacity-50"
+          className="p-2 bg-gray-200 rounded-full hover:bg-gray-300 disabled:opacity-50 cursor-pointer"
           disabled={!canScrollRight}
         >
           <ChevronRightIcon className="size-6" />
