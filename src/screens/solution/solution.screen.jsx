@@ -92,7 +92,7 @@ export const Solution = () => {
                 </div>
 
                 <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-center items-center"
+                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-end items-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -102,7 +102,7 @@ export const Solution = () => {
                   <img
                     src={solution_1}
                     alt="verkehrsanalyse_schnell"
-                    className="w-full object-cover h-full rounded-t-2xl"
+                    className="w-full object-contain h-full rounded-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -158,7 +158,7 @@ export const Solution = () => {
                 </div>
 
                 <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-center items-center"
+                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-end items-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -168,7 +168,7 @@ export const Solution = () => {
                   <img
                     src={solution_2}
                     alt="vernetzt"
-                    className="w-full object-cover h-full rounded-t-2xl"
+                    className="w-full object-contain h-full rounded-xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -219,7 +219,7 @@ export const Solution = () => {
                 </div>
 
                 <motion.div
-                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-center items-center"
+                  className="w-full md:w-1/2 px-4 pt-4 flex flex-col justify-end items-center"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 1, ease: "easeInOut" }}
@@ -229,7 +229,7 @@ export const Solution = () => {
                   <img
                     src={solution_3}
                     alt="direkt_aufs_smartphone"
-                    className="w-full object-cover h-full rounded-t-2xl"
+                    className="w-full object-contain h-full rounded-2xl"
                     loading="lazy"
                   />
                 </motion.div>
@@ -288,7 +288,7 @@ export const Solution = () => {
 
             {/* Second Block */}
             <motion.div
-              className="shadow-360 bg-[#F7F7F7]flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
+              className="shadow-360 bg-[#F7F7F7] flex flex-col justify-around items-center rounded-2xl pt-6 px-4 mb-2"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, ease: "easeInOut" }}
