@@ -52,7 +52,7 @@ export const Solution = () => {
                 scaleY: scaleYFirst,
                 transform: `translate3d(0, ${translateFirst}, 0)`,
               }}
-              className="h-auto sticky top-[10%] color-blocks-wrap bg-[#F7F7F7] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[650px]"
+              className="h-auto sticky top-[5%] color-blocks-wrap bg-[#F7F7F7] shadow-360 flex flex-col justify-between items-center rounded-2xl pt-6 md:pt-12 px-4 mb-2 md:min-h-[650px]"
             >
               <div className="relative text-center tracking-normal">
                 <h2
