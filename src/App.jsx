@@ -9,7 +9,6 @@ import { DataProtectionPage } from "./pages/dataprotection.page";
 import { PaymentRedirect } from "./pages/payment-redirect.page";
 import { Impress } from "./pages/impress.page";
 import { AGB } from "./pages/agb.page";
-import { PaymentPage } from "./pages/payment.page";
 
 import "./App.css";
 
@@ -39,7 +38,6 @@ function App() {
                 <Route path="/impressum" element={<Impress />} />
                 <Route path="/datenschutz" element={<DataProtectionPage />} />
                 <Route path="/paymentSuccess" element={<PaymentRedirect />} />
-                <Route path="/payment" element={<PaymentPage />} />
               </Routes>
             </div>
             <Footer />
