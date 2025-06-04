@@ -6,6 +6,8 @@ const Stripe = require("stripe");
 const sendMail = require("../mailer");
 const router = express.Router();
 
+console.log("🚀  API-Router geladen", router);
+
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Middleware

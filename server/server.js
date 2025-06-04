@@ -10,9 +10,10 @@ app.use("/api", require("./routes/api")); // ./routes/api MUSS einen Router expo
 
 app.use(express.static(path.join(__dirname, "../frontend/dist")));
 
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
-// });
+app.get("/", (req, res) => {
+  // Bitte einmal checken, ob das so passt!
+  res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
