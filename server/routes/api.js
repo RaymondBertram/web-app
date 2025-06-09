@@ -6,8 +6,6 @@ const Stripe = require("stripe");
 const sendMail = require("../mailer");
 const router = express.Router();
 
-console.log("🚀  API-Router geladen", router);
-
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 
 // Middleware
@@ -204,8 +202,8 @@ router.post("/create-checkout-session", async (req, res) => {
       phone_number_collection: {
         enabled: true,
       },
-      success_url: `${process.env.CLIENT_URL}/paymentSuccess`,
-      cancel_url: `${process.env.CLIENT_URL}/`,
+      success_url: `${process.env.ALLOWED_ORIGIN}/paymentSuccess`,
+      cancel_url: `${process.env.ALLOWED_ORIGIN}/`,
       metadata: {
         addressLine1,
         city,
